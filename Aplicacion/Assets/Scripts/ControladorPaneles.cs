@@ -10,6 +10,10 @@ public class ControladorPaneles : MonoBehaviour
     public GameObject panelInfo;
     public GameObject panelOpciones;
     public GameObject panelActividades;
+    public GameObject panelHistorias;
+    public GameObject panelProgreso;
+    public GameObject panelProfesiones;
+    public GameObject panelMatematicas;
 
     // Start is called before the first frame update
     void Start()
@@ -80,5 +84,88 @@ public class ControladorPaneles : MonoBehaviour
     {
         panelPrincipal.SetActive(true);
         panelSalir.SetActive(false);
+    }
+
+    public void ActivarPanelProgreso()
+    {
+        panelProgreso.SetActive(true);
+    }
+
+    public void DesactivarPanelProgreso()
+    {
+        panelPrincipal.SetActive(true);
+        panelProgreso.SetActive(false);
+    }
+
+    public void ActivarPanelActividades()
+    {
+        panelActividades.SetActive(true);
+    }
+
+    public void DesactivarPanelActividades()
+    {
+        panelJuegos.SetActive(true);
+        panelActividades.SetActive(false);
+    }
+
+    public void DesactivarPanelActividadesJuegos()
+    {
+        panelPrincipal.SetActive(true);
+        panelActividades.SetActive(false);
+        panelJuegos.SetActive(false);
+    }
+
+    public void ActivarPanelHistorias()
+    {
+        panelHistorias.SetActive(true);
+    }
+
+    public void DesactivarPanelHistorias()
+    {
+        panelJuegos.SetActive(true);
+        panelHistorias.SetActive(false);
+    }
+
+    public void DesactivarPanelHistoriasJuegos()
+    {
+        panelPrincipal.SetActive(true);
+        panelHistorias.SetActive(false);
+        panelJuegos.SetActive(false);
+    }
+
+    public void ActivarPanelProfesiones()
+    {
+        panelProfesiones.SetActive(true);
+    }
+
+    public void DesactivarPanelProfesiones()
+    {
+        panelJuegos.SetActive(true);
+        panelProfesiones.SetActive(false);
+    }
+
+    public void DesactivarPanelProfesionesJuegos()
+    {
+        panelPrincipal.SetActive(true);
+        panelProfesiones.SetActive(false);
+        panelJuegos.SetActive(false);
+    }
+
+    public void ActivarPanelMatematicas()
+    {
+        panelMatematicas.SetActive(true);
+    }
+
+    public void DesactivarPanelMatematicas()
+    {
+        panelJuegos.SetActive(true);
+        panelMatematicas.SetActive(false);
+    }
+
+    public void DesactivarPanelMatematicasJuegos()
+    {
+        panelPrincipal.SetActive(true);
+        panelMatematicas.SetActive(false);
+        panelJuegos.SetActive(false);
     }
 }
