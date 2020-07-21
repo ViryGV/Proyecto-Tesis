@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: ccfea53cb9564984c84a39156dd5ffa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5520766154211710705
+    second: OrganizacionNivel1_0
+  - first:
+      213: -8818754849918066674
+    second: OrganizacionNivel1_1
+  - first:
+      213: -978528471705453591
+    second: OrganizacionNivel1_2
+  - first:
+      213: -331975043539349185
+    second: OrganizacionNivel1_3
+  - first:
+      213: 1290733183350509390
+    second: OrganizacionNivel1_4
+  - first:
+      213: -1777170173424526898
+    second: OrganizacionNivel1_5
+  - first:
+      213: -5963685321016334882
+    second: OrganizacionNivel1_6
+  - first:
+      213: 6582422699324835429
+    second: OrganizacionNivel1_7
+  - first:
+      213: -336669836985270525
+    second: OrganizacionNivel1_8
+  - first:
+      213: 5476269594433383390
+    second: OrganizacionNivel1_9
+  - first:
+      213: 1627626629536415784
+    second: OrganizacionNivel1_10
+  - first:
+      213: 6499824959755220434
+    second: OrganizacionNivel1_11
+  - first:
+      213: -2452374091443365704
+    second: OrganizacionNivel1_12
+  - first:
+      213: 4613837937455297805
+    second: OrganizacionNivel1_13
+  - first:
+      213: 1390650925482192238
+    second: OrganizacionNivel1_14
+  - first:
+      213: 647263205469018913
+    second: OrganizacionNivel1_15
+  - first:
+      213: 8506638109087673970
+    second: OrganizacionNivel1_16
+  - first:
+      213: 8259473847015705905
+    second: OrganizacionNivel1_17
+  - first:
+      213: -4801740795650096228
+    second: OrganizacionNivel1_18
+  - first:
+      213: -2979356093252536081
+    second: OrganizacionNivel1_19
+  - first:
+      213: -4023375430925148200
+    second: OrganizacionNivel1_20
+  - first:
+      213: 3448639017890408584
+    second: OrganizacionNivel1_21
+  - first:
+      213: 8639342802556504785
+    second: OrganizacionNivel1_22
+  - first:
+      213: -8549549219665405413
+    second: OrganizacionNivel1_23
+  - first:
+      213: -5394758775288326814
+    second: OrganizacionNivel1_24
+  - first:
+      213: -132332756272834893
+    second: OrganizacionNivel1_25
+  - first:
+      213: 7507748217708517513
+    second: OrganizacionNivel1_26
+  - first:
+      213: -5165653521297005954
+    second: OrganizacionNivel1_27
+  - first:
+      213: -1853173073521942691
+    second: OrganizacionNivel1_28
+  - first:
+      213: -8459949304610778932
+    second: OrganizacionNivel1_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OrganizacionNivel1_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1092
+        width: 412
+        height: 442
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09263ade6c4263b0800000000000000
+      internalID: -5520766154211710705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_1
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1063
+        width: 421
+        height: 410
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e006161103d7d9580800000000000000
+      internalID: -8818754849918066674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_2
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1087
+        width: 216
+        height: 312
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebf3691a819b62f0800000000000000
+      internalID: -978528471705453591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_3
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1285
+        width: 218
+        height: 265
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31da8fe476946bf0800000000000000
+      internalID: -331975043539349185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_4
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 1396
+        width: 125
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f8a6dddfa99e110800000000000000
+      internalID: 1290733183350509390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_5
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 1164
+        width: 224
+        height: 226
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec99c93a4293657e0800000000000000
+      internalID: -1777170173424526898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_6
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 885
+        width: 60
+        height: 122
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed52c982ccbbc3da0800000000000000
+      internalID: -5963685321016334882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 829
+        width: 71
+        height: 93
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56689b2e196795b50800000000000000
+      internalID: 6582422699324835429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_8
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 798
+        width: 224
+        height: 235
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f77e72198e35bf0800000000000000
+      internalID: -336669836985270525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 736
+        width: 174
+        height: 345
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb697e7e2e9ffb40800000000000000
+      internalID: 5476269594433383390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_10
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 682
+        width: 330
+        height: 270
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8200c78cbcd769610800000000000000
+      internalID: 1627626629536415784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_11
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 831
+        width: 175
+        height: 175
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d57d640d54043a50800000000000000
+      internalID: 6499824959755220434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_12
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 853
+        width: 68
+        height: 194
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8952fc1ca67fdd0800000000000000
+      internalID: -2452374091443365704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_13
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 768
+        width: 4
+        height: 4
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d057e31b825a70040800000000000000
+      internalID: 4613837937455297805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 331
+        width: 86
+        height: 420
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d2fe316a59c4310800000000000000
+      internalID: 1390650925482192238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_15
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 543
+        width: 54
+        height: 198
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b592eb47a8bf800800000000000000
+      internalID: 647263205469018913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_16
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 563
+        width: 63
+        height: 98
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ea8f44a46ad0670800000000000000
+      internalID: 8506638109087673970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_17
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 563
+        width: 63
+        height: 96
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d000b04bb8f9270800000000000000
+      internalID: 8259473847015705905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_18
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 379
+        width: 241
+        height: 222
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9346c3ef2acc5db0800000000000000
+      internalID: -4801740795650096228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_19
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 495
+        width: 242
+        height: 168
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe879422b6337a6d0800000000000000
+      internalID: -2979356093252536081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_20
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 552
+        width: 167
+        height: 188
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df1ca1cc591a28c0800000000000000
+      internalID: -4023375430925148200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_21
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 285
+        width: 161
+        height: 210
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888e8e34ae60cdf20800000000000000
+      internalID: 3448639017890408584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_22
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 267
+        width: 121
+        height: 218
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da4537718c15e770800000000000000
+      internalID: 8639342802556504785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_23
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 79
+        width: 204
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a102c3846e95980800000000000000
+      internalID: -8549549219665405413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_24
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 231
+        width: 243
+        height: 204
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265940ef977f125b0800000000000000
+      internalID: -5394758775288326814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_25
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 132
+        width: 280
+        height: 173
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6953e2f0cd92ef0800000000000000
+      internalID: -132332756272834893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 101
+        width: 107
+        height: 110
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988969be931e03860800000000000000
+      internalID: 7507748217708517513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_27
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 31
+        width: 126
+        height: 171
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a85ebd79ef48b0800000000000000
+      internalID: -5165653521297005954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_28
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 91
+        width: 90
+        height: 129
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fd76d78e43846e0800000000000000
+      internalID: -1853173073521942691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrganizacionNivel1_29
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 88
+        width: 89
+        height: 129
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc09cd02ee8389a80800000000000000
+      internalID: -8459949304610778932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

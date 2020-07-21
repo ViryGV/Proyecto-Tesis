@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: c9e1adcc7227c8742ab9c1f4cf8cb79c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4653299573940242516
+    second: AtencionNivel1_0
+  - first:
+      213: 2527682695868039368
+    second: AtencionNivel1_1
+  - first:
+      213: -2744292358588844127
+    second: AtencionNivel1_2
+  - first:
+      213: -6747202840366147199
+    second: AtencionNivel1_3
+  - first:
+      213: 6116205106203398511
+    second: AtencionNivel1_4
+  - first:
+      213: 6247890424806056716
+    second: AtencionNivel1_5
+  - first:
+      213: 3212961730506631844
+    second: AtencionNivel1_6
+  - first:
+      213: 4917611087900797648
+    second: AtencionNivel1_7
+  - first:
+      213: 6066150719010652494
+    second: AtencionNivel1_8
+  - first:
+      213: -6787237601912672261
+    second: AtencionNivel1_9
+  - first:
+      213: 4651176238120078224
+    second: AtencionNivel1_10
+  - first:
+      213: -7229929090236740686
+    second: AtencionNivel1_11
+  - first:
+      213: 223403222498799892
+    second: AtencionNivel1_12
+  - first:
+      213: -5318890122126826630
+    second: AtencionNivel1_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AtencionNivel1_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1313
+        width: 230
+        height: 265
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7b0d511b82c6fb0800000000000000
+      internalID: -4653299573940242516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_1
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 1317
+        width: 177
+        height: 193
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0cd180502241320800000000000000
+      internalID: 2527682695868039368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_2
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1174
+        width: 472
+        height: 346
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a73e76c3a05ae9d0800000000000000
+      internalID: -2744292358588844127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 505
+        width: 473
+        height: 733
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1891870d3ce1d52a0800000000000000
+      internalID: -6747202840366147199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_4
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 956
+        width: 356
+        height: 310
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f611fa8932021e450800000000000000
+      internalID: 6116205106203398511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_5
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 911
+        width: 60
+        height: 46
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0321261d37f4b650800000000000000
+      internalID: 6247890424806056716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_6
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 695
+        width: 300
+        height: 388
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaa5cfbbabb69c20800000000000000
+      internalID: 3212961730506631844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_7
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 777
+        width: 284
+        height: 241
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da69d5da3dde3440800000000000000
+      internalID: 4917611087900797648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 902
+        width: 43
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e414c9860fb4f2450800000000000000
+      internalID: 6066150719010652494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_9
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 499
+        width: 277
+        height: 280
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff22d38c53eec1a0800000000000000
+      internalID: -6787237601912672261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 97
+        width: 381
+        height: 266
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b82e4452c4c8040800000000000000
+      internalID: 4651176238120078224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_11
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 85
+        width: 299
+        height: 365
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb0d295cc12aab90800000000000000
+      internalID: -7229929090236740686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_12
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 74
+        width: 410
+        height: 390
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411f7b61c00b91300800000000000000
+      internalID: 223403222498799892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtencionNivel1_13
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 127
+        width: 192
+        height: 275
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73eb475d918f26b0800000000000000
+      internalID: -5318890122126826630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

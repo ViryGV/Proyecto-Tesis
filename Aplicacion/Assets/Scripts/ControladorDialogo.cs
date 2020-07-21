@@ -28,7 +28,7 @@ public class ControladorDialogo : MonoBehaviour
             botonContinuar.SetActive(true);
         }
     }
-
+    
     IEnumerator Type()
     {
         foreach (char letras in palabras[_index].ToCharArray())
