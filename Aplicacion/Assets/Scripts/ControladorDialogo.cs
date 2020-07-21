@@ -7,8 +7,16 @@ public class ControladorDialogo : MonoBehaviour
 {
     public TextMeshProUGUI textoDisplay;
     public GameObject botonContinuar;
+    public GameObject objetoUno;
+    public GameObject emocionT;
+    public GameObject emocionA;
+    public GameObject emocionE;
+    public GameObject emocionTemor;
+    public GameObject textoPregunta;
 
     private AudioSource _audio;
+
+    Renderer render;
 
     public string[] palabras;
     public float typingSpeed;
@@ -18,6 +26,7 @@ public class ControladorDialogo : MonoBehaviour
     void Start()
     {
         //_audio = GetComponent<AudioSource>();
+        render = objetoUno.GetComponent<Renderer>();
         StartCoroutine(Type());
     }
 
@@ -42,17 +51,29 @@ public class ControladorDialogo : MonoBehaviour
     {
         //_audio.Play();
         botonContinuar.SetActive(false);
+        emocionA.SetActive(false);
+        emocionE.SetActive(false);
+        emocionT.SetActive(false);
+        emocionTemor.SetActive(false);
+        textoPregunta.SetActive(false);
 
         if (_index < palabras.Length - 1)
         {
             _index++;
             textoDisplay.text = "";
             StartCoroutine(Type());
+            render.enabled = false;
         }
         else
         {
             textoDisplay.text = "";
             botonContinuar.SetActive(false);
+            render.enabled = true;
+            emocionA.SetActive(true);
+            emocionE.SetActive(true);
+            emocionT.SetActive(true);
+            emocionTemor.SetActive(true);
+            textoPregunta.SetActive(true);
         }
     }
 }
