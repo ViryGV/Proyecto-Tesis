@@ -32,4 +32,18 @@ public class ControladorMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
+
+    public void CargarMenuJuegos()
+    {
+        Debug.Log("Cargar nivel");
+        StartCoroutine(EsperarPanelCargandoJuegos());
+    }
+
+    public IEnumerator EsperarPanelCargandoJuegos()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MenuJuegos");
+        Time.timeScale = 1;
+    }
 }

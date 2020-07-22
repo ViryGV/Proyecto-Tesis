@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NivelesEmociones.unity
     guid: e9c38aa592ad2e949abe6bce6797b47b
+  - enabled: 1
+    path: Assets/Scenes/MenuJuegos.unity
+    guid: fbdec7a850566e440920ed57dd793b21
   m_configObjects: {}

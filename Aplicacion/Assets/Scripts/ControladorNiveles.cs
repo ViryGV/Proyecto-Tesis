@@ -25,11 +25,25 @@ public class ControladorNiveles : MonoBehaviour
         StartCoroutine(EsperarPanelCargando());
     }
 
+    public void CargarMenuJuegos()
+    {
+        Debug.Log("Cargar nivel");
+        StartCoroutine(EsperarPanelCargandoJuegos());
+    }
+
     public IEnumerator EsperarPanelCargando()
     {
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("NivelesEmociones");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoJuegos()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MenuJuegos");
         Time.timeScale = 1;
     }
 }
