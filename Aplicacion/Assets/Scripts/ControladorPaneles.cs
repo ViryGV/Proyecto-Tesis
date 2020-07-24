@@ -2,47 +2,59 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//compile with: -doc:DocFileName.xml
 
-///<summary>
-///Clase cuya función es controlar el flujo entre los distintos paneles (menús) dispuestos para la aplicación
-///<para>Permite la navegación entre las opciones existentes</para>
-///</summary>
-///<list type="table">
-///<item>
-///<term>ActivarPanelPrincipal</term>
-///<description>Activa la vista de las opciones y funciones principlaes</description>
-///<item>
-///<term>DesactivarPanelPrincipal</term>
-///<description>Desactiva la vista de las opciones y funciones principlaes para dar acceso a otro panel</description>
-///<term>ActivarPanelJuegos</term>
-///<description>Activa la vista de las opciones para las actividades (Historias, Practicar, Profesiones y Juegos)</description>
-///<item>
-///<term>DesactivarPanelJuegos</term>
-///<description>Desactiva la vista del panel para dar acceso a otro panel o al panel principal</description>
-///<item>
-///<term>ActivarPanelOpciones</term>
-///<description>Activa la vista de las opciones de la aplicación</description>
-///<item>
-///<term>DesactivarPanelOpciones</term>
-///<description>Desactiva la vista de las opciones para dar acceso al panel principal</description>
-///<item>
-///<term>ActivarPanelInfo</term>
-///<description>Activa la vista del panel de información donde se describe a la aplicación, su desarrollador y contribuciones</description>
-///<item>
-///<term>DesactivarPanelInfo</term>
-///<description>Desactiva la vista de la información para dar acceso al panel principal</description>
-///<item>
-///<term>ActivarPanelSalir</term>
-///<description>Activa la vista para la opción de salir (cerrar la aplicación)</description>
-///<item>
-///<term>DesactivarPanelSalir</term>
-///<description>Desactiva la vista de salir para dar acceso al panel principal o cerrar la aplicación</description>
-///<item>
-///<term>ActivarPanelProgreso</term>
-///<description>Activa la vista para ver el progreso de los niños</description>
-///<item>
-///<term>DesactivarPanelProgreso</term>
-///<description>Desactiva la vista de progreso para dar acceso al panel principal</description>
+/// <summary>
+/// Clase cuya función es controlar el flujo entre los distintos paneles (menús) dispuestos para la aplicación
+/// <para>Permite la navegación entre las opciones existentes</para>
+/// <list type="table">
+/// <item>
+/// <term>ActivarPanelPrincipal</term>
+/// <description>Activa la vista de las opciones y funciones principlaes</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelPrincipal</term>
+/// <description>Desactiva la vista de las opciones y funciones principlaes para dar acceso a otro panel</description>
+/// <term>ActivarPanelJuegos</term>
+/// <description>Activa la vista de las opciones para las actividades (Historias, Practicar, Profesiones y Juegos)</description>
+/// <item>
+/// <term>DesactivarPanelJuegos</term>
+/// <description>Desactiva la vista del panel para dar acceso a otro panel o al panel principal</description>
+/// </item>
+/// <item>
+/// <term>ActivarPanelOpciones</term>
+/// <description>Activa la vista de las opciones de la aplicación</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelOpciones</term>
+/// <description>Desactiva la vista de las opciones para dar acceso al panel principal</description>
+/// </item>
+/// <item>
+/// <term>ActivarPanelInfo</term>
+/// <description>Activa la vista del panel de información donde se describe a la aplicación, su desarrollador y contribuciones</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelInfo</term>
+/// <description>Desactiva la vista de la información para dar acceso al panel principal</description>
+/// </item>
+/// <item>
+/// <term>ActivarPanelSalir</term>
+/// <description>Activa la vista para la opción de salir (cerrar la aplicación)</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelSalir</term>
+/// <description>Desactiva la vista de salir para dar acceso al panel principal o cerrar la aplicación</description>
+/// </item>
+/// <item>
+/// <term>ActivarPanelProgreso</term>
+/// <description>Activa la vista para ver el progreso de los niños</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelProgreso</term>
+/// <description>Desactiva la vista de progreso para dar acceso al panel principal</description>
+/// </item>
+/// </list>
+/// </summary>
 public class ControladorPaneles : MonoBehaviour
 {
     public GameObject panelPrincipal;
