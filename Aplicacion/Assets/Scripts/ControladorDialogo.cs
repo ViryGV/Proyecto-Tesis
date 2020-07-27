@@ -18,43 +18,18 @@ public class ControladorDialogo : MonoBehaviour
     /// <summary>
     /// <list type="bullet">
     /// <item>
-    /// <term>objetoUno</term>
-    /// <description>Addition Operation</description>
-    /// </item>
-    /// <item>
-    /// <term>emocionT</term>
-    /// <description>Texto indicativo de tristeza</description>
-    /// </item>
-    /// <item>
-    /// <term>emocionA</term>
-    /// <description>Texto indicativo de alegría</description>
-    /// </item>
-    /// <item>
-    /// <term>emocionE</term>
-    /// <description>Texto indicativo de enojo</description>
-    /// </item>
-    /// <item>
-    /// <term>emocionTemor</term>
-    /// <description>Texto indicativo de temor</description>
-    /// </item>
-    /// <item>
     /// <term>textoPregunta</term>
     /// <description>Texto indicativo donde irá la pregunta</description>
     /// </item>
     /// </list>
     /// </summary>
-    public GameObject objetoUno;
-    public GameObject emocionT;
-    public GameObject emocionA;
-    public GameObject emocionE;
-    public GameObject emocionTemor;
     public GameObject textoPregunta;
+    public GameObject textoAciertos;
 
     /// <value>Establece el valor para poner sonido en la conversación</value>
     private AudioSource _audio;
 
-    /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
-    Renderer render;
+    ControladorPuntos controladorPuntos;
 
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
     public string[] palabras;
@@ -70,7 +45,6 @@ public class ControladorDialogo : MonoBehaviour
     void Start()
     {
         //_audio = GetComponent<AudioSource>();
-        render = objetoUno.GetComponent<Renderer>();
         StartCoroutine(Type());
     }
 
@@ -86,6 +60,11 @@ public class ControladorDialogo : MonoBehaviour
         {
             botonContinuar.SetActive(true);
         }
+    }
+
+    void Awake()
+    {
+        controladorPuntos = GameObject.Find("ControladorPuntos").GetComponent(typeof(ControladorPuntos)) as ControladorPuntos;
     }
 
     /// <summary>
@@ -112,11 +91,8 @@ public class ControladorDialogo : MonoBehaviour
     {
         //_audio.Play();
         botonContinuar.SetActive(false);
-        emocionA.SetActive(false);
-        emocionE.SetActive(false);
-        emocionT.SetActive(false);
-        emocionTemor.SetActive(false);
         textoPregunta.SetActive(false);
+        textoAciertos.SetActive(false);
 
         // Si el índice de las palabras es menor al tamaño de ellas 
         // se incrementa un valor, los objetos permanecen desabilitados
@@ -128,18 +104,14 @@ public class ControladorDialogo : MonoBehaviour
             _index++;
             textoDisplay.text = "";
             StartCoroutine(Type());
-            render.enabled = false;
         }
         else
         {
             textoDisplay.text = "";
             botonContinuar.SetActive(false);
-            render.enabled = true;
-            emocionA.SetActive(true);
-            emocionE.SetActive(true);
-            emocionT.SetActive(true);
-            emocionTemor.SetActive(true);
             textoPregunta.SetActive(true);
+            textoAciertos.SetActive(true);
+            controladorPuntos.ActivarPanelAlegria();
         }
     }
 }
