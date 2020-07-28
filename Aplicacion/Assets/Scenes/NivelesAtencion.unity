@@ -1389,7 +1389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivelAcutal: 0
-  botonesMenuEmociones:
+  nivelAcutalAtencion: 0
+  botonesMenuEmociones: []
+  botonesMenuAtencion:
   - {fileID: 253182144}
   - {fileID: 1203727721}
   - {fileID: 1891658621}

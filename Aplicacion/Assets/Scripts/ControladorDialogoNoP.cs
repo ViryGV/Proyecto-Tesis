@@ -16,11 +16,13 @@ public class ControladorDialogoNoP : MonoBehaviour
     /// <value>Establece el valor para poder seguir avanzando en la conversación</value>
     public GameObject botonContinuar;
     public GameObject textoAciertos;
+    public GameObject girl;
+    public GameObject panel;
 
     /// <value>Establece el valor para poner sonido en la conversación</value>
     private AudioSource _audio;
 
-    //ControladorPuntos controladorPuntos;
+    //ControladorPuntosANivU controladorPuntosA;
 
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
     public string[] palabras;
@@ -78,6 +80,8 @@ public class ControladorDialogoNoP : MonoBehaviour
         //_audio.Play();
         botonContinuar.SetActive(false);
         textoAciertos.SetActive(false);
+        girl.SetActive(false);
+        panel.SetActive(false);
 
         // Si el índice de las palabras es menor al tamaño de ellas 
         // se incrementa un valor, los objetos permanecen desabilitados
@@ -95,6 +99,9 @@ public class ControladorDialogoNoP : MonoBehaviour
             textoDisplay.text = "";
             botonContinuar.SetActive(false);
             textoAciertos.SetActive(true);
+            girl.SetActive(true);
+            panel.SetActive(true);
+            //controladorPuntosA.ActivarPanelUno();
         }
     }
 }

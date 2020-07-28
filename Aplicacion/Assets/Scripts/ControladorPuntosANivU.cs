@@ -10,47 +10,40 @@ public class ControladorPuntosANivU : MonoBehaviour
     //public Text textoErrores;
     public TextMeshProUGUI textoMensaje;
     public GameObject cosmo;
-    public GameObject panelAlegria;
-    public GameObject panelEnojo;
-    public GameObject panelTristeza;
-    public GameObject panelSopresa;
-    public GameObject panelTemor;
-    public GameObject panelAburrido;
-    public GameObject panelPreocupado;
-    public GameObject panelCansado;
-    public GameObject objetoAlegria;
-    public GameObject objetoEnojo;
-    public GameObject objetoTristeza;
-    public GameObject objetoSorpresa;
-    public GameObject objetoTemor;
-    public GameObject objetoAburrido;
-    public GameObject objetoPreocupado;
-    public GameObject objetoCansado;
+    public GameObject panelUno;
+    public GameObject panelDos;
+    public GameObject panelTres;
+    public GameObject panelCuatro;
+    public GameObject panelCinco;
+    public GameObject panelSeis;
+    public GameObject objetoUno;
+    public GameObject objetoDos;
+    public GameObject objetoTres;
+    public GameObject objetoCuatro;
+    public GameObject objetoCinco;
+    public GameObject objetoSeis;
 
     int puntajeAciertos;
     int puntajeErrores;
 
     ControladorJuego controladorJuego;
+
     /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
-    Renderer render;
-    Renderer renderE;
-    Renderer renderT;
-    Renderer renderS;
-    Renderer renderA;
-    Renderer renderP;
-    Renderer renderC;
-    Renderer renderTemor;
+    Renderer renderUno;
+    Renderer renderDos;
+    Renderer renderTres;
+    Renderer renderCuatro;
+    Renderer renderCinco;
+    Renderer renderSeis;
 
     void Start()
     {
-        render = objetoAlegria.GetComponent<Renderer>();
-        renderE = objetoEnojo.GetComponent<Renderer>();
-        renderT = objetoTristeza.GetComponent<Renderer>();
-        renderS = objetoSorpresa.GetComponent<Renderer>();
-        renderA = objetoAburrido.GetComponent<Renderer>();
-        renderP = objetoPreocupado.GetComponent<Renderer>();
-        renderTemor = objetoTemor.GetComponent<Renderer>();
-        renderC = objetoCansado.GetComponent<Renderer>();
+        renderUno = objetoUno.GetComponent<Renderer>();
+        renderDos = objetoDos.GetComponent<Renderer>();
+        renderTres = objetoTres.GetComponent<Renderer>();
+        renderCuatro = objetoCuatro.GetComponent<Renderer>();
+        renderCinco = objetoCinco.GetComponent<Renderer>();
+        renderSeis = objetoSeis.GetComponent<Renderer>();
     }
 
     void Awake()
@@ -67,49 +60,36 @@ public class ControladorPuntosANivU : MonoBehaviour
         if (puntajeAciertos >= 1)
         {
             Debug.Log("puntaje 1");
-            DesactivarPanelAlegria();
-            ActivarPanelEnojo();
+            DesactivarPanelUno();
+            ActivarPanelDos();
         }
         if (puntajeAciertos >= 2)
         {
             Debug.Log("puntaje 2");
-            DesactivarPanelEnojo();
-            ActivarPanelTristeza();
+            DesactivarPanelDos();
+            ActivarPanelTres();
         }
         if (puntajeAciertos >= 3)
         {
             Debug.Log("puntaje 3");
-            DesactivarPanelTristeza();
-            ActivarPanelSorpresa();
+            DesactivarPanelTres();
+            ActivarPanelCuatro();
         }
         if (puntajeAciertos >= 4)
         {
             Debug.Log("puntaje 4");
-            DesactivarPanelSorpresa();
-            ActivarPanelTemor();
+            DesactivarPanelCuatro();
+            ActivarPanelCinco();
         }
         if (puntajeAciertos >= 5)
         {
             Debug.Log("puntaje 5");
-            DesactivarPanelTemor();
-            ActivarPanelAburrido();
+            DesactivarPanelCinco();
+            ActivarPanelSeis();
         }
         if (puntajeAciertos >= 6)
         {
-            Debug.Log("puntaje 6");
-            DesactivarPanelAburrido();
-            ActivarPanelPreocupado();
-        }
-        if (puntajeAciertos >= 7)
-        {
-            Debug.Log("puntaje 7");
-            DesactivarPanelPreocupado();
-            ActivarPanelCansado();
-        }
-
-        if (puntajeAciertos >= 8)
-        {
-            controladorJuego.DesbloquearNivel();
+            controladorJuego.DesbloquearNivelAtencion();
         }
     }
 
@@ -140,99 +120,74 @@ public class ControladorPuntosANivU : MonoBehaviour
         textoMensaje.text = "Intentalo de nuevo";
     }
 
-    public void ActivarPanelAlegria()
+    public void ActivarPanelUno()
     {
-        panelAlegria.SetActive(true);
-        render.enabled = true;
+        panelUno.SetActive(true);
     }
 
-    public void DesactivarPanelAlegria()
+    public void DesactivarPanelUno()
     {
-        panelAlegria.SetActive(false);
-        render.enabled = false;
+        panelUno.SetActive(false);
     }
 
-    public void ActivarPanelEnojo()
+    public void ActivarPanelDos()
     {
-        panelEnojo.SetActive(true);
-        renderE.enabled = true;
+        panelDos.SetActive(true);
+        renderUno.enabled = true;
+        renderDos.enabled = true;
     }
 
-    public void DesactivarPanelEnojo()
+    public void DesactivarPanelDos()
     {
-        panelEnojo.SetActive(false);
-        renderE.enabled = false;
+        panelDos.SetActive(false);
+        renderDos.enabled = false;
     }
 
-    public void ActivarPanelTristeza()
+    public void ActivarPanelTres()
     {
-        panelTristeza.SetActive(true);
-        renderT.enabled = true;
+        panelTres.SetActive(true);
+        renderTres.enabled = true;
     }
 
-    public void DesactivarPanelTristeza()
+    public void DesactivarPanelTres()
     {
-        panelTristeza.SetActive(false);
-        renderT.enabled = false;
+        panelTres.SetActive(false);
+        renderTres.enabled = false;
     }
 
-    public void ActivarPanelSorpresa()
+    public void ActivarPanelCuatro()
     {
-        panelSopresa.SetActive(true);
-        renderS.enabled = true;
+        panelCuatro.SetActive(true);
+        renderCuatro.enabled = true;
     }
 
-    public void DesactivarPanelSorpresa()
+    public void DesactivarPanelCuatro()
     {
-        panelSopresa.SetActive(false);
-        renderS.enabled = false;
+        panelCuatro.SetActive(false);
+        renderCuatro.enabled = false;
     }
 
-    public void ActivarPanelTemor()
+    public void ActivarPanelCinco()
     {
-        panelTemor.SetActive(true);
-        renderTemor.enabled = true;
+        panelCinco.SetActive(true);
+        renderCinco.enabled = true;
     }
 
-    public void DesactivarPanelTemor()
+    public void DesactivarPanelCinco()
     {
-        panelTemor.SetActive(false);
-        renderTemor.enabled = false;
+        panelCinco.SetActive(false);
+        renderCinco.enabled = false;
     }
 
-    public void ActivarPanelAburrido()
+    public void ActivarPanelSeis()
     {
-        panelAburrido.SetActive(true);
-        renderA.enabled = true;
+        panelSeis.SetActive(true);
+        renderSeis.enabled = true;
     }
 
-    public void DesactivarPanelAburrido()
+    public void DesactivarPanelSeis()
     {
-        panelAburrido.SetActive(false);
-        renderA.enabled = false;
-    }
-
-    public void ActivarPanelPreocupado()
-    {
-        panelPreocupado.SetActive(true);
-        renderP.enabled = true;
-    }
-
-    public void DesactivarPanelPreocupado()
-    {
-        panelPreocupado.SetActive(false);
-        renderP.enabled = false;
-    }
-
-    public void ActivarPanelCansado()
-    {
-        panelCansado.SetActive(true);
-        renderC.enabled = true;
-    }
-
-    public void DesactivarPanelCansado()
-    {
-        panelCansado.SetActive(false);
-        renderC.enabled = false;
+        panelSeis.SetActive(false);
+        renderSeis.enabled = false;
     }
 }

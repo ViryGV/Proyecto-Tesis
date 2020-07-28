@@ -33,6 +33,11 @@ public class ControladorNiveles : MonoBehaviour
         StartCoroutine(EsperarPanelCargando());
     }
 
+    public void CargarPanelNivelAtencion()
+    {
+        StartCoroutine(EsperarPanelCargandoAtencion());
+    }
+
     /// <summary>
     /// Activa la corrutina para cargar la pantalla de espera para el menú de juegos
     /// </summary>
@@ -50,6 +55,14 @@ public class ControladorNiveles : MonoBehaviour
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("NivelesEmociones");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoAtencion()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("NivelesAtencion");
         Time.timeScale = 1;
     }
 

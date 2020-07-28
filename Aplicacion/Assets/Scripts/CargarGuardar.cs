@@ -24,8 +24,10 @@ public class CargarGuardar : MonoBehaviour
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(_rutaArchivo);
-        GuardarDatos datos = new GuardarDatos(ControladorJuego.nivelesDisponibles);
+        GuardarDatos datos = new GuardarDatos(ControladorJuego.nivelesDisponibles, ControladorJuego.nivelesDisponiblesAtencion);
+        //Algo datosAtencion = new Algo(ControladorJuego.nivelesDisponiblesAtencion);
         bf.Serialize(file, datos);
+        //bf.Serialize(file, datosAtencion);
         file.Close();
     }
 
@@ -36,11 +38,14 @@ public class CargarGuardar : MonoBehaviour
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(_rutaArchivo, FileMode.Open);
             GuardarDatos datos = (GuardarDatos)bf.Deserialize(file);
+            //Algo datosAtencion = (Algo)bf.Deserialize(file);
             ControladorJuego.nivelesDisponibles = datos.nivelesDesbloqueados;
+            ControladorJuego.nivelesDisponiblesAtencion = datos.nivelesDesbloqueadosAtencion;
         }
         else
         {
             ControladorJuego.nivelesDisponibles = 0;
+            ControladorJuego.nivelesDisponiblesAtencion = 0;
         }
     }
 }
@@ -49,9 +54,27 @@ public class CargarGuardar : MonoBehaviour
 class GuardarDatos
 {
     public int nivelesDesbloqueados;
+    public int nivelesDesbloqueadosAtencion;
 
-    public GuardarDatos(int nivelesDes)
+    public GuardarDatos(int nivelesDes, int nivelesADes)
     {
         nivelesDesbloqueados = nivelesDes;
-    }
+        nivelesDesbloqueadosAtencion = nivelesADes;
 }
+
+    /*public Atencion(int nivelesAtencionDes)
+    {
+        nivelesDesbloqueados = nivelesDes;
+    }*/
+}
+
+/*[System.Serializable]
+class Algo
+{
+    public int nivelesDesbloqueadosAtencion;
+
+    public Algo(int nivelesDes)
+    {
+        nivelesDesbloqueadosAtencion = nivelesDes;
+    }
+}*/
