@@ -28,10 +28,14 @@ public class ControladorJuego : MonoBehaviour
         {
             cargar_guardar.Guardar();
             ActualizarBotones();
+        } else if (SceneManager.GetActiveScene().name == "NivelesAtencion")
+        {
+            cargar_guardar.Guardar();
+            ActualizarBotones();
         }
     }
 
-    public void ActualizarNivel(int nivel)
+    public void ActualizarNivelEmociones(int nivel)
     {
         if (nivel == 0)
         {
@@ -40,6 +44,18 @@ public class ControladorJuego : MonoBehaviour
         else
         {
             SceneManager.LoadScene("EmocionesNivel" + nivel);
+        }
+    }
+
+    public void ActualizarNivelAtencion(int nivel)
+    {
+        if (nivel == 0)
+        {
+            SceneManager.LoadScene("NivelesAtencion");
+        }
+        else
+        {
+            SceneManager.LoadScene("AtencionNivel" + nivel);
         }
     }
 
@@ -60,7 +76,8 @@ public class ControladorJuego : MonoBehaviour
 
     void RegresarMenu()
     {
-        ActualizarNivel(0);
+        ActualizarNivelEmociones(0);
+        ActualizarNivelAtencion(0);
     }
 
     public void ActualizarBotones()

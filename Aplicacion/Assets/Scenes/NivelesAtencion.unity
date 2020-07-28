@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 94.79}
+  m_AnchoredPosition: {x: -519, y: 76.988}
   m_SizeDelta: {x: 142.53516, y: 291.69006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253182144
@@ -203,7 +203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelEmociones
+        m_MethodName: ActualizarNivelAtencion
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6462077127840735447, guid: 766ee9665e216c048a6d854fd19a09a6,
+  m_Sprite: {fileID: 7033099133228612053, guid: e6d78e73935e57447adf68c49695fa07,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 823756805}
   - component: {fileID: 823756804}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: SeleccionarText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelEmociones
+        m_MethodName: ActualizarNivelAtencion
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1463691886699011475, guid: 766ee9665e216c048a6d854fd19a09a6,
+  m_Sprite: {fileID: 2167282069756697850, guid: e6d78e73935e57447adf68c49695fa07,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -1489,7 +1489,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelEmociones
+        m_MethodName: ActualizarNivelAtencion
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1518,7 +1518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7111658088870053969, guid: 766ee9665e216c048a6d854fd19a09a6,
+  m_Sprite: {fileID: -2167866576140548178, guid: e6d78e73935e57447adf68c49695fa07,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1

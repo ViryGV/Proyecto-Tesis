@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EmocionesNivel3.unity
     guid: 7684e90be55f6e447830c252bdfa90da
+  - enabled: 1
+    path: Assets/Scenes/AtencionNivel1.unity
+    guid: 6ab83d5bfff350a48afe41cf404106e7
+  - enabled: 1
+    path: Assets/Scenes/AtencionNivel2.unity
+    guid: a535d2f9d23144a4aaebb2f520acdb6a
+  - enabled: 1
+    path: Assets/Scenes/AtencionNivel3.unity
+    guid: 2eb0c750a9ff733469446ddfa95ab1e7
   m_configObjects: {}
