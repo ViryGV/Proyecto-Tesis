@@ -2430,7 +2430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31bb85fd4ae587439e047d45422cb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 12
+  tiempoVida: 13
 --- !u!1 &364150312
 GameObject:
   m_ObjectHideFlags: 0
@@ -8032,7 +8032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4e098764438514c8957821035f8314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 12
+  tiempoVida: 13
 --- !u!1 &1311472710
 GameObject:
   m_ObjectHideFlags: 0
@@ -9784,7 +9784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1745087707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9801,8 +9801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507, y: 346}
-  m_SizeDelta: {x: 160.4256, y: 30.212769}
+  m_AnchoredPosition: {x: -512.02, y: 349.2}
+  m_SizeDelta: {x: 156.45764, y: 43.813477}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745087708
 MonoBehaviour:
@@ -9905,7 +9905,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 27
+  m_fontSize: 35.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

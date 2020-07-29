@@ -31,7 +31,9 @@ public class ControladorJuego : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     CargarGuardar cargar_guardar;
     /// <value>Permite al acceso de los datos de la clase</value>
-    ControladorMensajesAtencion mensaje;
+    ControladorMensajes mensaje;
+    /// <value>Permite al acceso de los datos de la clase</value>
+    ControladorMensajesAtencion mensajeAtencion;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -39,7 +41,8 @@ public class ControladorJuego : MonoBehaviour
     void Awake()
     {
         cargar_guardar = GetComponent<CargarGuardar>();
-        mensaje = GetComponent<ControladorMensajesAtencion>();
+        mensaje = GetComponent<ControladorMensajes>();
+        mensajeAtencion = GetComponent<ControladorMensajesAtencion>();
     }
 
     /// <summary>
@@ -104,12 +107,21 @@ public class ControladorJuego : MonoBehaviour
     }
 
     /// <summary>
-    /// Activa una pantalla que indica que el nivel ha sido superado
+    /// Activa una pantalla que indica que el nivel ha sido superado (emociones)
     /// </summary>
     public void PantallaMensaje()
     {
         Debug.Log("Esperando");
         mensaje.CargarPanelMensaje();
+    }
+
+    /// <summary>
+    /// Activa una pantalla que indica que el nivel ha sido superado
+    /// </summary>
+    public void PantallaMensajeAtencion()
+    {
+        Debug.Log("Esperando");
+        mensajeAtencion.CargarPanelMensaje();
     }
 
     /// <summary>
@@ -141,7 +153,7 @@ public class ControladorJuego : MonoBehaviour
         {
             nivelesDisponiblesAtencion = nivelAcutalAtencion;
         }
-        PantallaMensaje();
+        PantallaMensajeAtencion();
     }
 
     /// <summary>

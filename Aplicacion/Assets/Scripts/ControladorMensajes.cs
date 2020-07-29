@@ -29,7 +29,7 @@ public class ControladorMensajes : MonoBehaviour
     public IEnumerator EsperarPanelCargando()
     {
         panelMensaje.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesEmociones");
         Time.timeScale = 1;
     }
