@@ -9,20 +9,21 @@ using TMPro;
 /// Esta clase maneja el flujo de las conversaciones de Cosmo
 /// Y maneja cuando aparecen los objetos del nivel
 /// </summary>
-public class ControladorDialogoNoP : MonoBehaviour
+public class ControladorDialogoAtencion : MonoBehaviour
 {
     /// <value>Establece el valor del texto que será mostrado en pantalla</value>
     public TextMeshProUGUI textoDisplay;
     /// <value>Establece el valor para poder seguir avanzando en la conversación</value>
     public GameObject botonContinuar;
+    /// <value>Permite tener acceso al contenido del texto</value>
     public GameObject textoAciertos;
+    /// <value>Permite poder manipular el objeto</value>
     public GameObject girl;
+    /// <value>Establece el valor para asignarle un panel</value>
     public GameObject panel;
 
     /// <value>Establece el valor para poner sonido en la conversación</value>
     private AudioSource _audio;
-
-    //ControladorPuntosANivU controladorPuntosA;
 
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
     public string[] palabras;
@@ -101,7 +102,6 @@ public class ControladorDialogoNoP : MonoBehaviour
             textoAciertos.SetActive(true);
             girl.SetActive(true);
             panel.SetActive(true);
-            //controladorPuntosA.ActivarPanelUno();
         }
     }
 }

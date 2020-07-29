@@ -21,6 +21,10 @@ public class ControladorDialogo : MonoBehaviour
     /// <term>textoPregunta</term>
     /// <description>Texto indicativo donde irá la pregunta</description>
     /// </item>
+    /// <item>
+    /// <term>textoAciertos</term>
+    /// <description>Texto indicativo donde se irán mostrando el valor de aciertos</description>
+    /// </item>
     /// </list>
     /// </summary>
     public GameObject textoPregunta;
@@ -29,6 +33,7 @@ public class ControladorDialogo : MonoBehaviour
     /// <value>Establece el valor para poner sonido en la conversación</value>
     private AudioSource _audio;
 
+    /// <value>Permite al acceso de los datos de la clase</value>
     ControladorPuntos controladorPuntos;
 
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
@@ -62,6 +67,9 @@ public class ControladorDialogo : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Permite encontrar y asegurar que existe la clase a la que se quiere acceder
+    /// </summary>
     void Awake()
     {
         controladorPuntos = GameObject.Find("ControladorPuntos").GetComponent(typeof(ControladorPuntos)) as ControladorPuntos;

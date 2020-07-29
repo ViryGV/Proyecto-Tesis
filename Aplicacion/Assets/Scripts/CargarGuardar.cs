@@ -4,15 +4,27 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+/// <summary>
+/// Esta clase maneja el flujo de los niveles que han sido desbloqueados
+/// generando un archivo donde se guarda esa información y posteriormente
+/// se podrá volver a accer a esta cuando se inice la aplicación
+/// </summary>
 public class CargarGuardar : MonoBehaviour
 {
+    /// <value>Establece un valor donde será almacenado el archivo para guardar los datos</value>
     private string _rutaArchivo;
 
+    /// <value>Establece un valor estático para saber si el archivo existe o no</value>
     static bool existe = true;
 
+    /// <summary>
+    /// Permite buscar el archivo cuando la aplicación se inicia por primera vez
+    /// </summary>
     void Awake()
     {
         _rutaArchivo = Application.persistentDataPath + "/datos.dat";
+        // Si el archivo ya existe carga la información
+        // de los niveles que se han superado
         if (existe)
         {
             Cargar();
@@ -20,6 +32,10 @@ public class CargarGuardar : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Método que almacena la información en el archivo de los niveles que se
+    /// han superado
+    /// </summary>
     public void Guardar()
     {
         BinaryFormatter bf = new BinaryFormatter();
@@ -31,6 +47,10 @@ public class CargarGuardar : MonoBehaviour
         file.Close();
     }
 
+    /// <summary>
+    /// Método que se encarga de mostrar los niveles que fueron superados
+    /// permitiendolé al usuario volver a entrar en ellos
+    /// </summary>
     public void Cargar()
     {
         if (File.Exists(_rutaArchivo))
@@ -50,31 +70,25 @@ public class CargarGuardar : MonoBehaviour
     }
 }
 
+/// <summary>
+/// Esta clase maneja el flujo de los datos de los
+/// niveles (superados) que serán guardados en la memoria
+/// </summary>
 [System.Serializable]
 class GuardarDatos
 {
+    /// <value>Establece un valor para los niveles que han sido desbloqueados (emociones)</value>
     public int nivelesDesbloqueados;
+    /// <value>Establece un valor para los niveles que han sido desbloqueados</value>
     public int nivelesDesbloqueadosAtencion;
 
+    /// <summary>Este método de guardar la información en memoria
+    /// de los niveles que desbloqueo el usuario</summary>
+    /// <param name="nivelDes">El valor del nivel(es) desbloqueado en a parte de emociones</param>
+    /// <param name="nivelADes">El valor del nivel(es) desbloqueado en a parte de atención</param>
     public GuardarDatos(int nivelesDes, int nivelesADes)
     {
         nivelesDesbloqueados = nivelesDes;
         nivelesDesbloqueadosAtencion = nivelesADes;
-}
-
-    /*public Atencion(int nivelesAtencionDes)
-    {
-        nivelesDesbloqueados = nivelesDes;
-    }*/
-}
-
-/*[System.Serializable]
-class Algo
-{
-    public int nivelesDesbloqueadosAtencion;
-
-    public Algo(int nivelesDes)
-    {
-        nivelesDesbloqueadosAtencion = nivelesDes;
     }
-}*/
+}

@@ -4,11 +4,91 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//compile with: -doc:DocFileName.xml
+
+/// <summary>
+/// Esta clase maneja el flujo del puntaje para superar un nivel de emociones
+/// Además de activar y desactivar los componentes necesarios para superar el nivel
+/// </summary>
 public class ControladorPuntos : MonoBehaviour
 {
+    /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
     //public Text textoErrores;
+    /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
     public TextMeshProUGUI textoMensaje;
+    /// <summary>
+    /// <list type="bullet">
+    /// <item>
+    /// <term>cosmo</term>
+    /// <description>Aparecerá cuando el usario acierte o falle</description>
+    /// </item>
+    /// <item>
+    /// <term>panelAlegría</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelEnojo</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelTristeza</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelSorpresa</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelTemor</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelAburrido</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelPreocupado</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>panelCansado</term>
+    /// <description>Panel que contiene los elementos de ese objetivo</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoAlegría</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoEnojo</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoTristeza</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoSorpresa</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoTemor</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoAburrido</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoPreocupado</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// <item>
+    /// <term>objetoCansado</term>
+    /// <description>Es un elemento que contiene el sprite (imagen) que describe</description>
+    /// </item>
+    /// </list>
+    /// </summary>
     public GameObject cosmo;
     public GameObject panelAlegria;
     public GameObject panelEnojo;
@@ -27,10 +107,14 @@ public class ControladorPuntos : MonoBehaviour
     public GameObject objetoPreocupado;
     public GameObject objetoCansado;
 
+    /// <value>Establece el valor de las veces que aciertas</value>
     int puntajeAciertos;
+    /// <value>Establece el valor de las veces que el usuario se ha equivocado</value>
     int puntajeErrores;
 
+    /// <value>Permite al acceso de los datos de la clase</value>
     ControladorJuego controladorJuego;
+
     /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
     Renderer render;
     Renderer renderE;
@@ -41,6 +125,9 @@ public class ControladorPuntos : MonoBehaviour
     Renderer renderC;
     Renderer renderTemor;
 
+    /// <summary>
+    /// Inicializa las variables establecidas
+    /// </summary>
     void Start()
     {
         render = objetoAlegria.GetComponent<Renderer>();
@@ -53,17 +140,26 @@ public class ControladorPuntos : MonoBehaviour
         renderC = objetoCansado.GetComponent<Renderer>();
     }
 
+    /// <summary>
+    /// Permite encontrar y asegurar que existe la clase a la que se quiere acceder
+    /// </summary>
     void Awake()
     {
         controladorJuego = GameObject.Find("ControladorJuego").GetComponent(typeof(ControladorJuego)) as ControladorJuego;
     }
 
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
     public void SumarPuntaje()
     {
         puntajeAciertos += 1;
         ActualizarTextoPuntaje();
         ActivarStatus();
 
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
         if (puntajeAciertos >= 1)
         {
             Debug.Log("puntaje 1");
@@ -113,6 +209,9 @@ public class ControladorPuntos : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Método que va sumando las veces que el usuario se ha equivocado
+    /// </summary>
     public void RestarPuntaje()
     {
         puntajeErrores += 1;
@@ -120,12 +219,18 @@ public class ControladorPuntos : MonoBehaviour
         ActivarPistas();
     }
 
+    /// <summary>
+    /// Muestra en pantalla los puntos que el usuario va obteniendo
+    /// </summary>
     void ActualizarTextoPuntaje()
     {
         textoAciertos.text = "Aciertos " + puntajeAciertos.ToString();
         //textoErrores.text = "Errores " + puntajeErrores.ToString();
     }
 
+    /// <summary>
+    /// Método que le indica al usuario cuando acierta
+    /// </summary>
     public void ActivarStatus()
     {
         textoMensaje.enabled = true;
@@ -133,6 +238,9 @@ public class ControladorPuntos : MonoBehaviour
         textoMensaje.text = "Bien Hecho";
     }
 
+    /// <summary>
+    /// Método que le indica al usuario que ha se equivocado
+    /// </summary>
     public void ActivarPistas()
     {
         textoMensaje.enabled = true;
