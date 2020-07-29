@@ -31,7 +31,7 @@ public class ControladorJuego : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     CargarGuardar cargar_guardar;
     /// <value>Permite al acceso de los datos de la clase</value>
-    ControladorMensajes mensaje;
+    ControladorMensajesAtencion mensaje;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -39,7 +39,7 @@ public class ControladorJuego : MonoBehaviour
     void Awake()
     {
         cargar_guardar = GetComponent<CargarGuardar>();
-        mensaje = GetComponent<ControladorMensajes>();
+        mensaje = GetComponent<ControladorMensajesAtencion>();
     }
 
     /// <summary>
