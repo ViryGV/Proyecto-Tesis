@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: dc3a4650d23f494488dce2cc98b7c289
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5704925364365701196
+    second: EmocionesNivel3_0
+  - first:
+      213: 3695296148351358220
+    second: EmocionesNivel3_1
+  - first:
+      213: 8940012923620719931
+    second: EmocionesNivel3_2
+  - first:
+      213: 1727415722679591979
+    second: EmocionesNivel3_3
+  - first:
+      213: -3936133874914050724
+    second: EmocionesNivel3_4
+  - first:
+      213: 4828113640429059649
+    second: EmocionesNivel3_5
+  - first:
+      213: -6854073688833231987
+    second: EmocionesNivel3_6
+  - first:
+      213: 8955503547739959732
+    second: EmocionesNivel3_7
+  - first:
+      213: -538067119344414157
+    second: EmocionesNivel3_8
+  - first:
+      213: -1887496561045760620
+    second: EmocionesNivel3_9
+  - first:
+      213: -1543927860785265788
+    second: EmocionesNivel3_10
+  - first:
+      213: -4873894415136914667
+    second: EmocionesNivel3_11
+  - first:
+      213: -8767076535227936554
+    second: EmocionesNivel3_12
+  - first:
+      213: -6883894635648098945
+    second: EmocionesNivel3_13
+  - first:
+      213: 5178182434341237912
+    second: EmocionesNivel3_14
+  - first:
+      213: -966414560986307394
+    second: EmocionesNivel3_15
+  - first:
+      213: -5912819779300875232
+    second: EmocionesNivel3_16
+  - first:
+      213: 8661335439601743934
+    second: EmocionesNivel3_17
+  - first:
+      213: -7576293250556601426
+    second: EmocionesNivel3_18
+  - first:
+      213: -3083643515278830876
+    second: EmocionesNivel3_19
+  - first:
+      213: 6661697591367015750
+    second: EmocionesNivel3_20
+  - first:
+      213: -6546303174933726931
+    second: EmocionesNivel3_21
+  - first:
+      213: 6680178515082950205
+    second: EmocionesNivel3_22
+  - first:
+      213: 2967286850935313455
+    second: EmocionesNivel3_23
+  - first:
+      213: 3681360398007817923
+    second: EmocionesNivel3_24
+  - first:
+      213: 3558035990881793944
+    second: EmocionesNivel3_25
+  - first:
+      213: -2139383400437459453
+    second: EmocionesNivel3_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EmocionesNivel3_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1467
+        width: 26
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfcdda6b9804d0b0800000000000000
+      internalID: -5704925364365701196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_1
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1480
+        width: 10
+        height: 78
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c051a56b444584330800000000000000
+      internalID: 3695296148351358220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_2
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1478
+        width: 22
+        height: 59
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d70d7436e411c70800000000000000
+      internalID: 8940012923620719931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_3
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1468
+        width: 39
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24edb1927309f710800000000000000
+      internalID: 1727415722679591979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 881
+        width: 443
+        height: 660
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dbd55681b0069c0800000000000000
+      internalID: -3936133874914050724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_5
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1486
+        width: 40
+        height: 27
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14efdf886c7e00340800000000000000
+      internalID: 4828113640429059649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_6
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 999
+        width: 331
+        height: 549
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d837eb06b4071e0a0800000000000000
+      internalID: -6854073688833231987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1415
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b17ac34707584c70800000000000000
+      internalID: 8955503547739959732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 729
+        width: 561
+        height: 838
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33298264ec66888f0800000000000000
+      internalID: -538067119344414157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_9
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1423
+        width: 66
+        height: 53
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495981cc0e34ec5e0800000000000000
+      internalID: -1887496561045760620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_10
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1347
+        width: 28
+        height: 37
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483c01b6acdd29ae0800000000000000
+      internalID: -1543927860785265788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_11
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1341
+        width: 33
+        height: 35
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51301093ad27c5cb0800000000000000
+      internalID: -4873894415136914667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1303
+        width: 66
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d093175756155680800000000000000
+      internalID: -8767076535227936554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_13
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1306
+        width: 79
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d5af22d4e7770a0800000000000000
+      internalID: -6883894635648098945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_14
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1204
+        width: 81
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894b3152d799cd740800000000000000
+      internalID: 5178182434341237912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1187
+        width: 81
+        height: 13
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb465aab31b9692f0800000000000000
+      internalID: -966414560986307394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1020
+        width: 64
+        height: 45
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0242ed9fcb171fda0800000000000000
+      internalID: -5912819779300875232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_17
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1055
+        width: 65
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38b6fd41be333870800000000000000
+      internalID: 8661335439601743934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_18
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 803
+        width: 15
+        height: 28
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab5266fd699bd690800000000000000
+      internalID: -7576293250556601426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 796
+        width: 11
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e25ed98f82b435d0800000000000000
+      internalID: -3083643515278830876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_20
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 52
+        width: 383
+        height: 777
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d91860aaa137c50800000000000000
+      internalID: 6661697591367015750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_21
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 302
+        width: 393
+        height: 604
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29301a32fbd625a0800000000000000
+      internalID: -6546303174933726931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_22
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 197
+        width: 341
+        height: 576
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3637b367f2c4bc50800000000000000
+      internalID: 6680178515082950205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_23
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 722
+        width: 29
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24dfa86babed2920800000000000000
+      internalID: 2967286850935313455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 35
+        width: 362
+        height: 597
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6527df6c1d61330800000000000000
+      internalID: 3681360398007817923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_25
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 624
+        width: 28
+        height: 8
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8977096e1eea06130800000000000000
+      internalID: 3558035990881793944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmocionesNivel3_26
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 610
+        width: 28
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306de8ad1226f42e0800000000000000
+      internalID: -2139383400437459453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
