@@ -102,6 +102,7 @@ public class ControladorJuego : MonoBehaviour
         }
         else
         {
+            Debug.Log("else");
             SceneManager.LoadScene("AtencionNivel" + nivel);
         }
     }

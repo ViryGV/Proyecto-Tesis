@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 76fff8e6de64f63499892e0f8bd872e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3595156500164677885
+    second: PlayaCasa_0
+  - first:
+      213: -6773514274589187722
+    second: PlayaCasa_1
+  - first:
+      213: -3934766458080714252
+    second: PlayaCasa_2
+  - first:
+      213: 8431500267248644102
+    second: PlayaCasa_3
+  - first:
+      213: -5095908865378135048
+    second: PlayaCasa_4
+  - first:
+      213: 3729803277258114722
+    second: PlayaCasa_5
+  - first:
+      213: -5167286095727083779
+    second: PlayaCasa_6
+  - first:
+      213: 3154955621015777589
+    second: PlayaCasa_7
+  - first:
+      213: -2598228317281129230
+    second: PlayaCasa_8
+  - first:
+      213: 2404953252396897057
+    second: PlayaCasa_9
+  - first:
+      213: 988327965353840847
+    second: PlayaCasa_10
+  - first:
+      213: 5521517033385983292
+    second: PlayaCasa_11
+  - first:
+      213: 9026390664217098710
+    second: PlayaCasa_12
+  - first:
+      213: 7142253155530085467
+    second: PlayaCasa_13
+  - first:
+      213: 5301758370749256289
+    second: PlayaCasa_14
+  - first:
+      213: 3827699454819067280
+    second: PlayaCasa_15
+  - first:
+      213: 5916636173381895897
+    second: PlayaCasa_16
+  - first:
+      213: 5769149995641059773
+    second: PlayaCasa_17
+  - first:
+      213: 7425142034467546826
+    second: PlayaCasa_18
+  - first:
+      213: 6983413224401902183
+    second: PlayaCasa_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayaCasa_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1261
+        width: 291
+        height: 290
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f6fb706307b1ec0800000000000000
+      internalID: -3595156500164677885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1291
+        width: 322
+        height: 222
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671e216a7a4aff1a0800000000000000
+      internalID: -6773514274589187722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_2
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1223
+        width: 329
+        height: 337
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f12affe0c6e469c0800000000000000
+      internalID: -3934766458080714252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_3
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1301
+        width: 264
+        height: 199
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60077f032d4b20570800000000000000
+      internalID: 8431500267248644102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_4
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1332
+        width: 303
+        height: 162
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f35f5fd2e1b749b0800000000000000
+      internalID: -5095908865378135048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 791
+        width: 370
+        height: 294
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6ce0fb15ce2c330800000000000000
+      internalID: 3729803277258114722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 828
+        width: 300
+        height: 225
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe3f536cac1a48b0800000000000000
+      internalID: -5167286095727083779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_7
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 838
+        width: 278
+        height: 279
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53174c0fb67a8cb20800000000000000
+      internalID: 3154955621015777589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_8
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 825
+        width: 269
+        height: 349
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fce8178c1d31fbd0800000000000000
+      internalID: -2598228317281129230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_9
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 828
+        width: 182
+        height: 333
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1239986bd3c106120800000000000000
+      internalID: 2404953252396897057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 67
+        width: 282
+        height: 609
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc010805c0f37bd00800000000000000
+      internalID: 988327965353840847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 451
+        width: 252
+        height: 185
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7d34dc7e50ac40800000000000000
+      internalID: 5521517033385983292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_12
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 417
+        width: 233
+        height: 281
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9ff883c7e244d70800000000000000
+      internalID: 9026390664217098710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_13
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 349
+        width: 283
+        height: 390
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54984757616e1360800000000000000
+      internalID: 7142253155530085467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_14
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 517
+        width: 104
+        height: 214
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1629675f521a39940800000000000000
+      internalID: 5301758370749256289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_15
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 23
+        width: 512
+        height: 273
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0956277cf58be1530800000000000000
+      internalID: 3827699454819067280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_16
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 52
+        width: 218
+        height: 270
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d687a3804d1c1250800000000000000
+      internalID: 5916636173381895897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_17
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 54
+        width: 324
+        height: 279
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9b122da53201050800000000000000
+      internalID: 5769149995641059773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_18
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 279
+        width: 215
+        height: 215
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6624b17576b0760800000000000000
+      internalID: 7425142034467546826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayaCasa_19
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 35
+        width: 171
+        height: 186
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a9d30f3511ae060800000000000000
+      internalID: 6983413224401902183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
