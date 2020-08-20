@@ -22,9 +22,9 @@ public class ControladorJuego : MonoBehaviour
 
     /// <value>Establece un valor estático para saber en que nivel (en emociones) te encuentras actualmente</value>
     public int nivelAcutal;
-    /// <value>Establece un valor estático para saber en que nivel te encuentras actualmente</value>
+    /// <value>Establece un valor estático para saber en que nivel (en atención) te encuentras actualmente</value>
     public int nivelAcutalAtencion;
-    /// <value>Establece un valor estático para saber en que nivel te encuentras actualmente</value>
+    /// <value>Establece un valor estático para saber en que nivel (en instrucciones visuales) te encuentras actualmente</value>
     public int nivelAcutalInstrucciones;
 
     /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
@@ -75,7 +75,7 @@ public class ControladorJuego : MonoBehaviour
         {
             Debug.Log("Instrucciones");
             cargar_guardar.Guardar();
-            ActualizarBotones();
+            ActualizarBotonesInstrucciones();
         }
     }
 

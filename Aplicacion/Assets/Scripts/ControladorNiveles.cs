@@ -38,6 +38,11 @@ public class ControladorNiveles : MonoBehaviour
         StartCoroutine(EsperarPanelCargandoAtencion());
     }
 
+    public void CargarPanelNivelInstrucciones()
+    {
+        StartCoroutine(EsperarPanelCargandoInstrucciones());
+    }
+
     /// <summary>
     /// Activa la corrutina para cargar la pantalla de espera para el menú de juegos
     /// </summary>
@@ -48,7 +53,7 @@ public class ControladorNiveles : MonoBehaviour
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
-    /// se muestran la pantalla de cargando y el menú de los niveles
+    /// se muestran la pantalla de cargando y el menú de los niveles (emociones)
     /// </summary>
     public IEnumerator EsperarPanelCargando()
     {
@@ -58,11 +63,27 @@ public class ControladorNiveles : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y el menú de los niveles (atención)
+    /// </summary>
     public IEnumerator EsperarPanelCargandoAtencion()
     {
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("NivelesAtencion");
+        Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y el menú de los niveles (instrucciones visuales)
+    /// </summary>
+    public IEnumerator EsperarPanelCargandoInstrucciones()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("NivelesInstruccionesVisuales");
         Time.timeScale = 1;
     }
 
