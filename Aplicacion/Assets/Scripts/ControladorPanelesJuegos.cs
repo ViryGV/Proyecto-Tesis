@@ -48,6 +48,14 @@ using UnityEngine;
 /// <term>DesactivarPanelMatematicas</term>
 /// <description>Desactiva la vista de matemáticas para dar acceso al panel de juegos</description>
 /// </item>
+/// <item>
+/// <term>ActivarPanelReglas</term>
+/// <description>Activa la vista que le permite al niño seleccionar alguna regla social para poner en práctica</description>
+/// </item>
+/// <item>
+/// <term>DesactivarPanelMatematicas</term>
+/// <description>Desactiva la vista de reglas para dar acceso al panel de juegos</description>
+/// </item>
 /// </list>
 /// </summary>
 public class ControladorPanelesJuegos : MonoBehaviour
@@ -57,6 +65,7 @@ public class ControladorPanelesJuegos : MonoBehaviour
     public GameObject panelHistorias;
     public GameObject panelProfesiones;
     public GameObject panelMatematicas;
+    public GameObject panelReglas;
 
     // Start is called before the first frame update
     void Start()
@@ -121,5 +130,17 @@ public class ControladorPanelesJuegos : MonoBehaviour
     {
         panelJuegos.SetActive(true);
         panelMatematicas.SetActive(false);
+    }
+
+    public void ActivarPanelReglas()
+    {
+        panelReglas.SetActive(true);
+    }
+
+    public void DesactivarPanelReglas()
+    {
+        //panelJuegos.SetActive(true);
+        panelActividades.SetActive(true);
+        panelReglas.SetActive(false);
     }
 }

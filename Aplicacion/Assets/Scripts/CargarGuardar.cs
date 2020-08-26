@@ -40,7 +40,7 @@ public class CargarGuardar : MonoBehaviour
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(_rutaArchivo);
-        GuardarDatos datos = new GuardarDatos(ControladorJuego.nivelesDisponibles, ControladorJuego.nivelesDisponiblesAtencion, ControladorJuego.nivelesDisponiblesInstrucciones);
+        GuardarDatos datos = new GuardarDatos(ControladorJuego.nivelesDisponibles, ControladorJuego.nivelesDisponiblesAtencion, ControladorJuego.nivelesDisponiblesComedor);
         //Algo datosAtencion = new Algo(ControladorJuego.nivelesDisponiblesAtencion);
         bf.Serialize(file, datos);
         //bf.Serialize(file, datosAtencion);
@@ -61,13 +61,15 @@ public class CargarGuardar : MonoBehaviour
             //Algo datosAtencion = (Algo)bf.Deserialize(file);
             ControladorJuego.nivelesDisponibles = datos.nivelesDesbloqueados;
             ControladorJuego.nivelesDisponiblesAtencion = datos.nivelesDesbloqueadosAtencion;
-            ControladorJuego.nivelesDisponiblesInstrucciones = datos.nivelesDesbloqueadosInstrucciones;
+            ControladorJuego.nivelesDisponiblesComedor = datos.nivelesDesbloqueadosComedor;
+            //ControladorJuego.nivelesDisponiblesInstrucciones = datos.nivelesDesbloqueadosInstrucciones;
         }
         else
         {
             ControladorJuego.nivelesDisponibles = 0;
             ControladorJuego.nivelesDisponiblesAtencion = 0;
-            ControladorJuego.nivelesDisponiblesInstrucciones = 0;
+            ControladorJuego.nivelesDisponiblesComedor = 0;
+            //ControladorJuego.nivelesDisponiblesInstrucciones = 0;
         }
     }
 }
@@ -84,17 +86,20 @@ class GuardarDatos
     /// <value>Establece un valor para los niveles que han sido desbloqueados</value>
     public int nivelesDesbloqueadosAtencion;
     /// <value>Establece un valor para los niveles que han sido desbloqueados</value>
-    public int nivelesDesbloqueadosInstrucciones;
+    public int nivelesDesbloqueadosComedor;
+    /// <value>Establece un valor para los niveles que han sido desbloqueados</value>
+    //public int nivelesDesbloqueadosInstrucciones;
 
     /// <summary>Este método de guardar la información en memoria
     /// de los niveles que desbloqueo el usuario</summary>
     /// <param name="nivelDes">El valor del nivel(es) desbloqueado en la parte de emociones</param>
     /// <param name="nivelADes">El valor del nivel(es) desbloqueado en la parte de atención</param>
     /// <param name="nivelIVDes">El valor del nivel(es) desbloqueado en la parte de instrucciones visuales</param>
-    public GuardarDatos(int nivelesDes, int nivelesADes, int nivelesIVDes)
+    public GuardarDatos(int nivelesDes, int nivelesADes, int nivelesDesComedor)
     {
         nivelesDesbloqueados = nivelesDes;
         nivelesDesbloqueadosAtencion = nivelesADes;
-        nivelesDesbloqueadosInstrucciones = nivelesIVDes;
+        nivelesDesbloqueadosComedor = nivelesDesComedor;
+        //nivelesDesbloqueadosInstrucciones = nivelesIVDes;
     }
 }
