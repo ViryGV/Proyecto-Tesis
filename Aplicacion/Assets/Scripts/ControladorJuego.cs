@@ -47,7 +47,7 @@ public class ControladorJuego : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorMensajesAtencion mensajeAtencion;
     /// <value>Permite al acceso de los datos de la clase</value>
-    ControladorMensajesComedor mensajeComedor;
+    ControladorMensajesAtencion mensajeComedor;
     /// <value>Permite al acceso de los datos de la clase</value>
     //ControladorMensajesInstrucciones mensajeInstrucciones;
 
@@ -58,8 +58,8 @@ public class ControladorJuego : MonoBehaviour
     {
         cargar_guardar = GetComponent<CargarGuardar>();
         mensaje = GetComponent<ControladorMensajes>();
+        mensajeComedor = GetComponent<ControladorMensajesAtencion>();
         mensajeAtencion = GetComponent<ControladorMensajesAtencion>();
-        mensajeComedor = GetComponent<ControladorMensajesComedor>();
         //mensajeInstrucciones = GetComponent<ControladorMensajesInstrucciones>();
     }
 
@@ -152,6 +152,7 @@ public class ControladorJuego : MonoBehaviour
         }
         else
         {
+            Debug.Log("ELSE");
             SceneManager.LoadScene("ComedorNivel" + nivel);
         }
     }
@@ -202,7 +203,7 @@ public class ControladorJuego : MonoBehaviour
     public void PantallaMensajeComedor()
     {
         Debug.Log("Esperando comedor");
-        mensajeComedor.CargarPanelMensaje();
+        mensajeComedor.CargarPanelMensajeComedor();
     }
 
     /// <summary>

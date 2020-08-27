@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//compile with: -doc:DocFileName.xml
+
+/// <summary>
+/// Esta clase maneja el flujo del mensaje que indica cuando haz superado un nivel
+/// </summary>
 public class ControladorMensajesComedor : MonoBehaviour
 {
     /// <value>Establece el valor del panel que contendrá la pantalla del mensaje</value>
@@ -13,7 +18,7 @@ public class ControladorMensajesComedor : MonoBehaviour
     /// </summary>
     public void CargarPanelMensaje()
     {
-        Debug.Log("Mensaje");
+        Debug.Log("Mensaje Comedor");
         StartCoroutine(EsperarPanelCargando());
     }
 
