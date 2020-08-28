@@ -23,6 +23,8 @@ public class ControladorJuego : MonoBehaviour
     static public int nivelesDisponiblesComedor;
     /// <value>Establece un valor estático para saber que niveles se encuentran disponibles</value>
     static public int nivelesDisponiblesUrbanidad;
+    /// <value>Establece un valor estático para saber que niveles se encuentran disponibles</value>
+    static public int nivelesDisponiblesMemoria;
 
     /// <value>Establece un valor estático para saber en que nivel (en emociones) te encuentras actualmente</value>
     public int nivelAcutal;
@@ -32,6 +34,8 @@ public class ControladorJuego : MonoBehaviour
     public int nivelAcutalComedor;
     /// <value>Establece un valor estático para saber en que nivel (en atención) te encuentras actualmente</value>
     public int nivelAcutalUrbanidad;
+    /// <value>Establece un valor estático para saber en que nivel (en atención) te encuentras actualmente</value>
+    public int nivelAcutalMemoria;
     /// <value>Establece un valor estático para saber en que nivel (en instrucciones visuales) te encuentras actualmente</value>
     //public int nivelAcutalInstrucciones;
 
@@ -43,6 +47,8 @@ public class ControladorJuego : MonoBehaviour
     public Button[] botonesMenuComedor;
     /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
     public Button[] botonesMenuUrbanidad;
+    /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
+    public Button[] botonesMenuMemoria;
     /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
     //public Button[] botonesMenuInstrucciones;
 
@@ -99,14 +105,12 @@ public class ControladorJuego : MonoBehaviour
             Debug.Log("Urbanidad");
             cargar_guardar.Guardar();
             ActualizarBotonesUrbanidad();
-        }
-
-        /*else if (SceneManager.GetActiveScene().name == "NivelesInstruccionesVisuales")
+        } else if (SceneManager.GetActiveScene().name == "NivelesMemoria")
         {
-            Debug.Log("Instrucciones");
+            Debug.Log("Memoria");
             cargar_guardar.Guardar();
-            ActualizarBotonesInstrucciones();
-        }*/
+            ActualizarBotonesMemoria();
+        }
     }
 
     /// <summary>Este método se encarga de ir desbloqueando los niveles
@@ -197,24 +201,24 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>Este método se encarga de ir desbloqueando los niveles
     /// según se van pasando</summary>
     /// <param name="nivel">El valor del nivel que será actualizado</param>
-    /*public void ActualizarNivelInstrucciones(int nivel)
+    public void ActualizarNivelMemoria(int nivel)
     {
         // Si el valor del nivel es cero, la escena se mantiene en el 
         // menú correspondiente
         // De lo contrario deberá cambiar al nivel que corresponda
         // de manera incremental
-        Debug.Log("Actualizar instrucciones");
+        Debug.Log("Actualizar memoria");
         if (nivel == 0)
         {
             Debug.Log("Menu");
-            SceneManager.LoadScene("NivelesInstruccionesVisuales");
+            SceneManager.LoadScene("NivelesMemoria");
         }
         else
         {
             Debug.Log("else");
-            SceneManager.LoadScene("InstruccionesNivel" + nivel);
+            SceneManager.LoadScene("MemoriaNivel" + nivel);
         }
-    }*/
+    }
 
     /// <summary>
     /// Activa una pantalla que indica que el nivel ha sido superado (emociones)
@@ -255,11 +259,11 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>
     /// Activa una pantalla que indica que el nivel ha sido superado
     /// </summary>
-    /*public void PantallaMensajeInstrucciones()
+    public void PantallaMensajeMemoria()
     {
-        Debug.Log("Esperando");
-        mensajeInstrucciones.CargarPanelMensaje();
-    }*/
+        Debug.Log("Esperando memoria");
+        mensajeGeneral.CargarPanelMensajeMemoria();
+    }
 
     /// <summary>
     /// Activa la opción de poder cambiar entre los niveles disponibles
@@ -314,7 +318,6 @@ public class ControladorJuego : MonoBehaviour
     /// </summary>
     public void DesbloquearNivelUrbanidad()
     {
-        Debug.Log("Here");
         // Cuando el valor del nivel disponible
         // sea menor al nivel actual, este deberá tomar el valor
         // del nivel actual.
@@ -329,18 +332,19 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>
     /// Activa la opción de poder cambiar entre los niveles disponibles
     /// </summary>
-    /*public void DesbloquearNivelInstrucciones()
+    public void DesbloquearNivelMemoria()
     {
+        Debug.Log("Here");
         // Cuando el valor del nivel disponible
         // sea menor al nivel actual, este deberá tomar el valor
         // del nivel actual.
         // Una vez que ha terminado carga un mensaje de nivel superado
-        if (nivelesDisponiblesInstrucciones < nivelAcutalInstrucciones)
+        if (nivelesDisponiblesMemoria< nivelAcutalMemoria)
         {
-            nivelesDisponiblesInstrucciones = nivelAcutalInstrucciones;
+            nivelesDisponiblesMemoria = nivelAcutalMemoria;
         }
-        PantallaMensajeInstrucciones();
-    }*/
+        PantallaMensajeMemoria();
+    }
 
     /// <summary>
     /// Permite hacer el cambio de un nivel (cualquiera) al menú
@@ -352,7 +356,7 @@ public class ControladorJuego : MonoBehaviour
         ActualizarNivelAtencion(0);
         ActualizarNivelComedor(0);
         ActualizarNivelUrbanidad(0);
-        //ActualizarNivelInstrucciones(0);
+        ActualizarNivelMemoria(0);
     }
 
     /// <summary>
@@ -438,20 +442,20 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>
     /// Activa la opción para poder interactuar con los botones de la escena
     /// </summary>
-    /*public void ActualizarBotonesInstrucciones()
+    public void ActualizarBotonesMemoria()
     {
         /// <exception cref="IndexOutOfRangeException">
         /// En caso de no haber más elementos para recorrer los niveles
         /// </exception>
         try
         {
-            for (int i = 0; i < nivelesDisponiblesInstrucciones + 1; i++)
+            for (int i = 0; i < nivelesDisponiblesMemoria + 1; i++)
             {
-                botonesMenuInstrucciones[i].interactable = true;
+                botonesMenuMemoria[i].interactable = true;
             }
         }
         catch (System.IndexOutOfRangeException)
         {
         }
-    }*/
+    }
 }

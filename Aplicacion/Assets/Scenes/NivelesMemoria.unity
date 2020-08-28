@@ -379,7 +379,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelAtencion
+        m_MethodName: ActualizarNivelMemoria
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1319,7 +1319,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelAtencion
+        m_MethodName: ActualizarNivelMemoria
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1918,8 +1918,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivelAcutal: 0
   nivelAcutalAtencion: 0
+  nivelAcutalComedor: 0
+  nivelAcutalUrbanidad: 0
+  nivelAcutalMemoria: 0
   botonesMenuEmociones: []
   botonesMenuAtencion:
+  - {fileID: 253182144}
+  - {fileID: 1203727721}
+  - {fileID: 1891658621}
+  botonesMenuComedor: []
+  botonesMenuUrbanidad: []
+  botonesMenuMemoria:
   - {fileID: 253182144}
   - {fileID: 1203727721}
   - {fileID: 1891658621}
@@ -2019,7 +2028,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelAtencion
+        m_MethodName: ActualizarNivelMemoria
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

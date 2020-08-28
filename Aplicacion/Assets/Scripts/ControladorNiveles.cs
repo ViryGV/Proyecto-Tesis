@@ -48,9 +48,9 @@ public class ControladorNiveles : MonoBehaviour
         StartCoroutine(EsperarPanelCargandoReglasUrbanidad());
     }
 
-    public void CargarPanelNivelInstrucciones()
+    public void CargarPanelNivelMemoria()
     {
-        StartCoroutine(EsperarPanelCargandoInstrucciones());
+        StartCoroutine(EsperarPanelCargandoMemoria());
     }
 
     /// <summary>
@@ -111,13 +111,13 @@ public class ControladorNiveles : MonoBehaviour
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
-    /// se muestran la pantalla de cargando y el menú de los niveles (instrucciones visuales)
+    /// se muestran la pantalla de cargando y el menú de los niveles (reglas del comedor)
     /// </summary>
-    public IEnumerator EsperarPanelCargandoInstrucciones()
+    public IEnumerator EsperarPanelCargandoMemoria()
     {
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("NivelesInstruccionesVisuales");
+        SceneManager.LoadScene("NivelesMemoria");
         Time.timeScale = 1;
     }
 

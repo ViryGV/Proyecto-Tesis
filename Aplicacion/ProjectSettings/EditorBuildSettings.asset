@@ -54,8 +54,8 @@ EditorBuildSettings:
     path: Assets/Scenes/UrbanidadNivel2.unity
     guid: 84c9e5dfed494e84489cddc46312dae9
   - enabled: 1
-    path: Assets/Scenes/NivelesInstruccionesVisuales.unity
-    guid: cb3eb7614327472408cb83c655b94607
+    path: Assets/Scenes/NivelesMemoria.unity
+    guid: a644743e86171bc4a80d1f07c9441a71
   - enabled: 1
     path: Assets/Scenes/MemoriaNivel1.unity
     guid: e6db3851da3d5724ab88cfd2f92afee2

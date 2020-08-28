@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ControladorPuntosInstrucciones : MonoBehaviour
+public class ControladorPuntosMemoria : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
@@ -51,6 +51,9 @@ public class ControladorPuntosInstrucciones : MonoBehaviour
     public GameObject panelDos;
     public GameObject panelTres;
     public GameObject panelCuatro;
+    public GameObject panelParteUno;
+    public GameObject panelParteDos;
+    public GameObject panelParteTres;
     public GameObject objetoUno;
     public GameObject objetoDos;
     public GameObject objetoTres;
@@ -114,15 +117,16 @@ public class ControladorPuntosInstrucciones : MonoBehaviour
         {
             Debug.Log("if 3");
             Debug.Log("puntaje 3");
-            DesactivarPanelTres();
-            ActivarPanelCuatro();
+            DesactivarPanelParteUno();
+            ActivarPanelParteDos();
+            //DesactivarPanelTres();
+            //ActivarPanelCuatro();
         }
-        if (puntajeAciertos >= 6 || puntajeAciertos >= 3)
+        /*if (puntajeAciertos >= 3)
         {
-            Debug.Log("if bonus");
-            Debug.Log("Puntos " + puntajeAciertos);
-            Debug.Log("Tienes un bonus");
-            //controladorJuego.DesbloquearNivelInstrucciones();
+            DesactivarPanelParteUno();
+            ActivarPanelParteDos();
+            //controladorJuego.DesbloquearNivelMemoria();
         } /*else
         {
             Debug.Log("Puntos " + puntajeAciertos);
@@ -238,5 +242,30 @@ public class ControladorPuntosInstrucciones : MonoBehaviour
     public void DesactivarPanelCuatro()
     {
         panelCuatro.SetActive(false);
+    }
+
+    public void DesactivarPanelParteUno()
+    {
+        panelParteUno.SetActive(false);
+    }
+
+    public void ActivarPanelParteDos()
+    {
+        panelParteDos.SetActive(true);
+    }
+
+    public void DesactivarPanelParteDos()
+    {
+        panelParteDos.SetActive(true);
+    }
+
+    public void ActivarPanelParteTres()
+    {
+        panelParteTres.SetActive(true);
+    }
+
+    public void DesactivarPanelParteTres()
+    {
+        panelParteTres.SetActive(true);
     }
 }

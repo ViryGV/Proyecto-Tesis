@@ -34,6 +34,12 @@ public class ControladorMensajesAtencion : MonoBehaviour
         StartCoroutine(EsperarPanelCargandoComedor());
     }
 
+    public void CargarPanelMensajeMemoria()
+    {
+        Debug.Log("Mensaje memoria");
+        StartCoroutine(EsperarPanelCargandoMemoria());
+    }
+
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
     /// se muestran la pantalla del mensaje y el menú de los niveles de atención
@@ -59,6 +65,14 @@ public class ControladorMensajesAtencion : MonoBehaviour
         panelMensaje.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesComedor");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoMemoria()
+    {
+        panelMensaje.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("NivelesMemoria");
         Time.timeScale = 1;
     }
 }
