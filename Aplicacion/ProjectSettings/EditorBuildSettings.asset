@@ -48,6 +48,12 @@ EditorBuildSettings:
     path: Assets/Scenes/NivelesUrbanidad.unity
     guid: c8386f016c480214197619bdc7bc2f44
   - enabled: 1
+    path: Assets/Scenes/UrbanidadNivel1.unity
+    guid: eaf4c9668e2a4f748b7e93c99112a40e
+  - enabled: 1
+    path: Assets/Scenes/UrbanidadNivel2.unity
+    guid: 84c9e5dfed494e84489cddc46312dae9
+  - enabled: 1
     path: Assets/Scenes/NivelesInstruccionesVisuales.unity
     guid: cb3eb7614327472408cb83c655b94607
   - enabled: 1

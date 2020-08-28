@@ -14,7 +14,7 @@ public class ControladorPuntosReglas : MonoBehaviour
     public TextMeshProUGUI textoAciertos;
     //public Text textoErrores;
     /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
-    public TextMeshProUGUI textoMensaje;
+    public TextMeshProUGUI textoMensaje; 
 
     public GameObject cosmo;
 
@@ -37,9 +37,9 @@ public class ControladorPuntosReglas : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntaje()
+    public void SumarPuntajeComedor()
     {
-        puntajeAciertos += 1;
+        puntajeAciertos ++;
         ActualizarTextoPuntaje();
         ActivarStatus();
 
@@ -49,6 +49,24 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelComedor();
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeUrbanidad()
+    {
+        puntajeAciertos++;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 4)
+        {
+            controladorJuego.DesbloquearNivelUrbanidad();
         }
     }
 

@@ -379,7 +379,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelComedor
+        m_MethodName: ActualizarNivelUrbanidad
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1331,7 +1331,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835360130}
-        m_MethodName: ActualizarNivelComedor
+        m_MethodName: ActualizarNivelUrbanidad
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1931,9 +1931,13 @@ MonoBehaviour:
   nivelAcutal: 0
   nivelAcutalAtencion: 0
   nivelAcutalComedor: 0
+  nivelAcutalUrbanidad: 0
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor:
+  - {fileID: 253182144}
+  - {fileID: 1203727721}
+  botonesMenuUrbanidad:
   - {fileID: 253182144}
   - {fileID: 1203727721}
 --- !u!4 &1835360131

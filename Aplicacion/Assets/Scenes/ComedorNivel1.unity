@@ -493,7 +493,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: SumarPuntajeComedor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1597,7 +1597,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: SumarPuntajeComedor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,7 +1655,7 @@ Animator:
   m_GameObject: {fileID: 455178825}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4ad4f446afbd7dd4c9e15523d160cd2f, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8758f3d3affaac4ebea82b213f84052, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2190,7 +2190,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: SumarPuntajeComedor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4644,9 +4644,11 @@ MonoBehaviour:
   nivelAcutal: 0
   nivelAcutalAtencion: 0
   nivelAcutalComedor: 1
+  nivelAcutalUrbanidad: 0
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor: []
+  botonesMenuUrbanidad: []
 --- !u!4 &1933177974
 Transform:
   m_ObjectHideFlags: 0

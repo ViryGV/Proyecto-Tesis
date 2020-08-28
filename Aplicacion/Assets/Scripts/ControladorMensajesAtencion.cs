@@ -22,6 +22,12 @@ public class ControladorMensajesAtencion : MonoBehaviour
         StartCoroutine(EsperarPanelCargando());
     }
 
+    public void CargarPanelMensajeUrbanidad()
+    {
+        Debug.Log("Mensaje Urbanidad");
+        StartCoroutine(EsperarPanelCargandoUrbanidad());
+    }
+
     public void CargarPanelMensajeComedor()
     {
         Debug.Log("Mensaje Comedor");
@@ -37,6 +43,14 @@ public class ControladorMensajesAtencion : MonoBehaviour
         panelMensaje.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesAtencion");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoUrbanidad()
+    {
+        panelMensaje.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("NivelesUrbanidad");
         Time.timeScale = 1;
     }
 

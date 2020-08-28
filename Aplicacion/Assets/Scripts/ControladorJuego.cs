@@ -21,6 +21,8 @@ public class ControladorJuego : MonoBehaviour
     //static public int nivelesDisponiblesInstrucciones;
     /// <value>Establece un valor estático para saber que niveles se encuentran disponibles</value>
     static public int nivelesDisponiblesComedor;
+    /// <value>Establece un valor estático para saber que niveles se encuentran disponibles</value>
+    static public int nivelesDisponiblesUrbanidad;
 
     /// <value>Establece un valor estático para saber en que nivel (en emociones) te encuentras actualmente</value>
     public int nivelAcutal;
@@ -28,6 +30,8 @@ public class ControladorJuego : MonoBehaviour
     public int nivelAcutalAtencion;
     /// <value>Establece un valor estático para saber en que nivel (en atención) te encuentras actualmente</value>
     public int nivelAcutalComedor;
+    /// <value>Establece un valor estático para saber en que nivel (en atención) te encuentras actualmente</value>
+    public int nivelAcutalUrbanidad;
     /// <value>Establece un valor estático para saber en que nivel (en instrucciones visuales) te encuentras actualmente</value>
     //public int nivelAcutalInstrucciones;
 
@@ -37,6 +41,8 @@ public class ControladorJuego : MonoBehaviour
     public Button[] botonesMenuAtencion;
     /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
     public Button[] botonesMenuComedor;
+    /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
+    public Button[] botonesMenuUrbanidad;
     /// <value>Arreglo de botones para poder desbloquearlos cuando la posición cambie</value>
     //public Button[] botonesMenuInstrucciones;
 
@@ -49,6 +55,8 @@ public class ControladorJuego : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorMensajesAtencion mensajeComedor;
     /// <value>Permite al acceso de los datos de la clase</value>
+    ControladorMensajesAtencion mensajeGeneral;
+    /// <value>Permite al acceso de los datos de la clase</value>
     //ControladorMensajesInstrucciones mensajeInstrucciones;
 
     /// <summary>
@@ -60,6 +68,7 @@ public class ControladorJuego : MonoBehaviour
         mensaje = GetComponent<ControladorMensajes>();
         mensajeComedor = GetComponent<ControladorMensajesAtencion>();
         mensajeAtencion = GetComponent<ControladorMensajesAtencion>();
+        mensajeGeneral = GetComponent<ControladorMensajesAtencion>();
         //mensajeInstrucciones = GetComponent<ControladorMensajesInstrucciones>();
     }
 
@@ -85,7 +94,13 @@ public class ControladorJuego : MonoBehaviour
             Debug.Log("COMEDOR");
             cargar_guardar.Guardar();
             ActualizarBotonesComedor();
+        } else if (SceneManager.GetActiveScene().name == "NivelesUrbanidad")
+        {
+            Debug.Log("Urbanidad");
+            cargar_guardar.Guardar();
+            ActualizarBotonesUrbanidad();
         }
+
         /*else if (SceneManager.GetActiveScene().name == "NivelesInstruccionesVisuales")
         {
             Debug.Log("Instrucciones");
@@ -160,6 +175,28 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>Este método se encarga de ir desbloqueando los niveles
     /// según se van pasando</summary>
     /// <param name="nivel">El valor del nivel que será actualizado</param>
+    public void ActualizarNivelUrbanidad(int nivel)
+    {
+        // Si el valor del nivel es cero, la escena se mantiene en el 
+        // menú correspondiente
+        // De lo contrario deberá cambiar al nivel que corresponda
+        // de manera incremental
+        Debug.Log("Actualizar urbanidad");
+        if (nivel == 0)
+        {
+            Debug.Log("Menu");
+            SceneManager.LoadScene("NivelesUrbanidad");
+        }
+        else
+        {
+            Debug.Log("else");
+            SceneManager.LoadScene("UrbanidadNivel" + nivel);
+        }
+    }
+
+    /// <summary>Este método se encarga de ir desbloqueando los niveles
+    /// según se van pasando</summary>
+    /// <param name="nivel">El valor del nivel que será actualizado</param>
     /*public void ActualizarNivelInstrucciones(int nivel)
     {
         // Si el valor del nivel es cero, la escena se mantiene en el 
@@ -204,6 +241,15 @@ public class ControladorJuego : MonoBehaviour
     {
         Debug.Log("Esperando comedor");
         mensajeComedor.CargarPanelMensajeComedor();
+    }
+
+    /// <summary>
+    /// Activa una pantalla que indica que el nivel ha sido superado
+    /// </summary>
+    public void PantallaMensajeUrbanidad()
+    {
+        Debug.Log("Esperando urbanidad");
+        mensajeGeneral.CargarPanelMensajeUrbanidad();
     }
 
     /// <summary>
@@ -266,6 +312,23 @@ public class ControladorJuego : MonoBehaviour
     /// <summary>
     /// Activa la opción de poder cambiar entre los niveles disponibles
     /// </summary>
+    public void DesbloquearNivelUrbanidad()
+    {
+        Debug.Log("Here");
+        // Cuando el valor del nivel disponible
+        // sea menor al nivel actual, este deberá tomar el valor
+        // del nivel actual.
+        // Una vez que ha terminado carga un mensaje de nivel superado
+        if (nivelesDisponiblesUrbanidad < nivelAcutalUrbanidad)
+        {
+            nivelesDisponiblesUrbanidad = nivelAcutalUrbanidad;
+        }
+        PantallaMensajeUrbanidad();
+    }
+
+    /// <summary>
+    /// Activa la opción de poder cambiar entre los niveles disponibles
+    /// </summary>
     /*public void DesbloquearNivelInstrucciones()
     {
         // Cuando el valor del nivel disponible
@@ -288,6 +351,7 @@ public class ControladorJuego : MonoBehaviour
         ActualizarNivelEmociones(0);
         ActualizarNivelAtencion(0);
         ActualizarNivelComedor(0);
+        ActualizarNivelUrbanidad(0);
         //ActualizarNivelInstrucciones(0);
     }
 
@@ -344,6 +408,26 @@ public class ControladorJuego : MonoBehaviour
             for (int i = 0; i < nivelesDisponiblesComedor + 1; i++)
             {
                 botonesMenuComedor[i].interactable = true;
+            }
+        }
+        catch (System.IndexOutOfRangeException)
+        {
+        }
+    }
+
+    /// <summary>
+    /// Activa la opción para poder interactuar con los botones de la escena
+    /// </summary>
+    public void ActualizarBotonesUrbanidad()
+    {
+        /// <exception cref="IndexOutOfRangeException">
+        /// En caso de no haber más elementos para recorrer los niveles
+        /// </exception>
+        try
+        {
+            for (int i = 0; i < nivelesDisponiblesUrbanidad + 1; i++)
+            {
+                botonesMenuUrbanidad[i].interactable = true;
             }
         }
         catch (System.IndexOutOfRangeException)

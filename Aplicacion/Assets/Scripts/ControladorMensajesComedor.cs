@@ -18,7 +18,7 @@ public class ControladorMensajesComedor : MonoBehaviour
     /// </summary>
     public void CargarPanelMensaje()
     {
-        Debug.Log("Mensaje Comedor");
+        Debug.Log("Mensaje Urbanidad");
         StartCoroutine(EsperarPanelCargando());
     }
 
@@ -30,7 +30,7 @@ public class ControladorMensajesComedor : MonoBehaviour
     {
         panelMensaje.SetActive(true);
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("NivelesComedor");
+        SceneManager.LoadScene("NivelesUrbanidad");
         Time.timeScale = 1;
     }
 }

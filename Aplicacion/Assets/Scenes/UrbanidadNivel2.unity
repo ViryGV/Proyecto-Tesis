@@ -362,7 +362,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: RestarPuntaje
+        m_MethodName: SumarPuntajeUrbanidad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -493,7 +493,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: SumarPuntajeUrbanidad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1597,7 +1597,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: RestarPuntaje
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2321,7 +2321,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: SumarPuntaje
+        m_MethodName: SumarPuntajeUrbanidad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3882,7 +3882,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1207497664}
-        m_MethodName: RestarPuntaje
+        m_MethodName: SumarPuntajeUrbanidad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tirar la basura en su luagr
+  m_text: Tirar la basura en su lugar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4931,10 +4931,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivelAcutal: 0
   nivelAcutalAtencion: 0
-  nivelAcutalComedor: 1
+  nivelAcutalComedor: 0
+  nivelAcutalUrbanidad: 2
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor: []
+  botonesMenuUrbanidad: []
 --- !u!4 &1933177974
 Transform:
   m_ObjectHideFlags: 0
