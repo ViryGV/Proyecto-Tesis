@@ -29,6 +29,7 @@ public class ControladorDialogo : MonoBehaviour
     /// </summary>
     public GameObject textoPregunta;
     public GameObject textoAciertos;
+    public GameObject textoErrores;
 
     /// <value>Establece el valor para poner sonido en la conversación</value>
     private AudioSource _audio;
@@ -101,6 +102,7 @@ public class ControladorDialogo : MonoBehaviour
         botonContinuar.SetActive(false);
         textoPregunta.SetActive(false);
         textoAciertos.SetActive(false);
+        textoErrores.SetActive(false);
 
         // Si el índice de las palabras es menor al tamaño de ellas 
         // se incrementa un valor, los objetos permanecen desabilitados
@@ -119,6 +121,7 @@ public class ControladorDialogo : MonoBehaviour
             botonContinuar.SetActive(false);
             textoPregunta.SetActive(true);
             textoAciertos.SetActive(true);
+            textoErrores.SetActive(true);
             controladorPuntos.ActivarPanelAlegria();
         }
     }

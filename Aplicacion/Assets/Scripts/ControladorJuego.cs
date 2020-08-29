@@ -270,6 +270,7 @@ public class ControladorJuego : MonoBehaviour
     /// </summary>
     public void DesbloquearNivel()
     {
+        Debug.Log("HERE");
         // Cuando el valor del nivel disponible
         // sea menor al nivel actual, este deberá tomar el valor
         // del nivel actual.
@@ -277,6 +278,7 @@ public class ControladorJuego : MonoBehaviour
         if (nivelesDisponibles < nivelAcutal)
         {
             nivelesDisponibles = nivelAcutal;
+            Debug.Log("DISPONIBLE " + nivelesDisponibles);
         }
         PantallaMensaje();
     }

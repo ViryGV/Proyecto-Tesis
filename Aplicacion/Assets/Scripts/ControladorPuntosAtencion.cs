@@ -14,7 +14,7 @@ public class ControladorPuntosAtencion : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
-    //public Text textoErrores;
+    public TextMeshProUGUI textoErrores;
     /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
     public TextMeshProUGUI textoMensaje;
     /// <summary>
@@ -192,7 +192,7 @@ public class ControladorPuntosAtencion : MonoBehaviour
     void ActualizarTextoPuntaje()
     {
         textoAciertos.text = "Aciertos " + puntajeAciertos.ToString();
-        //textoErrores.text = "Errores " + puntajeErrores.ToString();
+        textoErrores.text = "Errores " + puntajeErrores.ToString();
     }
 
     /// <summary>

@@ -17,6 +17,8 @@ public class ControladorDialogoAtencion : MonoBehaviour
     public GameObject botonContinuar;
     /// <value>Permite tener acceso al contenido del texto</value>
     public GameObject textoAciertos;
+    /// <value>Permite tener acceso al contenido del texto</value>
+    public GameObject textoErrores;
     /// <value>Permite poder manipular el objeto</value>
     public GameObject girl;
     /// <value>Establece el valor para asignarle un panel</value>
@@ -81,6 +83,7 @@ public class ControladorDialogoAtencion : MonoBehaviour
         //_audio.Play();
         botonContinuar.SetActive(false);
         textoAciertos.SetActive(false);
+        textoErrores.SetActive(false);
         girl.SetActive(false);
         panel.SetActive(false);
 
@@ -100,6 +103,7 @@ public class ControladorDialogoAtencion : MonoBehaviour
             textoDisplay.text = "";
             botonContinuar.SetActive(false);
             textoAciertos.SetActive(true);
+            textoErrores.SetActive(true);
             girl.SetActive(true);
             panel.SetActive(true);
         }
