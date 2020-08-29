@@ -53,10 +53,23 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public GameObject panelCuatro;
     public GameObject panelParteUno;
     public GameObject panelParteDos;
+    public GameObject panelDUno;
+    public GameObject panelDDos;
+    public GameObject panelDTres;
+    //public GameObject panelDCuatro;
     public GameObject panelParteTres;
+    public GameObject panelTUno;
+    public GameObject panelTDos;
+    public GameObject panelTTres;
+    //public GameObject panelTCuatro;
     public GameObject objetoUno;
     public GameObject objetoDos;
     public GameObject objetoTres;
+    public GameObject objetoHistoriaUno;
+    public GameObject objetoHistoriaDos;
+    public GameObject objetoHistoriaTres;
+    public GameObject continuarDos;
+    public GameObject continuarTres;
 
     /// <value>Establece el valor de las veces que aciertas</value>
     int puntajeAciertos;
@@ -122,12 +135,39 @@ public class ControladorPuntosMemoria : MonoBehaviour
             //DesactivarPanelTres();
             //ActivarPanelCuatro();
         }
-        /*if (puntajeAciertos >= 3)
+        if (puntajeAciertos >= 4)
         {
-            DesactivarPanelParteUno();
-            ActivarPanelParteDos();
+            DesactivarPanelDUno();
+            ActivarPanelDDos();
             //controladorJuego.DesbloquearNivelMemoria();
-        } /*else
+        }
+        if (puntajeAciertos >= 5)
+        {
+            DesactivarPanelDDos();
+            ActivarPanelDTres();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            DesactivarPanelParteDos();
+            ActivarPanelParteTres();
+        }
+        if (puntajeAciertos >= 7)
+        {
+            DesactivarPanelTUno();
+            ActivarPanelTDos();
+        }
+        if (puntajeAciertos >= 8)
+        {
+            DesactivarPanelTDos();
+            ActivarPanelTTres();
+        }
+
+        if (puntajeAciertos >= 9)
+        {
+            DesactivarPanelParteTres();
+            controladorJuego.DesbloquearNivelMemoria();
+        }
+        /*else
         {
             Debug.Log("Puntos " + puntajeAciertos);
             Debug.Log("NO Tienes un bonus");
@@ -247,25 +287,91 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void DesactivarPanelParteUno()
     {
         panelParteUno.SetActive(false);
+        objetoHistoriaUno.SetActive(false);
+
     }
 
     public void ActivarPanelParteDos()
     {
         panelParteDos.SetActive(true);
+        objetoHistoriaDos.SetActive(true);
+        continuarDos.SetActive(true);
+        panelDUno.SetActive(true);
+    }
+
+    public void DesactivarPanelDUno()
+    {
+        panelDUno.SetActive(false);
+    }
+
+    public void ActivarPanelDDos()
+    {
+        panelDDos.SetActive(true);
+        renderUno.enabled = true;
+        renderDos.enabled = true;
+        continuarDos.SetActive(false);
+    }
+
+    public void DesactivarPanelDDos()
+    {
+        panelDDos.SetActive(false);
+        renderDos.enabled = false;
+    }
+
+    public void ActivarPanelDTres()
+    {
+        panelDTres.SetActive(true);
+    }
+
+    public void DesactivarPanelDTres()
+    {
+        panelDTres.SetActive(false);
     }
 
     public void DesactivarPanelParteDos()
     {
-        panelParteDos.SetActive(true);
+        panelParteDos.SetActive(false);
     }
 
     public void ActivarPanelParteTres()
     {
         panelParteTres.SetActive(true);
+        objetoHistoriaTres.SetActive(true);
+        continuarTres.SetActive(true);
+        panelTUno.SetActive(true);
+    }
+
+    public void DesactivarPanelTUno()
+    {
+        panelTUno.SetActive(false);
+    }
+
+    public void ActivarPanelTDos()
+    {
+        panelTDos.SetActive(true);
+        renderUno.enabled = true;
+        renderDos.enabled = true;
+        continuarTres.SetActive(false);
+    }
+
+    public void DesactivarPanelTDos()
+    {
+        panelTDos.SetActive(false);
+        renderDos.enabled = false;
+    }
+
+    public void ActivarPanelTTres()
+    {
+        panelTTres.SetActive(true);
+    }
+
+    public void DesactivarPanelTTres()
+    {
+        panelTTres.SetActive(false);
     }
 
     public void DesactivarPanelParteTres()
     {
-        panelParteTres.SetActive(true);
+        panelParteTres.SetActive(false);
     }
 }
