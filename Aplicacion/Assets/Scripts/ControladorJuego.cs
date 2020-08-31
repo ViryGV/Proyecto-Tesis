@@ -270,7 +270,6 @@ public class ControladorJuego : MonoBehaviour
     /// </summary>
     public void DesbloquearNivel()
     {
-        Debug.Log("HERE");
         // Cuando el valor del nivel disponible
         // sea menor al nivel actual, este deberá tomar el valor
         // del nivel actual.
@@ -278,7 +277,6 @@ public class ControladorJuego : MonoBehaviour
         if (nivelesDisponibles < nivelAcutal)
         {
             nivelesDisponibles = nivelAcutal;
-            Debug.Log("DISPONIBLE " + nivelesDisponibles);
         }
         PantallaMensaje();
     }
@@ -344,6 +342,7 @@ public class ControladorJuego : MonoBehaviour
         if (nivelesDisponiblesMemoria< nivelAcutalMemoria)
         {
             nivelesDisponiblesMemoria = nivelAcutalMemoria;
+            Debug.Log("DISPONIBLE " + nivelesDisponiblesMemoria);
         }
         PantallaMensajeMemoria();
     }
@@ -454,6 +453,7 @@ public class ControladorJuego : MonoBehaviour
             for (int i = 0; i < nivelesDisponiblesMemoria + 1; i++)
             {
                 botonesMenuMemoria[i].interactable = true;
+                Debug.Log("DISPONIBLE " + nivelesDisponiblesMemoria);
             }
         }
         catch (System.IndexOutOfRangeException)

@@ -65,6 +65,8 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public GameObject objetoUno;
     public GameObject objetoDos;
     public GameObject objetoTres;
+    public GameObject objetoCuatro;
+    public GameObject objetoCinco;
     public GameObject objetoHistoriaUno;
     public GameObject objetoHistoriaDos;
     public GameObject objetoHistoriaTres;
@@ -83,6 +85,8 @@ public class ControladorPuntosMemoria : MonoBehaviour
     Renderer renderUno;
     Renderer renderDos;
     Renderer renderTres;
+    Renderer renderCuatro;
+    Renderer renderCinco;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -91,6 +95,9 @@ public class ControladorPuntosMemoria : MonoBehaviour
     {
         renderUno = objetoUno.GetComponent<Renderer>();
         renderDos = objetoDos.GetComponent<Renderer>();
+        renderTres = objetoTres.GetComponent<Renderer>();
+        renderCuatro = objetoCuatro.GetComponent<Renderer>();
+        renderCinco = objetoCinco.GetComponent<Renderer>();
     }
 
     /// <summary>
@@ -139,7 +146,6 @@ public class ControladorPuntosMemoria : MonoBehaviour
         {
             DesactivarPanelDUno();
             ActivarPanelDDos();
-            //controladorJuego.DesbloquearNivelMemoria();
         }
         if (puntajeAciertos >= 5)
         {
@@ -254,7 +260,6 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void ActivarPanelDos()
     {
         panelDos.SetActive(true);
-        renderUno.enabled = true;
         renderDos.enabled = true;
     }
 
@@ -267,11 +272,13 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void ActivarPanelTres()
     {
         panelTres.SetActive(true);
+        renderTres.enabled = true;
     }
 
     public void DesactivarPanelTres()
     {
         panelTres.SetActive(false);
+        //renderTres.enabled = false;
     }
 
     public void ActivarPanelCuatro()
@@ -288,7 +295,7 @@ public class ControladorPuntosMemoria : MonoBehaviour
     {
         panelParteUno.SetActive(false);
         objetoHistoriaUno.SetActive(false);
-
+        renderTres.enabled = false;
     }
 
     public void ActivarPanelParteDos()
@@ -297,30 +304,31 @@ public class ControladorPuntosMemoria : MonoBehaviour
         objetoHistoriaDos.SetActive(true);
         continuarDos.SetActive(true);
         panelDUno.SetActive(true);
+        renderTres.enabled = false;
+        renderCuatro.enabled = true;
     }
 
     public void DesactivarPanelDUno()
     {
         panelDUno.SetActive(false);
+        renderCuatro.enabled = false;
     }
 
     public void ActivarPanelDDos()
     {
         panelDDos.SetActive(true);
-        renderUno.enabled = true;
-        renderDos.enabled = true;
         continuarDos.SetActive(false);
     }
 
     public void DesactivarPanelDDos()
     {
         panelDDos.SetActive(false);
-        renderDos.enabled = false;
     }
 
     public void ActivarPanelDTres()
     {
         panelDTres.SetActive(true);
+        renderDos.enabled = true;
     }
 
     public void DesactivarPanelDTres()
@@ -331,6 +339,7 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void DesactivarPanelParteDos()
     {
         panelParteDos.SetActive(false);
+        renderDos.enabled = false;
     }
 
     public void ActivarPanelParteTres()
@@ -339,11 +348,13 @@ public class ControladorPuntosMemoria : MonoBehaviour
         objetoHistoriaTres.SetActive(true);
         continuarTres.SetActive(true);
         panelTUno.SetActive(true);
+        renderCuatro.enabled = true;
     }
 
     public void DesactivarPanelTUno()
     {
         panelTUno.SetActive(false);
+        renderCuatro.enabled = false;
     }
 
     public void ActivarPanelTDos()
@@ -363,6 +374,7 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void ActivarPanelTTres()
     {
         panelTTres.SetActive(true);
+        renderCinco.enabled = true;
     }
 
     public void DesactivarPanelTTres()

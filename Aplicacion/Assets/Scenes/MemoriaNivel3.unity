@@ -790,10 +790,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivelAcutal: 0
   nivelAcutalAtencion: 0
-  nivelAcutalInstrucciones: 3
+  nivelAcutalComedor: 0
+  nivelAcutalUrbanidad: 0
+  nivelAcutalMemoria: 3
   botonesMenuEmociones: []
   botonesMenuAtencion: []
-  botonesMenuInstrucciones: []
+  botonesMenuComedor: []
+  botonesMenuUrbanidad: []
+  botonesMenuMemoria: []
 --- !u!4 &362681903
 Transform:
   m_ObjectHideFlags: 0

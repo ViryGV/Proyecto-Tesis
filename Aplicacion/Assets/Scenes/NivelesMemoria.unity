@@ -332,8 +332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -519, y: 76.988}
-  m_SizeDelta: {x: 142.53516, y: 291.69006}
+  m_AnchoredPosition: {x: -485.3, y: 35}
+  m_SizeDelta: {x: 209.8778, y: 353.42078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253182144
 MonoBehaviour:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7033099133228612053, guid: e6d78e73935e57447adf68c49695fa07,
+  m_Sprite: {fileID: -915199478987999320, guid: 962f0251d9ce6d04dba7d6e1538bd1b7,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -1272,8 +1272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86.225, y: 85.889}
-  m_SizeDelta: {x: 172.45062, y: 309.49292}
+  m_AnchoredPosition: {x: -39, y: 43}
+  m_SizeDelta: {x: 239.79321, y: 345.97015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203727721
 MonoBehaviour:
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2167282069756697850, guid: e6d78e73935e57447adf68c49695fa07,
+  m_Sprite: {fileID: 4989992504316448268, guid: 962f0251d9ce6d04dba7d6e1538bd1b7,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -1981,8 +1981,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359, y: 94.79}
-  m_SizeDelta: {x: 142.53516, y: 291.69006}
+  m_AnchoredPosition: {x: 395, y: 30}
+  m_SizeDelta: {x: 187.43018, y: 342.19708}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891658621
 MonoBehaviour:
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2167866576140548178, guid: e6d78e73935e57447adf68c49695fa07,
+  m_Sprite: {fileID: -5419264370979432709, guid: 962f0251d9ce6d04dba7d6e1538bd1b7,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
