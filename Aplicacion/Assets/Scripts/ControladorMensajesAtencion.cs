@@ -34,6 +34,12 @@ public class ControladorMensajesAtencion : MonoBehaviour
         StartCoroutine(EsperarPanelCargandoComedor());
     }
 
+    public void CargarPanelMensajeEscuela()
+    {
+        Debug.Log("Mensaje Escuela");
+        StartCoroutine(EsperarPanelCargandoEscuela());
+    }
+
     public void CargarPanelMensajeMemoria()
     {
         Debug.Log("Mensaje memoria");
@@ -65,6 +71,14 @@ public class ControladorMensajesAtencion : MonoBehaviour
         panelMensaje.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesComedor");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoEscuela()
+    {
+        panelMensaje.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("NivelesEscuela");
         Time.timeScale = 1;
     }
 

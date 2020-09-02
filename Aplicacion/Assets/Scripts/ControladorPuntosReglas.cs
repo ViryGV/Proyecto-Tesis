@@ -71,6 +71,24 @@ public class ControladorPuntosReglas : MonoBehaviour
     }
 
     /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeEscuela()
+    {
+        puntajeAciertos++;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 4)
+        {
+            controladorJuego.DesbloquearNivelEscuela();
+        }
+    }
+
+    /// <summary>
     /// Método que va sumando las veces que el usuario se ha equivocado
     /// </summary>
     public void RestarPuntaje()
