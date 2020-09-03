@@ -394,6 +394,7 @@ public class ControladorJuego : MonoBehaviour
         {
             nivelesDisponiblesMemoria = nivelAcutalMemoria;
             Debug.Log("DISPONIBLE " + nivelesDisponiblesMemoria);
+            Debug.Log("ACTUAL " + nivelAcutalMemoria);
         }
         PantallaMensajeMemoria();
     }

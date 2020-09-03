@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
-public class ControladorPuntosMemoria : MonoBehaviour
+public class ControladorPuntosMemoriaHistoria : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
     public TextMeshProUGUI textoErrores;
     /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
     public TextMeshProUGUI textoMensaje;
-
     /// <summary>
     /// <list type="bullet">
     /// <item>
@@ -49,34 +47,57 @@ public class ControladorPuntosMemoria : MonoBehaviour
     /// </list>
     /// </summary>
     public GameObject cosmo;
-    public GameObject objetoDos;
-    public GameObject objetoTres;
-    public GameObject botonUno;
-    public GameObject botonDos;
-    public GameObject botonTres;
     public GameObject panelUno;
     public GameObject panelDos;
     public GameObject panelTres;
+    public GameObject panelCuatro;
     public GameObject panelParteUno;
     public GameObject panelParteDos;
+    public GameObject panelDUno;
+    public GameObject panelDDos;
+    public GameObject panelDTres;
+    //public GameObject panelDCuatro;
     public GameObject panelParteTres;
+    public GameObject panelTUno;
+    public GameObject panelTDos;
+    public GameObject panelTTres;
+    //public GameObject panelTCuatro;
+    public GameObject objetoUno;
+    public GameObject objetoDos;
+    public GameObject objetoTres;
+    public GameObject objetoCuatro;
+    public GameObject objetoCinco;
+    public GameObject objetoHistoriaUno;
+    public GameObject objetoHistoriaDos;
+    public GameObject objetoHistoriaTres;
+    public GameObject continuarDos;
+    public GameObject continuarTres;
 
     /// <value>Establece el valor de las veces que aciertas</value>
     int puntajeAciertos;
     /// <value>Establece el valor de las veces que el usuario se ha equivocado</value>
     int puntajeErrores;
-    /// <value>Establece el valor flotante del tiempo de vida que tiene en pantalla los cuadros de diálogo</value>
-    float tiempoVida;
 
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorJuego controladorJuego;
-   
+
+    /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
+    Renderer renderUno;
+    Renderer renderDos;
+    Renderer renderTres;
+    Renderer renderCuatro;
+    Renderer renderCinco;
+
     /// <summary>
     /// Inicializa las variables establecidas
     /// </summary>
     void Start()
     {
-
+        renderUno = objetoUno.GetComponent<Renderer>();
+        renderDos = objetoDos.GetComponent<Renderer>();
+        renderTres = objetoTres.GetComponent<Renderer>();
+        renderCuatro = objetoCuatro.GetComponent<Renderer>();
+        renderCinco = objetoCinco.GetComponent<Renderer>();
     }
 
     /// <summary>
@@ -103,23 +124,79 @@ public class ControladorPuntosMemoria : MonoBehaviour
         {
             Debug.Log("puntaje 1");
             DesactivarPanelUno();
-            ActivarPanelParteDos();
+            ActivarPanelDos();
         }
         if (puntajeAciertos >= 2)
         {
             Debug.Log("if 2");
             Debug.Log("puntaje 2");
             DesactivarPanelDos();
-            ActivarPanelParteTres();
+            ActivarPanelTres();
         }
-        
         if (puntajeAciertos >= 3)
         {
             Debug.Log("if 3");
             Debug.Log("puntaje 3");
-            DesactivarPanelTres();
+            DesactivarPanelParteUno();
+            ActivarPanelParteDos();
+            //DesactivarPanelTres();
+            //ActivarPanelCuatro();
+        }
+        if (puntajeAciertos >= 4)
+        {
+            DesactivarPanelDUno();
+            ActivarPanelDDos();
+        }
+        if (puntajeAciertos >= 5)
+        {
+            DesactivarPanelDDos();
+            ActivarPanelDTres();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            DesactivarPanelParteDos();
+            ActivarPanelParteTres();
+        }
+        if (puntajeAciertos >= 7)
+        {
+            DesactivarPanelTUno();
+            ActivarPanelTDos();
+        }
+        if (puntajeAciertos >= 8)
+        {
+            DesactivarPanelTDos();
+            ActivarPanelTTres();
+        }
+
+        if (puntajeAciertos >= 9)
+        {
+            DesactivarPanelParteTres();
             controladorJuego.DesbloquearNivelMemoria();
         }
+        /*else
+        {
+            Debug.Log("Puntos " + puntajeAciertos);
+            Debug.Log("NO Tienes un bonus");
+            DesactivarPanelCuatro();
+        }*/
+        /*if (puntajeAciertos >= 6)
+        {
+            Debug.Log("Puntos " + puntajeAciertos);
+            Debug.Log("Tienes un bonus");
+            //DesactivarPanelCuatro();
+            controladorJuego.DesbloquearNivelInstrucciones();
+        } else
+        {
+            //DesactivarPanelCuatro();
+            Debug.Log("Puntos " + puntajeAciertos);
+            Debug.Log("NO Tienes un bonus");
+            //controladorJuego.DesbloquearNivelInstrucciones();
+        }*/
+
+        /*if (puntajeAciertos >= 6)
+        {
+            controladorJuego.DesbloquearNivelInstrucciones();
+        }*/
     }
 
     /// <summary>
@@ -130,6 +207,15 @@ public class ControladorPuntosMemoria : MonoBehaviour
         puntajeErrores += 1;
         ActualizarTextoPuntaje();
         ActivarPistas();
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario se ha equivocado
+    /// </summary>
+    public void PuntajeBonus()
+    {
+        puntajeAciertos += 3;
+        ActualizarTextoPuntaje();
     }
 
     /// <summary>
@@ -164,60 +250,136 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public void ActivarPanelUno()
     {
         panelUno.SetActive(true);
-        botonUno.SetActive(false);
     }
 
     public void DesactivarPanelUno()
     {
         panelUno.SetActive(false);
-        objetoDos.SetActive(true);
-        botonDos.SetActive(true);
     }
 
     public void ActivarPanelDos()
     {
         panelDos.SetActive(true);
-        botonDos.SetActive(false);
+        renderDos.enabled = true;
     }
 
     public void DesactivarPanelDos()
     {
         panelDos.SetActive(false);
-        objetoTres.SetActive(true);
-        botonTres.SetActive(true);
-        botonDos.SetActive(false);
+        renderDos.enabled = false;
     }
 
     public void ActivarPanelTres()
     {
         panelTres.SetActive(true);
-        botonDos.SetActive(false);
-        botonTres.SetActive(false);
+        renderTres.enabled = true;
     }
 
     public void DesactivarPanelTres()
     {
         panelTres.SetActive(false);
+        //renderTres.enabled = false;
+    }
+
+    public void ActivarPanelCuatro()
+    {
+        panelCuatro.SetActive(true);
+    }
+
+    public void DesactivarPanelCuatro()
+    {
+        panelCuatro.SetActive(false);
     }
 
     public void DesactivarPanelParteUno()
     {
         panelParteUno.SetActive(false);
+        objetoHistoriaUno.SetActive(false);
+        renderTres.enabled = false;
     }
 
     public void ActivarPanelParteDos()
     {
         panelParteDos.SetActive(true);
+        objetoHistoriaDos.SetActive(true);
+        continuarDos.SetActive(true);
+        panelDUno.SetActive(true);
+        renderTres.enabled = false;
+        renderCuatro.enabled = true;
+    }
+
+    public void DesactivarPanelDUno()
+    {
+        panelDUno.SetActive(false);
+        renderCuatro.enabled = false;
+    }
+
+    public void ActivarPanelDDos()
+    {
+        panelDDos.SetActive(true);
+        continuarDos.SetActive(false);
+    }
+
+    public void DesactivarPanelDDos()
+    {
+        panelDDos.SetActive(false);
+    }
+
+    public void ActivarPanelDTres()
+    {
+        panelDTres.SetActive(true);
+        renderDos.enabled = true;
+    }
+
+    public void DesactivarPanelDTres()
+    {
+        panelDTres.SetActive(false);
     }
 
     public void DesactivarPanelParteDos()
     {
         panelParteDos.SetActive(false);
+        renderDos.enabled = false;
     }
 
     public void ActivarPanelParteTres()
     {
         panelParteTres.SetActive(true);
+        objetoHistoriaTres.SetActive(true);
+        continuarTres.SetActive(true);
+        panelTUno.SetActive(true);
+        renderCuatro.enabled = true;
+    }
+
+    public void DesactivarPanelTUno()
+    {
+        panelTUno.SetActive(false);
+        renderCuatro.enabled = false;
+    }
+
+    public void ActivarPanelTDos()
+    {
+        panelTDos.SetActive(true);
+        renderUno.enabled = true;
+        renderDos.enabled = true;
+        continuarTres.SetActive(false);
+    }
+
+    public void DesactivarPanelTDos()
+    {
+        panelTDos.SetActive(false);
+        renderDos.enabled = false;
+    }
+
+    public void ActivarPanelTTres()
+    {
+        panelTTres.SetActive(true);
+        renderCinco.enabled = true;
+    }
+
+    public void DesactivarPanelTTres()
+    {
+        panelTTres.SetActive(false);
     }
 
     public void DesactivarPanelParteTres()
