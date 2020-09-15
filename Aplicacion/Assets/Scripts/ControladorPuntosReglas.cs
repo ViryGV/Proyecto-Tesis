@@ -64,7 +64,7 @@ public class ControladorPuntosReglas : MonoBehaviour
         // Si el puntaje equivale al número indicado
         // se activa el panel siguiete y el superado 
         // es desactivado hasta superar el nivel por completo
-        if (puntajeAciertos >= 4)
+        if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelUrbanidad();
         }

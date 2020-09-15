@@ -7,7 +7,7 @@ using UnityEngine;
 /// <summary>
 /// Esta clase maneja el tiempo de vida del personaje Cosmo
 /// </summary>
-public class ControladorCosmo : MonoBehaviour
+public class ControladorPersonajes : MonoBehaviour
 {
     /// <value>Establece el valor flotante del tiempo de vida que tiene en pantalla los cuadros de diálogo</value>
     public float tiempoVida;
@@ -25,7 +25,6 @@ public class ControladorCosmo : MonoBehaviour
         _audio = GetComponent<AudioSource>();
     }*/
 
-    // Update is called once per frame
     // Update is called once per frame
     /// <summary>
     /// Actualiza los valores de las variables establecidas

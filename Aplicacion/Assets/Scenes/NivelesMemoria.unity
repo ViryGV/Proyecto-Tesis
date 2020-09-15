@@ -1920,6 +1920,7 @@ MonoBehaviour:
   nivelAcutalAtencion: 0
   nivelAcutalComedor: 0
   nivelAcutalUrbanidad: 0
+  nivelAcutalEscuela: 0
   nivelAcutalMemoria: 0
   botonesMenuEmociones: []
   botonesMenuAtencion:
@@ -1928,6 +1929,7 @@ MonoBehaviour:
   - {fileID: 1891658621}
   botonesMenuComedor: []
   botonesMenuUrbanidad: []
+  botonesMenuEscuela: []
   botonesMenuMemoria:
   - {fileID: 253182144}
   - {fileID: 1203727721}

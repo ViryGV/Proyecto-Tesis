@@ -7091,7 +7091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2f5c52cee394945809b9431584aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 2
+  tiempoVida: 5
   empezar_btn: {fileID: 1417424411}
   panel: {fileID: 806211166}
 --- !u!1 &824753660
@@ -11925,7 +11925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2f5c52cee394945809b9431584aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 2
+  tiempoVida: 7
   empezar_btn: {fileID: 357356359}
   panel: {fileID: 1295480110}
 --- !u!1 &1299492618
