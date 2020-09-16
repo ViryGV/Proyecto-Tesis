@@ -25,14 +25,6 @@ using UnityEngine;
 /// <description>Desactiva la vista de las activadades para dar acceso al panel de juegos</description>
 /// </item>
 /// <item>
-/// <term>ActivarPanelHistorias</term>
-/// <description>Activa la vista de algunas historias donde el niño puede seleccionar una respuesta ante la situación presentada</description>
-/// </item>
-/// <item>
-/// <term>DesactivarPanelHistorias</term>
-/// <description>Desactiva la vista de las historias para dar acceso al panel de juegos</description>
-/// </item>
-/// <item>
 /// <term>ActivarPanelProfesiones</term>
 /// <description>Activa la vista de algunas profesiones u oficios donde se le permita al niño generar interés por otros temas</description>
 /// </item>
@@ -62,22 +54,9 @@ public class ControladorPanelesJuegos : MonoBehaviour
 {
     public GameObject panelJuegos;
     public GameObject panelActividades;
-    public GameObject panelHistorias;
     public GameObject panelProfesiones;
     public GameObject panelMatematicas;
     public GameObject panelReglas;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ActivarPanelJuegos()
     {
@@ -97,17 +76,6 @@ public class ControladorPanelesJuegos : MonoBehaviour
     {
         panelJuegos.SetActive(true);
         panelActividades.SetActive(false);
-    }
-
-    public void ActivarPanelHistorias()
-    {
-        panelHistorias.SetActive(true);
-    }
-
-    public void DesactivarPanelHistorias()
-    {
-        panelJuegos.SetActive(true);
-        panelHistorias.SetActive(false);
     }
 
     public void ActivarPanelProfesiones()
