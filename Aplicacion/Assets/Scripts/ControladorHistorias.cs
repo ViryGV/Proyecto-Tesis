@@ -26,6 +26,21 @@ public class ControladorHistorias : MonoBehaviour
         StartCoroutine(EsperarPanelCargandoHistoriaUno());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera para la historia dos
+    /// </summary>
+    public void CargarHistoriaDos()
+    {
+        StartCoroutine(EsperarPanelCargandoHistoriaDos());
+    }
+
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera para la historia dos
+    /// </summary>
+    public void CargarHistoriaTres()
+    {
+        StartCoroutine(EsperarPanelCargandoHistoriaTres());
+    }
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
@@ -48,6 +63,30 @@ public class ControladorHistorias : MonoBehaviour
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("HistoriaUno");
+        Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y la segunda historia
+    /// </summary>
+    public IEnumerator EsperarPanelCargandoHistoriaDos()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("HistoriaDos");
+        Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y la tercera historia
+    /// </summary>
+    public IEnumerator EsperarPanelCargandoHistoriaTres()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("HistoriaTres");
         Time.timeScale = 1;
     }
 }
