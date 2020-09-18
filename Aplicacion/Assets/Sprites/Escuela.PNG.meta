@@ -357,13 +357,13 @@ TextureImporter:
       name: Escuela_10
       rect:
         serializedVersion: 2
-        x: 1788
+        x: 1812
         y: 11
-        width: 284
+        width: 260
         height: 533
       alignment: 9
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
