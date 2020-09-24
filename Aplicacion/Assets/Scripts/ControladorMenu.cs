@@ -13,18 +13,6 @@ public class ControladorMenu : MonoBehaviour
     /// <value>Establece el valor del panel que contendrá la pantalla de espera</value>
     public GameObject panelCargando;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     /// <summary>
     /// Activa la corrutina para cargar la pantalla de espera para el menú principal
     /// </summary>
@@ -63,5 +51,14 @@ public class ControladorMenu : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("MenuJuegos");
         Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Permite cambiar la escenar para dar acceso a la
+    /// opción de progreso
+    /// </summary>
+    public void CargarProgreso()
+    {
+        SceneManager.LoadScene("InformacionProgreso");
     }
 }

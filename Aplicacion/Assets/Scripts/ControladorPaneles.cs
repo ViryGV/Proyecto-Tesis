@@ -15,12 +15,6 @@ using UnityEngine;
 /// <item>
 /// <term>DesactivarPanelPrincipal</term>
 /// <description>Desactiva la vista de las opciones y funciones principlaes para dar acceso a otro panel</description>
-/// <term>ActivarPanelJuegos</term>
-/// <description>Activa la vista de las opciones para las actividades (Historias, Practicar, Profesiones y Juegos)</description>
-/// <item>
-/// <term>DesactivarPanelJuegos</term>
-/// <description>Desactiva la vista del panel para dar acceso a otro panel o al panel principal</description>
-/// </item>
 /// <item>
 /// <term>ActivarPanelOpciones</term>
 /// <description>Activa la vista de las opciones de la aplicación</description>
@@ -45,14 +39,6 @@ using UnityEngine;
 /// <term>DesactivarPanelSalir</term>
 /// <description>Desactiva la vista de salir para dar acceso al panel principal o cerrar la aplicación</description>
 /// </item>
-/// <item>
-/// <term>ActivarPanelProgreso</term>
-/// <description>Activa la vista para ver el progreso de los niños</description>
-/// </item>
-/// <item>
-/// <term>DesactivarPanelProgreso</term>
-/// <description>Desactiva la vista de progreso para dar acceso al panel principal</description>
-/// </item>
 /// </list>
 /// </summary>
 public class ControladorPaneles : MonoBehaviour
@@ -61,19 +47,6 @@ public class ControladorPaneles : MonoBehaviour
     public GameObject panelSalir;
     public GameObject panelInfo;
     public GameObject panelOpciones;
-    public GameObject panelProgreso;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ActivarPanelPrincipal()
     {
@@ -119,16 +92,5 @@ public class ControladorPaneles : MonoBehaviour
     {
         panelPrincipal.SetActive(true);
         panelSalir.SetActive(false);
-    }
-
-    public void ActivarPanelProgreso()
-    {
-        panelProgreso.SetActive(true);
-    }
-
-    public void DesactivarPanelProgreso()
-    {
-        panelPrincipal.SetActive(true);
-        panelProgreso.SetActive(false);
     }
 }
