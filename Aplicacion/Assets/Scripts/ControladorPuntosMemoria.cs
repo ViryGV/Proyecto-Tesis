@@ -8,9 +8,39 @@ public class ControladorPuntosMemoria : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
-    public TextMeshProUGUI textoErrores;
+    TextMeshProUGUI textoGuardarAciertos;
     /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
     public TextMeshProUGUI textoMensaje;
+
+    //Nivel Uno
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el primer nivel</value>
+    TextMeshProUGUI textoErrores;
+    TextMeshProUGUI textoGuardar;
+    TextMeshProUGUI textoErroresMax;
+    TextMeshProUGUI textoGuardarMax;
+    TextMeshProUGUI textoErroresMin;
+    TextMeshProUGUI textoGuardarMin;
+
+    //Nivel Dos
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el segundo nivel</value>
+    TextMeshProUGUI textoErroresDos;
+    TextMeshProUGUI textoGuardarDos;
+    TextMeshProUGUI textoErroresMaxDos;
+    TextMeshProUGUI textoGuardarMaxDos;
+    TextMeshProUGUI textoErroresMinDos;
+    TextMeshProUGUI textoGuardarMinDos;
+
+    //Nivel Tres
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el tercer nivel</value>
+    TextMeshProUGUI textoErroresTres;
+    TextMeshProUGUI textoGuardarTres;
+    TextMeshProUGUI textoErroresMaxTres;
+    TextMeshProUGUI textoGuardarMaxTres;
+    TextMeshProUGUI textoErroresMinTres;
+    TextMeshProUGUI textoGuardarMinTres;
 
     /// <summary>
     /// <list type="bullet">
@@ -62,9 +92,24 @@ public class ControladorPuntosMemoria : MonoBehaviour
     public GameObject panelParteTres;
 
     /// <value>Establece el valor de las veces que aciertas</value>
-    int puntajeAciertos;
-    /// <value>Establece el valor de las veces que el usuario se ha equivocado</value>
-    int puntajeErrores;
+    public static int puntajeAciertos;
+    /// <value>Establece el valor estático (para guardar) intermedio
+    /// de las veces que el usuario se ha equivocado</value>
+    public static int puntajeErrores;
+    /// <value>Establece el valor estático (para guardar) menor 
+    /// de las veces que el usuario se ha equivocado
+    /// </value>
+    public static int puntajeErroresMin;
+    /// <value>Establece el valor estático (para guardar) mayor 
+    /// de las veces que el usuario se ha equivocado
+    /// </value>
+    public static int puntajeErroresMax;
+    public static int puntajeErroresDos;
+    public static int puntajeErroresMinDos;
+    public static int puntajeErroresMaxDos;
+    public static int puntajeErroresTres;
+    public static int puntajeErroresMinTres;
+    public static int puntajeErroresMaxTres;
     /// <value>Establece el valor flotante del tiempo de vida que tiene en pantalla los cuadros de diálogo</value>
     float tiempoVida;
 
@@ -76,7 +121,23 @@ public class ControladorPuntosMemoria : MonoBehaviour
     /// </summary>
     void Start()
     {
-
+        puntajeErrores = 0;
+        puntajeErroresMax = 0;
+        puntajeErroresMin = 0;
+        puntajeErroresDos = 0;
+        puntajeErroresMaxDos = 0;
+        puntajeErroresMinDos = 0;
+        puntajeAciertos = 0;
+        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresMemoria", 0).ToString();
+        textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMax", 0).ToString();
+        textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMin", 0).ToString();
+        textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0).ToString();
+        textoGuardarMaxDos.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxDos", 0).ToString();
+        textoGuardarMinDos.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
+        textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
+        textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxTres", 0).ToString();
+        textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
+        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     /// <summary>
@@ -125,9 +186,89 @@ public class ControladorPuntosMemoria : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario se ha equivocado
     /// </summary>
-    public void RestarPuntaje()
+    public void RestarPuntajeNivelUno()
     {
-        puntajeErrores += 1;
+        puntajeErroresMax++;
+        puntajeErroresMin++;
+        puntajeErrores++;
+
+        if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMemoriaMax", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMax", puntajeErroresMax);
+            Debug.Log("Errores Max  " + puntajeErroresMax);
+        }
+        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMemoriaMin", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMin", puntajeErroresMin);
+            Debug.Log("Errores Min  " + puntajeErroresMin);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresMemoria", puntajeErrores);
+            Debug.Log("Errores Normal " + puntajeErrores);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+    public void RestarPuntajeNivelDos()
+    {
+        puntajeErroresMaxDos++;
+        puntajeErroresMinDos++;
+        puntajeErroresDos++;
+
+        if (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxDos", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMaxDos", puntajeErroresMaxDos);
+            Debug.Log("Errores Max dos " + puntajeErroresMaxDos);
+        }
+        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMinDos", puntajeErroresMinDos);
+            Debug.Log("Errores Min dos " + puntajeErroresMinDos);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaDos", puntajeErroresDos);
+            Debug.Log("Errores Normal dos " + puntajeErroresDos);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+    public void RestarPuntajeNivelTres()
+    {
+        puntajeErroresMaxTres++;
+        puntajeErroresMinTres++;
+        puntajeErroresTres++;
+
+        if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxTres", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMaxTres", puntajeErroresMaxTres);
+            Debug.Log("Errores Max tres " + puntajeErroresMaxTres);
+        }
+        else if (puntajeErroresMinTres <= PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMinTres", puntajeErroresMinTres);
+            Debug.Log("Errores Min tres " + puntajeErroresMinTres);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaTres", puntajeErroresTres);
+            Debug.Log("Errores Normal 3 " + puntajeErroresTres);
+        }
+
         ActualizarTextoPuntaje();
         ActivarPistas();
     }
@@ -138,7 +279,6 @@ public class ControladorPuntosMemoria : MonoBehaviour
     void ActualizarTextoPuntaje()
     {
         textoAciertos.text = "Aciertos " + puntajeAciertos.ToString();
-        textoErrores.text = "Errores " + puntajeErrores.ToString();
     }
 
     /// <summary>

@@ -22701,6 +22701,24 @@ MonoBehaviour:
   textoAciertosEmociones: {fileID: 103280611}
   textoAciertosEmocionesDos: {fileID: 1521182014}
   textoAciertosEmocionesTres: {fileID: 1659133658}
+  textoGuardarAtencionMax: {fileID: 671980043}
+  textoGuardarAtencionMin: {fileID: 369714512}
+  textoGuardarAtencionDosMax: {fileID: 1650901147}
+  textoGuardarAtencionDosMin: {fileID: 589025965}
+  textoGuardarAtencionTresMax: {fileID: 2019390311}
+  textoGuardarAtencionTresMin: {fileID: 1563453083}
+  textoAciertosAtencion: {fileID: 1660191083}
+  textoAciertosAtencionDos: {fileID: 570442846}
+  textoAciertosAtencionTres: {fileID: 1857209373}
+  textoGuardarMemoriaMax: {fileID: 1427552863}
+  textoGuardarMemoriaMin: {fileID: 870193269}
+  textoGuardarMemoriaDosMax: {fileID: 1910400846}
+  textoGuardarMemoriaDosMin: {fileID: 544171899}
+  textoGuardarMemoriaTresMax: {fileID: 1292098538}
+  textoGuardarMemoriaTresMin: {fileID: 337591438}
+  textoAciertosMemoria: {fileID: 584989986}
+  textoAciertosMemoriaDos: {fileID: 81709859}
+  textoAciertosMemoriaTres: {fileID: 1271469091}
   barraActividades: {fileID: 566926710}
   barraHistorias: {fileID: 1487143556}
 --- !u!4 &1759381777

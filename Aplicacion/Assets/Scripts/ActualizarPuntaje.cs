@@ -18,12 +18,43 @@ public class ActualizarPuntaje : MonoBehaviour
     public TextMeshProUGUI textoAciertosEmocionesDos;
     public TextMeshProUGUI textoAciertosEmocionesTres;
 
+    //Tarjeta Atención
+    public TextMeshProUGUI textoGuardarAtencionMax;
+    public TextMeshProUGUI textoGuardarAtencionMin;
+    public TextMeshProUGUI textoGuardarAtencionDosMax;
+    public TextMeshProUGUI textoGuardarAtencionDosMin;
+    public TextMeshProUGUI textoGuardarAtencionTresMax;
+    public TextMeshProUGUI textoGuardarAtencionTresMin;
+    public TextMeshProUGUI textoAciertosAtencion;
+    public TextMeshProUGUI textoAciertosAtencionDos;
+    public TextMeshProUGUI textoAciertosAtencionTres;
+
+    //Tarjeta Memoria de Trabajo
+    public TextMeshProUGUI textoGuardarMemoriaMax;
+    public TextMeshProUGUI textoGuardarMemoriaMin;
+    public TextMeshProUGUI textoGuardarMemoriaDosMax;
+    public TextMeshProUGUI textoGuardarMemoriaDosMin;
+    public TextMeshProUGUI textoGuardarMemoriaTresMax;
+    public TextMeshProUGUI textoGuardarMemoriaTresMin;
+    public TextMeshProUGUI textoAciertosMemoria;
+    public TextMeshProUGUI textoAciertosMemoriaDos;
+    public TextMeshProUGUI textoAciertosMemoriaTres;
+
+
     public GameObject barraActividades;
     public GameObject barraHistorias;
 
     public static int guardarEmocionesMax;
     public static int guardarEmocionesMin;
     public static int aciertosEmociones;
+
+    public static int guardarAtencionMax;
+    public static int guardarAtencionMin;
+    public static int aciertosAtencion;
+
+    public static int guardarMemoriaMax;
+    public static int guardarMemoriaMin;
+    public static int aciertosMemoria;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +82,26 @@ public class ActualizarPuntaje : MonoBehaviour
         textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        //Atencion
+        textoGuardarAtencionMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMax", 0).ToString();
+        textoGuardarAtencionMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencion", 0).ToString();
+        textoGuardarAtencionDosMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMaxDos", 0).ToString();
+        textoGuardarAtencionDosMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMinDos", 0).ToString();
+        textoGuardarAtencionTresMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMaxTres", 0).ToString();
+        textoGuardarAtencionTresMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencionTres", 0).ToString();
+        textoAciertosAtencion.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoAciertosAtencionDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoAciertosAtencionTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        //Memoria
+        textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMax", 0).ToString();
+        textoGuardarMemoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoria", 0).ToString();
+        textoGuardarMemoriaDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxDos", 0).ToString();
+        textoGuardarMemoriaDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
+        textoGuardarMemoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxTres", 0).ToString();
+        textoGuardarMemoriaTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
+        textoAciertosMemoria.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoAciertosMemoriaDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoAciertosMemoriaTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     public void MostrarPuntajeHistorias()
@@ -64,27 +115,4 @@ public class ActualizarPuntaje : MonoBehaviour
     {
         
     }*/
-
-    public void BorrarDatos()
-    {
-        PlayerPrefs.DeleteKey("PuntajeErroresMax");
-        PlayerPrefs.DeleteKey("PuntajeErroresMin");
-        PlayerPrefs.DeleteKey("PuntajeErrores");
-        textoGuardarEmocionesMax.text = "0";
-        textoGuardarEmocionesMin.text = "0";
-        PlayerPrefs.DeleteKey("PuntajeErroresMaxDos");
-        PlayerPrefs.DeleteKey("PuntajeErroresMinDos");
-        PlayerPrefs.DeleteKey("PuntajeErrores");
-        textoGuardarEmocionesDosMax.text = "0";
-        textoGuardarEmocionesDosMin.text = "0";
-        PlayerPrefs.DeleteKey("PuntajeErroresMaxTres");
-        PlayerPrefs.DeleteKey("PuntajeErroresMinTres");
-        PlayerPrefs.DeleteKey("PuntajeErrores");
-        textoGuardarEmocionesTresMax.text = "0";
-        textoGuardarEmocionesTresMin.text = "0";
-        PlayerPrefs.DeleteKey("PuntajeAciertos");
-        textoAciertosEmociones.text = "0";
-        textoAciertosEmocionesDos.text = "0";
-        textoAciertosEmocionesTres.text = "0";
-    }
 }

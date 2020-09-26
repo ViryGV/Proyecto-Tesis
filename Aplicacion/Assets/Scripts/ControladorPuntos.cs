@@ -323,7 +323,7 @@ public class ControladorPuntos : MonoBehaviour
             PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMaxDos);
             Debug.Log("Errores Max dos " + puntajeErroresMaxDos);
         }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMinDos", 0))
+        else if (puntajeErroresMinDos <= PlayerPrefs.GetInt("PuntajeErroresMinDos", 0))
         {
             Debug.Log("elese if");
             PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMinDos);
