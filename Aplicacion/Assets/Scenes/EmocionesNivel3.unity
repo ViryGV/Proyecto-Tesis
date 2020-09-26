@@ -359,7 +359,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -489,7 +489,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -693,11 +693,13 @@ MonoBehaviour:
   nivelAcutalAtencion: 0
   nivelAcutalComedor: 0
   nivelAcutalUrbanidad: 0
+  nivelAcutalEscuela: 0
   nivelAcutalMemoria: 0
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor: []
   botonesMenuUrbanidad: []
+  botonesMenuEscuela: []
   botonesMenuMemoria: []
 --- !u!1 &105613147
 GameObject:
@@ -917,7 +919,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1126,7 +1128,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1557,7 +1559,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1766,7 +1768,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2186,7 +2188,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2316,7 +2318,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2713,7 +2715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2843,7 +2845,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4062,7 +4064,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4660,7 +4662,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5456,7 +5458,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5898,7 +5900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6710,7 +6712,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7274,7 +7276,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7697,7 +7699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7959,7 +7961,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8089,7 +8091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8763,7 +8765,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9635,7 +9637,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10011,7 +10013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoAciertos: {fileID: 1316501709}
-  textoErrores: {fileID: 803735452}
   textoMensaje: {fileID: 1696632388}
   cosmo: {fileID: 1119842380}
   panelAlegria: {fileID: 234395988}
@@ -10112,7 +10113,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10242,7 +10243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10502,7 +10503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945917710}
-        m_MethodName: RestarPuntaje
+        m_MethodName: RestarPuntajeNivelTres
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

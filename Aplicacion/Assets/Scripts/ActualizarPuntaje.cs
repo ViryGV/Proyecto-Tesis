@@ -18,7 +18,8 @@ public class ActualizarPuntaje : MonoBehaviour
     public TextMeshProUGUI textoAciertosEmocionesDos;
     public TextMeshProUGUI textoAciertosEmocionesTres;
 
-    public GameObject barra;
+    public GameObject barraActividades;
+    public GameObject barraHistorias;
 
     public static int guardarEmocionesMax;
     public static int guardarEmocionesMin;
@@ -39,25 +40,51 @@ public class ActualizarPuntaje : MonoBehaviour
     public void MostrarPuntajeActividades()
     {
         Debug.Log("Entre");
-        barra.SetActive(true);
+        barraActividades.SetActive(true);
+        barraHistorias.SetActive(false);
+        textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
+        textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErrores", 0).ToString();
         textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0).ToString();
         textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
-        textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
-        textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErroresMin", 0).ToString();
         textoGuardarEmocionesTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0).ToString();
-        textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMinTres", 0).ToString();
+        textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresTres", 0).ToString();
         textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
-    /*public void MostrarPuntajeHistorias()
+    public void MostrarPuntajeHistorias()
     {
-        
+        Debug.Log("Entre");
+        barraHistorias.SetActive(true);
+        barraActividades.SetActive(false);
     }
 
-    public void MostrarPuntajeMatematicas()
+    /*public void MostrarPuntajeMatematicas()
     {
         
     }*/
+
+    public void BorrarDatos()
+    {
+        PlayerPrefs.DeleteKey("PuntajeErroresMax");
+        PlayerPrefs.DeleteKey("PuntajeErroresMin");
+        PlayerPrefs.DeleteKey("PuntajeErrores");
+        textoGuardarEmocionesMax.text = "0";
+        textoGuardarEmocionesMin.text = "0";
+        PlayerPrefs.DeleteKey("PuntajeErroresMaxDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresMinDos");
+        PlayerPrefs.DeleteKey("PuntajeErrores");
+        textoGuardarEmocionesDosMax.text = "0";
+        textoGuardarEmocionesDosMin.text = "0";
+        PlayerPrefs.DeleteKey("PuntajeErroresMaxTres");
+        PlayerPrefs.DeleteKey("PuntajeErroresMinTres");
+        PlayerPrefs.DeleteKey("PuntajeErrores");
+        textoGuardarEmocionesTresMax.text = "0";
+        textoGuardarEmocionesTresMin.text = "0";
+        PlayerPrefs.DeleteKey("PuntajeAciertos");
+        textoAciertosEmociones.text = "0";
+        textoAciertosEmocionesDos.text = "0";
+        textoAciertosEmocionesTres.text = "0";
+    }
 }

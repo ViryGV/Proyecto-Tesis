@@ -197,10 +197,10 @@ public class ControladorPuntos : MonoBehaviour
         textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
         textoGuardarMaxDos.text = PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0).ToString();
         textoGuardarMinDos.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresTres", 0).ToString();
         textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0).ToString();
         textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresMinTres", 0).ToString();
+        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
