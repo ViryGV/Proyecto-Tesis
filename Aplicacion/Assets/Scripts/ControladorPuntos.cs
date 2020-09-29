@@ -190,6 +190,9 @@ public class ControladorPuntos : MonoBehaviour
         puntajeErroresDos = 0;
         puntajeErroresMaxDos = 0;
         puntajeErroresMinDos = 0;
+        puntajeErroresTres = 0;
+        puntajeErroresMaxTres = 0;
+        puntajeErroresMinTres = 0;
         puntajeAciertos = 0;
         textoGuardar.text = PlayerPrefs.GetInt("PuntajeErrores", 0).ToString();
         textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();

@@ -14,19 +14,152 @@ public class ControladorPuntosReglas : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
     public TextMeshProUGUI textoAciertos;
-    public TextMeshProUGUI textoErrores;
+    TextMeshProUGUI textoGuardarAciertos;
     /// <value>Establece el valor del texto que será mostrado en pantalla como una ayuda</value>
-    public TextMeshProUGUI textoMensaje; 
+    public TextMeshProUGUI textoMensaje;
+    
+    //Comedor
+    //Nivel Uno
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el primer nivel</value>
+    TextMeshProUGUI textoErrores;
+    TextMeshProUGUI textoGuardar;
+    TextMeshProUGUI textoErroresMax;
+    TextMeshProUGUI textoGuardarMax;
+    TextMeshProUGUI textoErroresMin;
+    TextMeshProUGUI textoGuardarMin;
+
+    //Nivel Dos
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el segundo nivel</value>
+    TextMeshProUGUI textoErroresDos;
+    TextMeshProUGUI textoGuardarDos;
+    TextMeshProUGUI textoErroresMaxDos;
+    TextMeshProUGUI textoGuardarMaxDos;
+    TextMeshProUGUI textoErroresMinDos;
+    TextMeshProUGUI textoGuardarMinDos;
+
+    //Escuela
+    //Nivel Uno
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el tercer nivel</value>
+    TextMeshProUGUI textoErroresTres;
+    TextMeshProUGUI textoGuardarTres;
+    TextMeshProUGUI textoErroresMaxTres;
+    TextMeshProUGUI textoGuardarMaxTres;
+    TextMeshProUGUI textoErroresMinTres;
+    TextMeshProUGUI textoGuardarMinTres;
+
+    //Nivel Dos
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el tercer nivel</value>
+    TextMeshProUGUI textoErroresCuatro;
+    TextMeshProUGUI textoGuardarCuatro;
+    TextMeshProUGUI textoErroresMaxCuatro;
+    TextMeshProUGUI textoGuardarMaxCuatro;
+    TextMeshProUGUI textoErroresMinCuatro;
+    TextMeshProUGUI textoGuardarMinCuatro;
+
+    //Urbanidad
+    //Nivel Uno
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el tercer nivel</value>
+    TextMeshProUGUI textoErroresCinco;
+    TextMeshProUGUI textoGuardarCinco;
+    TextMeshProUGUI textoErroresMaxCinco;
+    TextMeshProUGUI textoGuardarMaxCinco;
+    TextMeshProUGUI textoErroresMinCinco;
+    TextMeshProUGUI textoGuardarMinCinco;
+
+    //Nivel Dos
+    /// <value>Establece el valor interno de los errores que 
+    /// será guardado en memoria para el tercer nivel</value>
+    TextMeshProUGUI textoErroresSeis;
+    TextMeshProUGUI textoGuardarSeis;
+    TextMeshProUGUI textoErroresMaxSeis;
+    TextMeshProUGUI textoGuardarMaxSeis;
+    TextMeshProUGUI textoErroresMinSeis;
+    TextMeshProUGUI textoGuardarMinSeis;
 
     public GameObject cosmo;
 
-    /// <value>Establece el valor de las veces que aciertas</value>
-    int puntajeAciertos;
-    /// <value>Establece el valor de las veces que el usuario se ha equivocado</value>
-    int puntajeErrores;
+    /// <value>Establece el valor estático (para guardar) intermedio
+    /// de las veces que el usuario se ha equivocado</value>
+    public static int puntajeErrores;
+    /// <value>Establece el valor estático (para guardar) menor 
+    /// de las veces que el usuario se ha equivocado
+    /// </value>
+    public static int puntajeErroresMin;
+    /// <value>Establece el valor estático (para guardar) mayor 
+    /// de las veces que el usuario se ha equivocado
+    /// </value>
+    public static int puntajeErroresMax;
+    public static int puntajeErroresDos;
+    public static int puntajeErroresMinDos;
+    public static int puntajeErroresMaxDos;
+    public static int puntajeErroresTres;
+    public static int puntajeErroresMinTres;
+    public static int puntajeErroresMaxTres;
+    public static int puntajeErroresCuatro;
+    public static int puntajeErroresMinCuatro;
+    public static int puntajeErroresMaxCuatro;
+    public static int puntajeErroresCinco;
+    public static int puntajeErroresMinCinco;
+    public static int puntajeErroresMaxCinco;
+    public static int puntajeErroresSeis;
+    public static int puntajeErroresMinSeis;
+    public static int puntajeErroresMaxSeis;
+    /// <value>Establece el valor estático de las veces que aciertas</value>
+    public static int puntajeAciertos;
 
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorJuego controladorJuego;
+
+    /// <summary>
+    /// Inicializa las variables establecidas
+    /// </summary>
+    void Start()
+    {
+        puntajeErrores = 0;
+        puntajeErroresMax = 0;
+        puntajeErroresMin = 0;
+        puntajeErroresDos = 0;
+        puntajeErroresMaxDos = 0;
+        puntajeErroresMinDos = 0;
+        puntajeErroresTres = 0;
+        puntajeErroresMaxTres = 0;
+        puntajeErroresMinTres = 0;
+        puntajeErroresCuatro = 0;
+        puntajeErroresMaxCuatro = 0;
+        puntajeErroresMinCuatro = 0;
+        puntajeErroresCinco = 0;
+        puntajeErroresMaxCinco = 0;
+        puntajeErroresMinCinco = 0;
+        puntajeErroresSeis = 0;
+        puntajeErroresMaxSeis = 0;
+        puntajeErroresMinSeis = 0;
+        puntajeAciertos = 0;
+        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresReglas", 0).ToString();
+        textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresReglasMax", 0).ToString();
+        textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresReglasMin", 0).ToString();
+        textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasDos", 0).ToString();
+        textoGuardarMaxDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxDos", 0).ToString();
+        textoGuardarMinDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinDos", 0).ToString();
+        textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasTres", 0).ToString();
+        textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxTres", 0).ToString();
+        textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinTres", 0).ToString();
+        textoGuardarCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasCuatro", 0).ToString();
+        textoGuardarMaxCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxCuatro", 0).ToString();
+        textoGuardarMinCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinCuatro", 0).ToString();
+        textoGuardarCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasCinco", 0).ToString();
+        textoGuardarMaxCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxCinco", 0).ToString();
+        textoGuardarMinCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinCinco", 0).ToString();
+        textoGuardarSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasSeis", 0).ToString();
+        textoGuardarMaxSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxSeis", 0).ToString();
+        textoGuardarMinSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinSeis", 0).ToString();
+        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+    }
 
     /// <summary>
     /// Permite encontrar y asegurar que existe la clase a la que se quiere acceder
@@ -93,9 +226,180 @@ public class ControladorPuntosReglas : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario se ha equivocado
     /// </summary>
-    public void RestarPuntaje()
+    public void RestarPuntajeComedorNivelUno()
     {
-        puntajeErrores += 1;
+        puntajeErroresMax++;
+        puntajeErroresMin++;
+        puntajeErrores++;
+
+        if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresReglasMax", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMax", puntajeErroresMax);
+            Debug.Log("Errores Max " + puntajeErroresMax);
+
+        }
+        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresReglasMin", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMin", puntajeErroresMin);
+            Debug.Log("Errores Min " + puntajeErroresMin);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresReglas", puntajeErrores);
+            Debug.Log("Errores Normal " + puntajeErrores);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+
+    public void RestarPuntajeComedorNivelDos()
+    {
+        puntajeErroresMaxDos++;
+        puntajeErroresMinDos++;
+        puntajeErroresDos++;
+
+        if (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresReglasMaxDos", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMaxDos", puntajeErroresMaxDos);
+            Debug.Log("Errores Max dos " + puntajeErroresMaxDos);
+        }
+        else if (puntajeErroresMinDos <= PlayerPrefs.GetInt("PuntajeErroresReglasMinDos", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMinDos", puntajeErroresMinDos);
+            Debug.Log("Errores Min dos " + puntajeErroresMinDos);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresReglasDos", puntajeErroresDos);
+            Debug.Log("Errores Normal dos " + puntajeErroresDos);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+    public void RestarPuntajeEscuelaNivelUno()
+    {
+        puntajeErroresMaxTres++;
+        puntajeErroresMinTres++;
+        puntajeErroresTres++;
+
+        if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresReglasMaxTres", 0))
+        {
+            Debug.Log("if tres");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMaxTres", puntajeErroresMaxTres);
+            Debug.Log("Errores Max " + puntajeErroresMaxTres);
+        }
+        else if (puntajeErroresMinTres <= PlayerPrefs.GetInt("PuntajeErroresReglasMinTres", 0))
+        {
+            Debug.Log("elese if 3");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMinTres", puntajeErroresMinTres);
+            Debug.Log("Errores Min " + puntajeErroresMinTres);
+        }
+        else
+        {
+            Debug.Log("else 3");
+            PlayerPrefs.SetInt("PuntajeErroresReglasTres", puntajeErroresTres);
+            Debug.Log("Errores Normal " + puntajeErroresTres);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+    public void RestarPuntajeEscuelaNivelDos()
+    {
+        puntajeErroresMaxCuatro++;
+        puntajeErroresMinCuatro++;
+        puntajeErroresCuatro++;
+
+        if (puntajeErroresMaxCuatro > PlayerPrefs.GetInt("PuntajeErroresReglasMaxCuatro", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMaxCuatro", puntajeErroresMaxCuatro);
+            Debug.Log("Errores Max " + puntajeErroresMaxCuatro);
+
+        }
+        else if (puntajeErroresMinCuatro <= PlayerPrefs.GetInt("PuntajeErroresReglasMinCuatro", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMinCuatro", puntajeErroresMinCuatro);
+            Debug.Log("Errores Min " + puntajeErroresMinCuatro);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresReglasCuatro", puntajeErroresCuatro);
+            Debug.Log("Errores Normal " + puntajeErroresCuatro);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+
+    public void RestarPuntajeUrbanidadNivelUno()
+    {
+        puntajeErroresMaxCinco++;
+        puntajeErroresMinCinco++;
+        puntajeErroresCinco++;
+
+        if (puntajeErroresMaxCinco > PlayerPrefs.GetInt("PuntajeErroresReglasMaxCinco", 0))
+        {
+            Debug.Log("if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMaxCinco", puntajeErroresMaxCinco);
+            Debug.Log("Errores Max 5 " + puntajeErroresMaxCinco);
+        }
+        else if (puntajeErroresMinCinco <= PlayerPrefs.GetInt("PuntajeErroresReglasMinCinco", 0))
+        {
+            Debug.Log("elese if");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMinCinco", puntajeErroresMinCinco);
+            Debug.Log("Errores Min 5 " + puntajeErroresMinCinco);
+        }
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresReglasCinco", puntajeErroresCinco);
+            Debug.Log("Errores Normal 5 " + puntajeErroresCinco);
+        }
+
+        ActualizarTextoPuntaje();
+        ActivarPistas();
+    }
+
+    public void RestarPuntajeUrbanidadNivelDos()
+    {
+        puntajeErroresMaxSeis++;
+        puntajeErroresMinSeis++;
+        puntajeErroresSeis++;
+
+        if (puntajeErroresMaxSeis > PlayerPrefs.GetInt("PuntajeErroresReglasMaxSeis", 0))
+        {
+            Debug.Log("if tres");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMaxSeis", puntajeErroresMaxSeis);
+            Debug.Log("Errores Max 6" + puntajeErroresMaxSeis);
+        }
+        else if (puntajeErroresMinSeis <= PlayerPrefs.GetInt("PuntajeErroresReglasMinSeis", 0))
+        {
+            Debug.Log("elese if 6");
+            PlayerPrefs.SetInt("PuntajeErroresReglasMinSeis", puntajeErroresMinSeis);
+            Debug.Log("Errores Min 6" + puntajeErroresMinSeis);
+        }
+        else
+        {
+            Debug.Log("else 6");
+            PlayerPrefs.SetInt("PuntajeErroresReglasSeis", puntajeErroresSeis);
+            Debug.Log("Errores Normal 6" + puntajeErroresSeis);
+        }
+
         ActualizarTextoPuntaje();
         ActivarPistas();
     }
@@ -106,7 +410,6 @@ public class ControladorPuntosReglas : MonoBehaviour
     void ActualizarTextoPuntaje()
     {
         textoAciertos.text = "Aciertos " + puntajeAciertos.ToString();
-        textoErrores.text = "Errores " + puntajeErrores.ToString();
     }
 
     /// <summary>

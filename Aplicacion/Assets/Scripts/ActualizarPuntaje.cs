@@ -40,6 +40,16 @@ public class ActualizarPuntaje : MonoBehaviour
     public TextMeshProUGUI textoAciertosMemoriaDos;
     public TextMeshProUGUI textoAciertosMemoriaTres;
 
+    //Historias
+    public TextMeshProUGUI textoGuardarHistoriaMax;
+    public TextMeshProUGUI textoGuardarHistoriaMin;
+    public TextMeshProUGUI textoGuardarHistoriaDosMax;
+    public TextMeshProUGUI textoGuardarHistoriaDosMin;
+    public TextMeshProUGUI textoGuardarHistoriaTresMax;
+    public TextMeshProUGUI textoGuardarHistoriaTresMin;
+    public TextMeshProUGUI textoAciertosHistoria;
+    public TextMeshProUGUI textoAciertosHistoriaDos;
+    public TextMeshProUGUI textoAciertosHistoriaTres;
 
     public GameObject barraActividades;
     public GameObject barraHistorias;
@@ -56,11 +66,9 @@ public class ActualizarPuntaje : MonoBehaviour
     public static int guardarMemoriaMin;
     public static int aciertosMemoria;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int guardarHistoriaMax;
+    public static int guardarHistoriaMin;
+    public static int aciertosHistoria;
 
     // Update is called once per frame
     void Update()
@@ -109,6 +117,16 @@ public class ActualizarPuntaje : MonoBehaviour
         Debug.Log("Entre");
         barraHistorias.SetActive(true);
         barraActividades.SetActive(false);
+
+        textoGuardarHistoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMax", 0).ToString();
+        textoGuardarHistoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMin", 0).ToString();
+        textoGuardarHistoriaDosMax.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMaxDos", 0).ToString();
+        textoGuardarHistoriaDosMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMinDos", 0).ToString();
+        textoGuardarHistoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMaxTres", 0).ToString();
+        textoGuardarHistoriaTresMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMinTres", 0).ToString();
+        textoAciertosHistoria.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaUno", 0).ToString();
+        textoAciertosHistoriaDos.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaDos", 0).ToString();
+        textoAciertosHistoriaTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     /*public void MostrarPuntajeMatematicas()

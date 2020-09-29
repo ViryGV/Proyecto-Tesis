@@ -4,35 +4,21 @@ using UnityEngine;
 
 public class BorrarDatos : MonoBehaviour
 {
-    [SerializeField]
-    private InterfazMensaje interfazDeUsuario;
-
-    [SerializeField]
-    private string mensajeSalteableBoton;
-
+    public GameObject panelMensajeExito;
     void Start()
     {
-        interfazDeUsuario = FindObjectOfType<InterfazMensaje>();
+
     }
 
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Debug.Log("Tecla 3 pulsada");
-            interfazDeUsuario.MostrarMensajeSalteableBoton(mensajeSalteableBoton);
-        }
-        */
-        if (Input.anyKeyDown)
-        {
-            interfazDeUsuario.MostrarMensajeSalteableBoton(mensajeSalteableBoton);
-        }
+
     }
 
     public void BorrarDatosActividades()
     {
+        panelMensajeExito.SetActive(true);
         Debug.Log("Entre");
-        interfazDeUsuario.MostrarMensajeSalteableBoton(mensajeSalteableBoton);
         //Emociones
         PlayerPrefs.DeleteKey("PuntajeErroresMax");
         PlayerPrefs.DeleteKey("PuntajeErroresMin");
@@ -44,5 +30,10 @@ public class BorrarDatos : MonoBehaviour
         PlayerPrefs.DeleteKey("PuntajeErroresMinTres");
         PlayerPrefs.DeleteKey("PuntajeErroresTres");
         PlayerPrefs.DeleteKey("PuntajeAciertos");
+    } 
+
+    public void CerrarMensaje()
+    {
+        panelMensajeExito.SetActive(false);
     }
 }
