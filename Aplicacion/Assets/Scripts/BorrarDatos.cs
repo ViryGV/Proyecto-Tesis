@@ -30,6 +30,15 @@ public class BorrarDatos : MonoBehaviour
         PlayerPrefs.DeleteKey("PuntajeErroresMinTres");
         PlayerPrefs.DeleteKey("PuntajeErroresTres");
         PlayerPrefs.DeleteKey("PuntajeAciertos");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMax");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMin");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMaxDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMinDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMaxTres");
+        PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMinTres");
+        PlayerPrefs.DeleteKey("PuntajeAciertosHistoriasUno");
+        PlayerPrefs.DeleteKey("PuntajeAciertosHistoriaDos");
+        PlayerPrefs.DeleteKey("PuntajeAciertos");
     } 
 
     public void CerrarMensaje()

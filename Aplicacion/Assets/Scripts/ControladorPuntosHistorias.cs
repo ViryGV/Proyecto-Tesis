@@ -68,6 +68,7 @@ public class ControladorPuntosHistorias : MonoBehaviour
     public static int puntajeErroresMaxTres;
     /// <value>Establece el valor estático de las veces que aciertas</value>
     public static int puntajeAciertos;
+    public static int puntajeAciertosDos;
 
     PantallaMensajesHistorias mensajes;
 
@@ -86,7 +87,7 @@ public class ControladorPuntosHistorias : MonoBehaviour
         puntajeErroresMaxTres = 0;
         puntajeErroresMinTres = 0;
         puntajeAciertos = 0;
-        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresHistorias", 0).ToString();
+        /*textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresHistorias", 0).ToString();
         textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMax", 0).ToString();
         textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMin", 0).ToString();
         textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasDos", 0).ToString();
@@ -96,7 +97,7 @@ public class ControladorPuntosHistorias : MonoBehaviour
         textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMaxTres", 0).ToString();
         textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMinTres", 0).ToString();
         textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriasUno", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaDos", 0).ToString();
+        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaDos", 0).ToString();*/
     }
 
     /// <summary>
@@ -121,6 +122,8 @@ public class ControladorPuntosHistorias : MonoBehaviour
         // es desactivado hasta superar el nivel por completo
         if (puntajeAciertos >= 1)
         {
+            PlayerPrefs.SetInt("PuntajeAciertosHistoriasUno", puntajeAciertos);
+            PlayerPrefs.SetInt("PuntajeAciertosHistoriasDos", puntajeAciertosDos);
             mensajes.CargarPanelMensaje();
         }
     }
@@ -138,10 +141,18 @@ public class ControladorPuntosHistorias : MonoBehaviour
         {
             Debug.Log("if");
             PlayerPrefs.SetInt("PuntajeErroresHistoriasMax", puntajeErroresMax);
+            PlayerPrefs.SetInt("PuntajeErroresHistoriasMin", puntajeErroresMax);
             Debug.Log("Errores Max " + puntajeErroresMax);
 
         }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresHistoriasMin", 0))
+        else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresHistoriasMax", puntajeErroresMin);
+            Debug.Log("Errores Min " + puntajeErroresMin);
+            Debug.Log("Errores Min con max" + puntajeErroresMax);
+        }
+        /*if ((puntajeErroresMin < puntajeErroresMax) && (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresHistoriasMin", 0)))
         {
             Debug.Log("elese if");
             PlayerPrefs.SetInt("PuntajeErroresHistoriasMin", puntajeErroresMin);
@@ -152,7 +163,7 @@ public class ControladorPuntosHistorias : MonoBehaviour
             Debug.Log("else");
             PlayerPrefs.SetInt("PuntajeErroresHistorias", puntajeErrores);
             Debug.Log("Errores Normal " + puntajeErrores);
-        }
+        }*/
 
         if (puntajeErrores >= 3)
         {

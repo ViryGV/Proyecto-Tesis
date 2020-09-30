@@ -25,14 +25,6 @@ using UnityEngine;
 /// <description>Desactiva la vista de las activadades para dar acceso al panel de juegos</description>
 /// </item>
 /// <item>
-/// <term>ActivarPanelProfesiones</term>
-/// <description>Activa la vista de algunas profesiones u oficios donde se le permita al niño generar interés por otros temas</description>
-/// </item>
-/// <item>
-/// <term>DesactivarPanelProfesiones</term>
-/// <description>Desactiva la vista de las profesioes y oficios para dar acceso al panel de juegos</description>
-/// </item>
-/// <item>
 /// <term>ActivarPanelMatematicas</term>
 /// <description>Activa la vista que le permite al niño poner en práctica sus hábilidades y conocimiento en el área de matemáticas</description>
 /// </item>
@@ -54,7 +46,6 @@ public class ControladorPanelesJuegos : MonoBehaviour
 {
     public GameObject panelJuegos;
     public GameObject panelActividades;
-    public GameObject panelProfesiones;
     public GameObject panelMatematicas;
     public GameObject panelReglas;
 
@@ -76,17 +67,6 @@ public class ControladorPanelesJuegos : MonoBehaviour
     {
         panelJuegos.SetActive(true);
         panelActividades.SetActive(false);
-    }
-
-    public void ActivarPanelProfesiones()
-    {
-        panelProfesiones.SetActive(true);
-    }
-
-    public void DesactivarPanelProfesiones()
-    {
-        panelJuegos.SetActive(true);
-        panelProfesiones.SetActive(false);
     }
 
     public void ActivarPanelMatematicas()

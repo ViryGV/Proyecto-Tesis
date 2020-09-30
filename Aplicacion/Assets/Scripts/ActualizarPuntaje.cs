@@ -82,11 +82,11 @@ public class ActualizarPuntaje : MonoBehaviour
         barraActividades.SetActive(true);
         barraHistorias.SetActive(false);
         textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
-        textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErrores", 0).ToString();
+        textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErroresMin", 0).ToString();
         textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0).ToString();
         textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
         textoGuardarEmocionesTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0).ToString();
-        textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresTres", 0).ToString();
+        textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMinTres", 0).ToString();
         textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
         textoAciertosEmocionesTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
@@ -124,7 +124,7 @@ public class ActualizarPuntaje : MonoBehaviour
         textoGuardarHistoriaDosMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMinDos", 0).ToString();
         textoGuardarHistoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMaxTres", 0).ToString();
         textoGuardarHistoriaTresMin.text = PlayerPrefs.GetInt("PuntajeErroresHistoriasMinTres", 0).ToString();
-        textoAciertosHistoria.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaUno", 0).ToString();
+        textoAciertosHistoria.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriasUno", 0).ToString();
         textoAciertosHistoriaDos.text = PlayerPrefs.GetInt("PuntajeAciertosHistoriaDos", 0).ToString();
         textoAciertosHistoriaTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }

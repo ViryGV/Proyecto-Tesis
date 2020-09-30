@@ -8114,7 +8114,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.992554}
+  m_AnchorMax: {x: 1, y: 0.9999224}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13024,7 +13024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.080497414}
+  m_AnchoredPosition: {x: 0, y: -0.000030267722}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &987943355
@@ -22719,6 +22719,15 @@ MonoBehaviour:
   textoAciertosMemoria: {fileID: 584989986}
   textoAciertosMemoriaDos: {fileID: 81709859}
   textoAciertosMemoriaTres: {fileID: 1271469091}
+  textoGuardarHistoriaMax: {fileID: 671762206}
+  textoGuardarHistoriaMin: {fileID: 1181449373}
+  textoGuardarHistoriaDosMax: {fileID: 1932063834}
+  textoGuardarHistoriaDosMin: {fileID: 483450477}
+  textoGuardarHistoriaTresMax: {fileID: 357911078}
+  textoGuardarHistoriaTresMin: {fileID: 1741447838}
+  textoAciertosHistoria: {fileID: 1690332048}
+  textoAciertosHistoriaDos: {fileID: 1281135776}
+  textoAciertosHistoriaTres: {fileID: 1077250354}
   barraActividades: {fileID: 566926710}
   barraHistorias: {fileID: 1487143556}
 --- !u!4 &1759381777
@@ -25348,7 +25357,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 588343796}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.992554
+  m_Size: 0.9999224
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
