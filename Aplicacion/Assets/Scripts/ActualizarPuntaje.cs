@@ -12,6 +12,7 @@ public class ActualizarPuntaje : MonoBehaviour
     public TextMeshProUGUI textoGuardarEmocionesMin;
     public TextMeshProUGUI textoGuardarEmocionesDosMax;
     public TextMeshProUGUI textoGuardarEmocionesDosMin;
+    public TextMeshProUGUI textoGuardarEmocionesDosIntermedio;
     public TextMeshProUGUI textoGuardarEmocionesTresMax;
     public TextMeshProUGUI textoGuardarEmocionesTresMin;
     public TextMeshProUGUI textoAciertosEmociones;
@@ -83,8 +84,9 @@ public class ActualizarPuntaje : MonoBehaviour
         barraHistorias.SetActive(false);
         textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
         textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErroresMin", 0).ToString();
-        textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0).ToString();
-        textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+        textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+        textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+        textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
         textoGuardarEmocionesTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0).ToString();
         textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMinTres", 0).ToString();
         textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();

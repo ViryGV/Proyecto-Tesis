@@ -23,8 +23,8 @@ public class BorrarDatos : MonoBehaviour
         PlayerPrefs.DeleteKey("PuntajeErroresMax");
         PlayerPrefs.DeleteKey("PuntajeErroresMin");
         PlayerPrefs.DeleteKey("PuntajeErrores");
-        PlayerPrefs.DeleteKey("PuntajeErroresMaxDos");
-        PlayerPrefs.DeleteKey("PuntajeErroresMinDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresActualesDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresAnterioresDos");
         PlayerPrefs.DeleteKey("PuntajeErroresDos");
         PlayerPrefs.DeleteKey("PuntajeErroresMaxTres");
         PlayerPrefs.DeleteKey("PuntajeErroresMinTres");

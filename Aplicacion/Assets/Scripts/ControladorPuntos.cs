@@ -336,23 +336,70 @@ public class ControladorPuntos : MonoBehaviour
         puntajeErroresMinDos++;
         puntajeErroresDos++;
 
-        if (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0))
+        Debug.Log(puntajeErroresMaxDos);
+
+        //Max --> ACTUALES y Min --> ANTERIORES
+        /*if ((puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0)) 
+            || (puntajeErroresMinDos <= PlayerPrefs.GetInt("PuntajeErroresMinDos", 0)))*/
+        if ((puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0)) && 
+            (puntajeErroresDos > PlayerPrefs.GetInt("PuntajeErroresDos", 0)))
+        //if (puntajeErroresMaxDos != 0)
         {
             Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMaxDos);
-            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresMaxDos);
+            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMinDos);
+            //PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos);
             Debug.Log("Errores Max " + puntajeErroresMaxDos);
 
+        } else if(puntajeErroresDos > PlayerPrefs.GetInt("PuntajeErroresDos", 0))
+        {
+            Debug.Log("else if " + puntajeErroresDos);
+            //PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresDos);
+            PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos);
+            Debug.Log("Errores max en else if " + puntajeErroresMaxDos);
         }
         else
         {
             Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMinDos);
-            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresDos);
+            PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresMinDos);
+            //PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos);
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
             Debug.Log("Errores Min " + puntajeErroresMinDos);
-            Debug.Log("Errores Min con max" + puntajeErroresMaxDos);
-            Debug.Log("Errores Min NORMAL" + puntajeErroresDos);
+            Debug.Log("Errores Max " + puntajeErroresMaxDos);
         }
+        if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMinDos", 0))
+        {
+            Debug.Log("if probando");
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+        }
+        /*else
+        {
+            Debug.Log("else probando");
+            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMinDos);
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            Debug.Log("Errores Min " + puntajeErroresMinDos);
+            Debug.Log("Errores Max " + puntajeErroresMaxDos);
+        }*/
+        /*else if (puntajeErroresMinDos > puntajeErroresMaxDos)
+        {
+            Debug.Log("else if");
+            PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMinDos);
+            Debug.Log("Min else if " + puntajeErroresMinDos);
+        }*/
+        /*else
+        {
+            Debug.Log("else");
+            PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMinDos);
+            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+            Debug.Log("Errores Min " + puntajeErroresMinDos);
+            Debug.Log("Errores Max " + puntajeErroresMaxDos);
+        }*/
+        Debug.Log("Contar min " + puntajeErroresMinDos);
+        Debug.Log("Contar max " + puntajeErroresMaxDos);
+        //PlayerPrefs.SetInt("PuntajeErroresMaxDos", puntajeErroresMinDos);
 
         /*if (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresMaxDos", 0))
         {
@@ -396,8 +443,6 @@ public class ControladorPuntos : MonoBehaviour
             Debug.Log("else 3");
             PlayerPrefs.SetInt("PuntajeErroresMaxTres", puntajeErroresMinTres);
             Debug.Log("Errores 3 Min " + puntajeErroresMinTres);
-            Debug.Log("Errores 3 Min con max" + puntajeErroresMinTres);
-            Debug.Log("Errores 3 otros " + puntajeErroresTres);
         }
 
         /*if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0))
