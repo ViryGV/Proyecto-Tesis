@@ -351,11 +351,13 @@ public class ControladorPuntos : MonoBehaviour
             //PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos);
             Debug.Log("Errores Max " + puntajeErroresMaxDos);
 
-        } else if(puntajeErroresDos > PlayerPrefs.GetInt("PuntajeErroresDos", 0))
+        } else if((puntajeErroresDos < PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0)) &&
+            (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresDos", 0)))
         {
             Debug.Log("else if " + puntajeErroresDos);
             //PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresDos);
-            PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos);
+            //PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresDos); //Actuales
+            PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos); //Actuales
             Debug.Log("Errores max en else if " + puntajeErroresMaxDos);
         }
         else

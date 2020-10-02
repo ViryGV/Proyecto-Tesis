@@ -89,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuProfesiones.unity
     guid: e4bf9983328ce4044b1b0e37790e4db1
+  - enabled: 1
+    path: Assets/Scenes/Veterinario.unity
+    guid: 4a8699e229b8f3644b45c79643a5268e
   m_configObjects: {}
