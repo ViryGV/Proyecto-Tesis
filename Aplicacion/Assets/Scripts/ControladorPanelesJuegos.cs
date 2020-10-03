@@ -44,9 +44,14 @@ using UnityEngine;
 /// </summary>
 public class ControladorPanelesJuegos : MonoBehaviour
 {
+    /// <value>Establece el valor del panel que contendrá la pantalla de Juegos</value>
     public GameObject panelJuegos;
+    /// <value>Establece el valor del panel que contendrá la pantalla de las tarjetas/value>
     public GameObject panelActividades;
+    /// <value>Establece el valor del panel que contendrá la pantalla del razonamiento matemático</value>
     public GameObject panelMatematicas;
+    /// <value>Establece el valor del panel que contendrá la pantalla de las opciones 
+    /// de la tarjeta instrucciones visuales</value>
     public GameObject panelReglas;
 
     public void ActivarPanelJuegos()

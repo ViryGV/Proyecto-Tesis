@@ -5,6 +5,11 @@ using TMPro;
 
 //compile with: -doc:DocFileName.xml
 
+/// <summary>
+/// Esta clase maneja el flujo que permite actualizar el número de errores 
+/// y de aciertos de las actividades contenidas en la aplicación 
+/// (tarjetas, historias y razonamiento matemático)
+/// </summary>
 public class ActualizarPuntaje : MonoBehaviour
 {
     //Tarjeta Reconocimiento de Emociones
@@ -77,6 +82,10 @@ public class ActualizarPuntaje : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar a cualquiera de las tarjetas de cualquier nivel
+    /// </summary>
     public void MostrarPuntajeActividades()
     {
         Debug.Log("Entre");

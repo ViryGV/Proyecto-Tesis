@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 //compile with: -doc:DocFileName.xml
 
+/// <summary>
+/// Esta clase maneja el flujo para navegar entre las
+/// distintas opciones de profesiones y oficicios
+/// </summary>
 public class ControladorProfesiones : MonoBehaviour
 {
     /// <value>Establece el valor del panel que contendrá la pantalla de espera</value>
     public GameObject panelCargando;
 
     /// <summary>
-    /// Activa la corrutina para cargar la pantalla de espera para el menú de historias
+    /// Activa la corrutina para cargar la pantalla de espera para 
+    /// el menú de profesiones/Oficios
     /// </summary>
     public void CargarMenuProfesionesOficios()
     {
@@ -20,7 +25,7 @@ public class ControladorProfesiones : MonoBehaviour
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
-    /// se muestran la pantalla de cargando y el menú de historias
+    /// se muestran la pantalla de cargando y el menú de profesiones/oficios
     /// </summary>
     public IEnumerator EsperarPanelCargandoMenuProfesionesOficios()
     {
