@@ -24,7 +24,11 @@ Link: https://freesound.org/people/Banzai_Bonsai/sounds/447581/
 Game Menu BUTTON CLICKING Sound de Christopherderp
 Link: https://freesound.org/people/Christopherderp/sounds/332257/
 7. Progreso
+GUI » High-Tech UI Cancel de plasterbrain
+Link: https://freesound.org/people/plasterbrain/sounds/419494/
 8. Borrar Datos
+Sci Fi » Beam 11 de SieuAmThanh
+Link: https://freesound.org/people/SieuAmThanh/sounds/431732/
 -----------------------------------------------------------------------------
 
 Sección Profesiones
@@ -64,6 +68,9 @@ Link: https://freesound.org/people/Beetlemuse/sounds/528958/
 4. Botón Inicio
 Select_Granted_06.wav de MATRIXXX_
 Link: https://freesound.org/people/MATRIXXX_/sounds/523763/
+5. Botón Practicar
+crashes » lite crash 1980.wav de Veiler
+Link: https://freesound.org/people/Veiler/sounds/528480/
 -----------------------------------------------------------------------------
 
 Menú Actividades
@@ -71,12 +78,14 @@ Menú Actividades
 Button press.wav de ZvinbergsA
 Link: https://freesound.org/people/ZvinbergsA/sounds/273143/
 2. Botón Volver
-
+FX >> Level Up.wav de Benboncan
+Link: https://freesound.org/people/Benboncan/sounds/90633/
 3. Atención
 Retro Game sounds » button select.wav de Cabeeno Rossley
 Link: https://freesound.org/people/Cabeeno%20Rossley/sounds/126418/
 4. Todos los niveles uno
-
+Retro "Accomplished" SFX de suntemple
+Link: https://freesound.org/people/suntemple/sounds/253177/
 5. Todos los niveles dos
 level_up_3note2.wav de jivatma07
 Link: https://freesound.org/people/jivatma07/sounds/76234/
@@ -107,14 +116,28 @@ Información
 1. Botón Actividades
 techniques 1200 turntable start/stops » 1200 start.stop button-02.wav de Lervis
 Link: https://freesound.org/people/Lervis/sounds/31786/
-2. Botón Histoiras
+2. Botón Historias
+Space Cowboy game » snd_blockdeleted.wav de komanderkyle
+Link: https://freesound.org/people/komanderkyle/sounds/482221/
 3. Botón Pensamiento Matemático
+Modular Bass Hits » modular hits#09.43.aif de modularsamples
+Link: https://freesound.org/people/modularsamples/sounds/331262/
 ------------------------------------------------------------------------------
 
 Menú Historias
 1. Historia 1 - 3
 Recording Start de AbdrTar
 Link: https://freesound.org/people/AbdrTar/sounds/519985/
-2. Botón Volver
+2. Volver
 Levl Up de qubodup
 Link: https://freesound.org/people/qubodup/sounds/442943/
+
+***************************************************************************
+Los sonidos para los personajes se listan a continuación: 
+***************************************************************************
+1. Cosmo
+Babble / bla bla bla in stereo / comic / Cartoon de Netpunk
+Link: https://freesound.org/people/Netpunk/sounds/255375/
+2. Tobi
+Bla bla Phone .wav de andresr2003
+Link: https://freesound.org/people/andrest2003/sounds/380480/
