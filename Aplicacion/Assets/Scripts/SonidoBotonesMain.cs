@@ -18,8 +18,10 @@ public class SonidoBotonesMain : MonoBehaviour
     private AudioClip _sonidoCerrar;
     [SerializeField]
     private AudioClip _sonidoRegresar;
-    /*[SerializeField]
-    private AudioClip _sonidoProgreso;*/
+    [SerializeField]
+    private AudioClip _sonidoProgreso;
+    [SerializeField]
+    private AudioClip _sonidoEliminar;
 
     void Start()
     {
@@ -46,14 +48,19 @@ public class SonidoBotonesMain : MonoBehaviour
         _audioSource.PlayOneShot(_sonidoSalir);
     }
 
-    /*public void ReproducirSonidoProgreso()
+    public void ReproducirSonidoProgreso()
     {
         _audioSource.PlayOneShot(_sonidoProgreso);
-    }*/
+    }
 
     public void ReproducirSonidoCerrar()
     {
         _audioSource.PlayOneShot(_sonidoCerrar);
+    }
+
+    public void ReproducirSonidoEliminar()
+    {
+        _audioSource.PlayOneShot(_sonidoEliminar);
     }
 
     public void ReproducirSonidoRegresar()

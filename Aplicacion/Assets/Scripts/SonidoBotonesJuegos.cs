@@ -16,6 +16,8 @@ public class SonidoBotonesJuegos : MonoBehaviour
     private AudioClip _sonidoHistorias;
     [SerializeField]
     private AudioClip _sonidoProfesiones;
+    [SerializeField]
+    private AudioClip _sonidoPracticar;
 
     void Start()
     {
@@ -40,6 +42,11 @@ public class SonidoBotonesJuegos : MonoBehaviour
     public void ReproducirSonidoProfesiones()
     {
         _audioSource.PlayOneShot(_sonidoProfesiones);
+    }
+
+    public void ReproducirSonidoPracticar()
+    {
+        _audioSource.PlayOneShot(_sonidoPracticar);
     }
 
     public void ReproducirSonidoRegresar()

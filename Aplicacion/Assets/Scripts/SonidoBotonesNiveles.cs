@@ -7,6 +7,8 @@ public class SonidoBotonesNiveles : MonoBehaviour
     private AudioSource _audioSource;
 
     [SerializeField]
+    private AudioClip _sonidoNivelUno;
+    [SerializeField]
     private AudioClip _sonidoNivelDos;
     [SerializeField]
     private AudioClip _sonidoNivelTres;
@@ -18,6 +20,11 @@ public class SonidoBotonesNiveles : MonoBehaviour
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+    }
+
+    public void ReproducirSonidoNivelUno()
+    {
+        _audioSource.PlayOneShot(_sonidoNivelUno);
     }
 
     public void ReproducirSonidoNivelDos()

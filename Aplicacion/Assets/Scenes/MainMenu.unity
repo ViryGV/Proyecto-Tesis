@@ -1951,6 +1951,7 @@ GameObject:
   - component: {fileID: 706586639}
   - component: {fileID: 706586638}
   - component: {fileID: 706586637}
+  - component: {fileID: 706586640}
   m_Layer: 5
   m_Name: CerrarButton
   m_TagString: Untagged
@@ -1975,8 +1976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 181.2, y: -142.3}
-  m_SizeDelta: {x: 152.30219, y: 63.35788}
+  m_AnchoredPosition: {x: 198, y: -170}
+  m_SizeDelta: {x: 131.51459, y: 124.670135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706586637
 MonoBehaviour:
@@ -2051,8 +2052,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c513af5023779dd42bf5a0b3471c9342, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2069,6 +2070,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706586635}
   m_CullTransparentMesh: 0
+--- !u!114 &706586640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706586635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2096172409}
+          m_MethodName: ReproducirSonidoCerrar
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &711263872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,7 +7212,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50.35
+  m_fontSize: 43.45
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7387,6 +7416,7 @@ GameObject:
   - component: {fileID: 1992969439}
   - component: {fileID: 1992969438}
   - component: {fileID: 1992969437}
+  - component: {fileID: 1992969440}
   m_Layer: 5
   m_Name: BorrarButton
   m_TagString: Untagged
@@ -7506,6 +7536,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992969435}
   m_CullTransparentMesh: 0
+--- !u!114 &1992969440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992969435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2096172409}
+          m_MethodName: ReproducirSonidoEliminar
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2005154719
 GameObject:
   m_ObjectHideFlags: 0
@@ -7519,6 +7577,7 @@ GameObject:
   - component: {fileID: 2005154722}
   - component: {fileID: 2005154721}
   - component: {fileID: 2005154724}
+  - component: {fileID: 2005154725}
   m_Layer: 5
   m_Name: Button_Progress
   m_TagString: Untagged
@@ -7655,6 +7714,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2005154725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005154719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2096172409}
+          m_MethodName: ReproducirSonidoProgreso
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2037288162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8050,6 +8137,8 @@ MonoBehaviour:
   _sonidoInfo: {fileID: 8300000, guid: f08228f364b779842a68fa3213116ee5, type: 3}
   _sonidoCerrar: {fileID: 8300000, guid: 797711fc060144a4b9432a0381196cba, type: 3}
   _sonidoRegresar: {fileID: 8300000, guid: 7d2c1a90f37e2a741a8255e263ae5433, type: 3}
+  _sonidoProgreso: {fileID: 8300000, guid: 47094110e4664d344b896fc2c4688c3f, type: 3}
+  _sonidoEliminar: {fileID: 8300000, guid: bc5c70ea80c475b4ea26c5db4c99c411, type: 3}
 --- !u!82 &2096172410
 AudioSource:
   m_ObjectHideFlags: 0
