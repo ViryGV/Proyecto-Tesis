@@ -1,0 +1,120 @@
+Todos los efectos de sonido de los botones fueron tomados de la página
+freesound.org
+Créditos a quienes corresponda
+***************************************************************************
+Los sonidos de los botones se listan a continuación: 
+***************************************************************************
+Menú Principal
+1. Botón opciones
+Sonido changing gears de diesel_freesound
+Link: https://freesound.org/people/diesel_freesound/sounds/104550/
+2. Botón Jugar
+Sonido Alert(1) de Beetlemuse
+Link: https://freesound.org/people/Beetlemuse/sounds/529626/
+3. Botón Salir
+Beam button de original_sound
+Link: https://freesound.org/people/original_sound/sounds/364657/
+4. Botón acerca de
+infobleep.wav de Divinux
+Link: https://freesound.org/people/Divinux/sounds/198414/
+5. Botón Regresar
+Pickup Sound de Banzai_Bonsai
+Link: https://freesound.org/people/Banzai_Bonsai/sounds/447581/
+6. Botón Cerrar
+Game Menu BUTTON CLICKING Sound de Christopherderp
+Link: https://freesound.org/people/Christopherderp/sounds/332257/
+7. Progreso
+8. Borrar Datos
+-----------------------------------------------------------------------------
+
+Sección Profesiones
+1. Botón Siguiente
+Flipping page de Mega-X-stream
+Link: https://freesound.org/people/Mega-X-stream/sounds/434182/
+2. Botón Anterior
+Page turn over flip de dersuperanton
+Link: https://freesound.org/people/dersuperanton/sounds/434476/
+3. Botón Bombero
+UI Confirmation, Synthesized » UI Confirmation Alert, B3.wav de InspectorJ
+Link: https://freesound.org/people/InspectorJ/sounds/403009
+4. Botón Terminar
+Foley SFX » Pressing Stop on An Old Tape Machine de djlprojects
+Link: https://freesound.org/people/djlprojects/sounds/392889/
+5. Botón Iniciar
+Start Beep de ACPascal
+Link: https://freesound.org/people/ACPascal/sounds/195912/
+6. Botón reiniciar
+Race Start de JustInvoke
+Link: https://freesound.org/people/JustInvoke/sounds/446142/
+7. Botón Veterinaria
+dog barking » single dog bark 1 de crazymonke9
+Link: https://freesound.org/people/crazymonke9/sounds/418107/
+----------------------------------------------------------------------------
+
+Menú Juegos
+1. Botón Actividades
+Sonido Itemize de Scrampunk
+Link: https://freesound.org/people/Scrampunk/sounds/345297/
+2. Botón Historias
+Books Dropping de deleted_user_3280201
+Link: https://freesound.org/people/deleted_user_3280201/sounds/178611/
+3. Botón Profesiones
+Level Up / Mission Complete de Beetlemuse
+Link: https://freesound.org/people/Beetlemuse/sounds/528958/
+4. Botón Inicio
+Select_Granted_06.wav de MATRIXXX_
+Link: https://freesound.org/people/MATRIXXX_/sounds/523763/
+-----------------------------------------------------------------------------
+
+Menú Actividades
+1. Memoria de Trabajo
+Button press.wav de ZvinbergsA
+Link: https://freesound.org/people/ZvinbergsA/sounds/273143/
+2. Botón Volver
+
+3. Atención
+Retro Game sounds » button select.wav de Cabeeno Rossley
+Link: https://freesound.org/people/Cabeeno%20Rossley/sounds/126418/
+4. Todos los niveles uno
+
+5. Todos los niveles dos
+level_up_3note2.wav de jivatma07
+Link: https://freesound.org/people/jivatma07/sounds/76234/
+6. Todos los niveles tres
+Lush Life Samples » LushLife_LevelUp.wav de SimonBay
+Link: https://freesound.org/people/SimonBay/sounds/439889/
+7. Instrucciones Visuales
+Glitchy pack » Street walking.wav de Obvsly
+Link: https://freesound.org/people/Obvsly/sounds/462991/
+8. Emociones
+Pcyc - blops and pops » Pcyc_synthTop_moveup.wav de ProCynic
+Link: https://freesound.org/people/ProCynic/sounds/31994/
+-----------------------------------------------------------------------------
+
+Menú Reglas
+1. Comedor
+a collection of everyday sounds based on an ecological framework » CutleryOnPlate.wav de mikaelfernstrom
+Link: https://freesound.org/people/mikaelfernstrom/sounds/68679/
+2. Salón de clases
+School » School bell.wav de 13FPanska_Stranska_Michaela
+Link: https://freesound.org/people/13FPanska_Stranska_Michaela/sounds/378394/
+3. Urbanidad
+bucket drummer » 42street2(da hats).aiff de jessdub1
+Link: https://freesound.org/people/jessdub1/sounds/80537/
+-------------------------------------------------------------------------------
+
+Información
+1. Botón Actividades
+techniques 1200 turntable start/stops » 1200 start.stop button-02.wav de Lervis
+Link: https://freesound.org/people/Lervis/sounds/31786/
+2. Botón Histoiras
+3. Botón Pensamiento Matemático
+------------------------------------------------------------------------------
+
+Menú Historias
+1. Historia 1 - 3
+Recording Start de AbdrTar
+Link: https://freesound.org/people/AbdrTar/sounds/519985/
+2. Botón Volver
+Levl Up de qubodup
+Link: https://freesound.org/people/qubodup/sounds/442943/
