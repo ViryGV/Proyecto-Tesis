@@ -1,0 +1,29 @@
+Toda la música de fondo fue tomada de la biblioteca de audio gratuita de
+Youtube, de la sección NO REQUIERE ATRIBUCIÓN; sin embargo es importante este
+archivo .txt para clarificar este punto y darle el crédito a las personas que 
+pusieron a la disposición del público general estos audios musicales.
+
+https://studio.youtube.com/
+
+*******************************************************************
+|  Título de la canción |       Sección        |     Artista      |
+___________________________________________________________________
+|      Motor Hums       |    Menú Principal    |     The 126ers   |
+|      Pure Magic       |    Menú Juegos       |   Chris Haugen   |
+|    I Found DB Cooper  | Selección de niveles |  Craig MacArthur |
+|    My Dog Is Happy    | Niveles de emociones |    Reed Mathis   |
+|   Socialite Mugshot   | Selección niveles R. | Verified Picasso |
+|     Good Morning!     | Niveles instrucciones|    Reed Mathis   |
+|      Into It          | Niveles de atención  |        Kwon      |
+|   RhythmOrganyzer     | Niveles de memoria   | Noir Et Blanc Vie|
+|   News Room News      |    Menú Historias    |       Spence     |
+|      Sunny Day        |      Historia 1      |     Reed Mathis  |
+|     Spring Fling      |      Historia 2      |     TrackTribe   | 
+|    Sweet Release      |      Historia 3      | Dan Lebowitz     |
+|      Sleepy West      |  Panel Mensaje H.    |    JHS Pedals    |
+|     Not Impossible    |   Menú Profesiones   |     The 126ers   |
+| Elevators Need Roct To|  Profesiones/Oficios |     Spence       |
+|       Ella Vater	    |       Progreso       | The Mini Vandals |
+|     Cute Avalanche    |    Panel Cargando    |       RKVC       |
+|    Key to Your Heart  | Panel Nivel superado | The Mini Vandals |
+------------------------------------------------------------------- 
