@@ -2193,7 +2193,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Tambi\xE9n les dan ba\xF1os o les cortan el pelo a las mascotas que lo
-    necesiten. Si est\xE1n heridos cambian las vendan y los revisan hasta que sanan.\nCuidan
+    necesiten. Si est\xE1n heridos cambian las vendas y los revisan hasta que sanan.\nCuidan
     que no tengan pulgas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
