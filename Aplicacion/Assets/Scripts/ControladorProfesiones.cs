@@ -54,4 +54,24 @@ public class ControladorProfesiones : MonoBehaviour
         SceneManager.LoadScene("Veterinario");
         Time.timeScale = 1;
     }
+
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera para los veterinarios
+    /// </summary>
+    public void CargarBomberos()
+    {
+        StartCoroutine(EsperarPanelCargandoBomberos());
+    }
+
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y la opción de veterinarios
+    /// </summary>
+    public IEnumerator EsperarPanelCargandoBomberos()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Bomberos");
+        Time.timeScale = 1;
+    }
 }
