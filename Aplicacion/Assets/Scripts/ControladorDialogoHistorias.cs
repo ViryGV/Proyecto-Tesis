@@ -6,7 +6,7 @@ using TMPro;
 //compile with: -doc:DocFileName.xml
 
 /// <summary>
-/// Esta clase maneja el flujo de las conversaciones de Cosmo
+/// Esta clase maneja el flujo de las conversaciones de Tobi
 /// Y maneja cuando aparecen los objetos del nivel
 /// </summary>
 public class ControladorDialogoHistorias : MonoBehaviour
@@ -82,7 +82,6 @@ public class ControladorDialogoHistorias : MonoBehaviour
     /// </summary>
     public void NextSentence()
     {
-        //_audio.Play();
         botonContinuar.SetActive(false);
         panelPregunta.SetActive(false);
 

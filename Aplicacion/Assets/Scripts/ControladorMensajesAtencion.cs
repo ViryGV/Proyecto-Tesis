@@ -14,35 +14,47 @@ public class ControladorMensajesAtencion : MonoBehaviour
     public GameObject panelMensaje;
 
     /// <summary>
-    /// Activa la corrutina para cargar la pantalla de nivel superado
+    /// Activa la corrutina para cargar la pantalla del 
+    /// nivel superado en atención
     /// </summary>
     public void CargarPanelMensaje()
     {
-        Debug.Log("Mensaje");
         StartCoroutine(EsperarPanelCargando());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla del
+    /// nivel superado en reglas de urbanidad
+    /// </summary>
     public void CargarPanelMensajeUrbanidad()
     {
-        Debug.Log("Mensaje Urbanidad");
         StartCoroutine(EsperarPanelCargandoUrbanidad());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla del
+    /// nivel superado en reglas del comedor
+    /// </summary>
     public void CargarPanelMensajeComedor()
     {
-        Debug.Log("Mensaje Comedor");
         StartCoroutine(EsperarPanelCargandoComedor());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla del
+    /// nivel superado en reglas del salón de clases
+    /// </summary>
     public void CargarPanelMensajeEscuela()
     {
-        Debug.Log("Mensaje Escuela");
         StartCoroutine(EsperarPanelCargandoEscuela());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla del
+    /// nivel superado en memoria de trabajo
+    /// </summary>
     public void CargarPanelMensajeMemoria()
     {
-        Debug.Log("Mensaje memoria");
         StartCoroutine(EsperarPanelCargandoMemoria());
     }
 

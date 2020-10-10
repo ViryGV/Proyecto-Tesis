@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 //compile with: -doc:DocFileName.xml
 
 /// <summary>
-/// Esta clase maneja el flujo del mensaje que indica cuando haz superado un nivel
+/// Esta clase maneja el flujo del mensaje que aparecerá al finalizar la historia
+/// Puede ser un mensaje de que el usuario acerto o uno donde le indica al usuario
+/// porque se equivocó
 /// </summary>
 public class PantallaMensajesHistorias : MonoBehaviour
 {
@@ -15,17 +17,17 @@ public class PantallaMensajesHistorias : MonoBehaviour
     public GameObject panelMensaje;
 
     /// <summary>
-    /// Activa la corrutina para cargar la pantalla de nivel superado
+    /// Activa la corrutina para cargar la pantalla del mensaje
+    /// indicando porque se equivocó
     /// </summary>
     public void CargarPanelMensajeEquivocado()
     {
-        Debug.Log("Mensaje");
         StartCoroutine(EsperarPanelMensajeEquivocado());
     }
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
-    /// se muestran la pantalla del mensaje y el menú de los niveles de atención
+    /// se muestran la pantalla del mensaje y el menú de las historias
     /// </summary>
     public IEnumerator EsperarPanelMensajeEquivocado()
     {
@@ -36,17 +38,17 @@ public class PantallaMensajesHistorias : MonoBehaviour
     }
 
     /// <summary>
-    /// Activa la corrutina para cargar la pantalla de nivel superado
+    /// Activa la corrutina para cargar la pantalla con el mensaje de que
+    /// el usuario acertó en la respuesta
     /// </summary>
     public void CargarPanelMensaje()
     {
-        Debug.Log("Mensaje");
         StartCoroutine(EsperarPanelMensaje());
     }
 
     /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
-    /// se muestran la pantalla del mensaje y el menú de los niveles de atención
+    /// se muestran la pantalla del mensaje y el menú de las historias
     /// </summary>
     public IEnumerator EsperarPanelMensaje()
     {

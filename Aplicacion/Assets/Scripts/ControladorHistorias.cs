@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 //compile with: -doc:DocFileName.xml
 
+/// <summary>
+/// Esta clase permite navegar entre el menú de las historias
+/// y entre las historias existentes
+/// </summary>
+
 public class ControladorHistorias : MonoBehaviour
 {
     /// <value>Establece el valor del panel que contendrá la pantalla de espera</value>

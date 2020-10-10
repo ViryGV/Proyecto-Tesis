@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+//compile with: -doc:DocFileName.xml
+
 /// <summary>
 /// Esta clase maneja el flujo de los niveles que han sido desbloqueados
 /// generando un archivo donde se guarda esa información y posteriormente
@@ -42,9 +44,7 @@ public class CargarGuardar : MonoBehaviour
         FileStream file = File.Create(_rutaArchivo);
         GuardarDatos datos = new GuardarDatos(ControladorJuego.nivelesDisponibles, ControladorJuego.nivelesDisponiblesAtencion, ControladorJuego.nivelesDisponiblesComedor, 
                                                 ControladorJuego.nivelesDisponiblesUrbanidad, ControladorJuego.nivelesDisponiblesMemoria, ControladorJuego.nivelesDisponiblesEscuela);
-        //Algo datosAtencion = new Algo(ControladorJuego.nivelesDisponiblesAtencion);
         bf.Serialize(file, datos);
-        //bf.Serialize(file, datosAtencion);
         file.Close();
     }
 
@@ -59,7 +59,6 @@ public class CargarGuardar : MonoBehaviour
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(_rutaArchivo, FileMode.Open);
             GuardarDatos datos = (GuardarDatos)bf.Deserialize(file);
-            //Algo datosAtencion = (Algo)bf.Deserialize(file);
             ControladorJuego.nivelesDisponibles = datos.nivelesDesbloqueados;
             ControladorJuego.nivelesDisponiblesAtencion = datos.nivelesDesbloqueadosAtencion;
             ControladorJuego.nivelesDisponiblesComedor = datos.nivelesDesbloqueadosComedor;

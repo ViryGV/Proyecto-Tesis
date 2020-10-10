@@ -92,7 +92,6 @@ public class ControladorPanelesJuegos : MonoBehaviour
 
     public void DesactivarPanelReglas()
     {
-        //panelJuegos.SetActive(true);
         panelActividades.SetActive(true);
         panelReglas.SetActive(false);
     }

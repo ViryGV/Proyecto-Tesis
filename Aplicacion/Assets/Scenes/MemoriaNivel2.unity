@@ -7867,11 +7867,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028555262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e27eb46870ed7a94ca58d74fa0a4864b, type: 3}
+  m_Script: {fileID: 11500000, guid: e44218e344ab517429683412f1df320d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textoDisplay: {fileID: 1832638108}
   botonContinuar: {fileID: 224247543}
+  panelPregunta: {fileID: 1900025039}
   palabras:
   - "Hab\xEDa una vez un dinosauario llamado Rex."
   - "A Rex le gusta jugar con su pelota favorita todos los d\xEDas"
@@ -8579,11 +8580,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122538470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e27eb46870ed7a94ca58d74fa0a4864b, type: 3}
+  m_Script: {fileID: 11500000, guid: e44218e344ab517429683412f1df320d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textoDisplay: {fileID: 1832638108}
   botonContinuar: {fileID: 1741590809}
+  panelPregunta: {fileID: 1257552533}
   palabras:
   - Rex y Samantha jugaron con la pelota
   - "Durante toda la tarde, m\xE1s la hora de que Samantha regresar\xE1 a casa lleg\xF3"
@@ -11938,11 +11940,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662424963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e27eb46870ed7a94ca58d74fa0a4864b, type: 3}
+  m_Script: {fileID: 11500000, guid: e44218e344ab517429683412f1df320d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textoDisplay: {fileID: 1832638108}
   botonContinuar: {fileID: 1831918161}
+  panelPregunta: {fileID: 562542289}
   palabras:
   - "Un d\xEDa, mientras Rex se encontraba jugando solo"
   - "Lleg\xF3 una vecina llamada Samantha"
@@ -11983,7 +11986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1696300281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12062,7 +12065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1733035819
 RectTransform:
   m_ObjectHideFlags: 0

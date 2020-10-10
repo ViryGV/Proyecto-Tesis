@@ -12,47 +12,59 @@ public class ControladorNiveles : MonoBehaviour
 {
     /// <value>Establece el valor del panel que contendrá la pantalla de espera</value>
     public GameObject panelCargando;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /// <summary>
-    /// Activa la corrutina para cargar la pantalla de espera para los niveles
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de reconocimiento de emociones
     /// </summary>
     public void CargarPanelNivel()
     {
         StartCoroutine(EsperarPanelCargando());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de atención
+    /// </summary>
     public void CargarPanelNivelAtencion()
     {
         StartCoroutine(EsperarPanelCargandoAtencion());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de intrucciones visuales 
+    /// (parte reglas del comedor)
+    /// </summary>
     public void CargarPanelNivelReglasComedor()
     {
         StartCoroutine(EsperarPanelCargandoReglasComedor());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de intrucciones visuales 
+    /// (parte reglas de urbanidad)
+    /// </summary>
     public void CargarPanelNivelReglasUrbanidad()
     {
         StartCoroutine(EsperarPanelCargandoReglasUrbanidad());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de intrucciones visuales 
+    /// (parte reglas del salón de clases)
+    /// </summary>
     public void CargarPanelNivelReglasEscuela()
     {
         StartCoroutine(EsperarPanelCargandoReglasEscuela());
     }
 
+    /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera 
+    /// para los niveles de memoria de trabajo
+    /// </summary>
     public void CargarPanelNivelMemoria()
     {
         StartCoroutine(EsperarPanelCargandoMemoria());

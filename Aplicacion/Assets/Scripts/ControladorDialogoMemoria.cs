@@ -6,21 +6,28 @@ using TMPro;
 //compile with: -doc:DocFileName.xml
 
 /// <summary>
-/// Esta clase maneja el flujo de las conversaciones de Cosmo
-/// Y maneja cuando aparecen los objetos del nivel
+/// Esta clase maneja el flujo de las oraciones que conforman
+/// la historia y determina cuando aparecerán el resto de elementos
 /// </summary>
-public class ControladorDialogoAtencion : MonoBehaviour
+public class ControladorDialogoMemoria : MonoBehaviour
 {
     /// <value>Establece el valor del texto que será mostrado en pantalla</value>
     public TextMeshProUGUI textoDisplay;
     /// <value>Establece el valor para poder seguir avanzando en la conversación</value>
     public GameObject botonContinuar;
-    /// <value>Permite tener acceso al contenido del texto</value>
-    public GameObject textoAciertos;
-    /// <value>Permite poder manipular el objeto</value>
-    public GameObject girl;
-    /// <value>Establece el valor para asignarle un panel</value>
-    public GameObject panel;
+    /// <summary>
+    /// <list type="bullet">
+    /// <item>
+    /// <term>textoPregunta</term>
+    /// <description>Texto indicativo donde irá la pregunta</description>
+    /// </item>
+    /// <item>
+    /// <term>textoAciertos</term>
+    /// <description>Texto indicativo donde se irán mostrando el valor de aciertos</description>
+    /// </item>
+    /// </list>
+    /// </summary>
+    public GameObject panelPregunta;
 
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
     public string[] palabras;
@@ -74,10 +81,9 @@ public class ControladorDialogoAtencion : MonoBehaviour
     /// </summary>
     public void NextSentence()
     {
+        //_audio.Play();
         botonContinuar.SetActive(false);
-        textoAciertos.SetActive(false);
-        girl.SetActive(false);
-        panel.SetActive(false);
+        panelPregunta.SetActive(false);
 
         // Si el índice de las palabras es menor al tamaño de ellas 
         // se incrementa un valor, los objetos permanecen desabilitados
@@ -94,9 +100,7 @@ public class ControladorDialogoAtencion : MonoBehaviour
         {
             textoDisplay.text = "";
             botonContinuar.SetActive(false);
-            textoAciertos.SetActive(true);
-            girl.SetActive(true);
-            panel.SetActive(true);
+            panelPregunta.SetActive(true);
         }
     }
 }

@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//compile with: -doc:DocFileName.xml
+
+/// <summary>
+/// Esta clase maneja el flujo de las oraciones que conforman
+/// La narración de la historia y cuando deben aparecer las preguntas
+/// </summary>
 public class ControladorPuntosMemoriaHistoria : MonoBehaviour
 {
     /// <value>Establece el valor de los aciertos que será mostrado en pantalla</value>
@@ -341,10 +347,8 @@ public class ControladorPuntosMemoriaHistoria : MonoBehaviour
 
     public void ActivarPanelParteDos()
     {
-        panelParteDos.SetActive(true);
         objetoHistoriaDos.SetActive(true);
         continuarDos.SetActive(true);
-        panelDUno.SetActive(true);
         renderTres.enabled = false;
         renderCuatro.enabled = true;
     }
@@ -385,10 +389,8 @@ public class ControladorPuntosMemoriaHistoria : MonoBehaviour
 
     public void ActivarPanelParteTres()
     {
-        panelParteTres.SetActive(true);
         objetoHistoriaTres.SetActive(true);
         continuarTres.SetActive(true);
-        panelTUno.SetActive(true);
         renderCuatro.enabled = true;
     }
 

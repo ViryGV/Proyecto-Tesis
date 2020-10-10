@@ -43,9 +43,13 @@ using UnityEngine;
 /// </summary>
 public class ControladorPaneles : MonoBehaviour
 {
+    /// <value>Almacena el valor que tendrá los elementos del panel principal</value>
     public GameObject panelPrincipal;
+    /// <value>Almacena el valor que tendrá los elementos del panel salir del juego</value>
     public GameObject panelSalir;
+    /// <value>Almacena el valor que tendrá los elementos del panel información/acerca de</value>
     public GameObject panelInfo;
+    /// <value>Almacena el valor que tendrá los elementos del panelde opciones</value>
     public GameObject panelOpciones;
 
     public void ActivarPanelPrincipal()
@@ -58,10 +62,9 @@ public class ControladorPaneles : MonoBehaviour
         panelPrincipal.SetActive(false);
     }
 
-    public void ActivarPanelOpciones() //Personajes
+    public void ActivarPanelOpciones()
     {
         panelOpciones.SetActive(true);
-        //panelPrincipal.SetActive(false);
     }
 
     public void DesactivarPanelOpciones()
@@ -73,7 +76,6 @@ public class ControladorPaneles : MonoBehaviour
     public void ActivarPanelInfo()
     {
         panelInfo.SetActive(true);
-        //panelPrincipal.SetActive(false);
     }
 
     public void DesactivarPanelInfo()
@@ -85,7 +87,6 @@ public class ControladorPaneles : MonoBehaviour
     public void ActivarPanelSalir()
     {
         panelSalir.SetActive(true);
-        //panelPrincipal.SetActive(false);
     }
 
     public void DesactivarPanelSalir()

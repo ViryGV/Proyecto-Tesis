@@ -16,9 +16,6 @@ public class ControladorDialogoMenu : MonoBehaviour
     /// <value>Establece el valor para poder seguir avanzando en la conversación</value>
     public GameObject botonContinuar;
 
-    /// <value>Establece el valor para poner sonido en la conversación</value>
-    private AudioSource _audio;
-
     /// <value>Crea un arreglo para las sentencias del diálogo</value>
     public string[] palabras;
     /// <value>Establece el valor de la velocidad en el que cargan las oraciones</value>
@@ -32,9 +29,6 @@ public class ControladorDialogoMenu : MonoBehaviour
     /// </summary>
     void Start()
     {
-        //_audio = GetComponent<AudioSource>();
-        Debug.Log(_audio);
-        Debug.Log("Start");
         StartCoroutine(Type());
     }
 
@@ -74,7 +68,6 @@ public class ControladorDialogoMenu : MonoBehaviour
     /// </summary>
     public void NextSentence()
     {
-        //_audio.Play();
         botonContinuar.SetActive(false);
 
         // Si el índice de las palabras es menor al tamaño de ellas 
@@ -84,8 +77,6 @@ public class ControladorDialogoMenu : MonoBehaviour
         {
             _index++;
             textoDisplay.text = "";
-            Debug.Log(_audio);
-            //_audio.Play();
             StartCoroutine(Type());
         }
         else

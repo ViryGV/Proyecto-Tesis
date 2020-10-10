@@ -30,9 +30,6 @@ public class ControladorDialogo : MonoBehaviour
     public GameObject textoPregunta;
     public GameObject textoAciertos;
 
-    /// <value>Establece el valor para poner sonido en la conversación</value>
-    private AudioSource _audio;
-
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorPuntos controladorPuntos;
 
@@ -49,7 +46,6 @@ public class ControladorDialogo : MonoBehaviour
     /// </summary>
     void Start()
     {
-        //_audio = GetComponent<AudioSource>();
         StartCoroutine(Type());
     }
 
@@ -97,7 +93,6 @@ public class ControladorDialogo : MonoBehaviour
     /// </summary>
     public void NextSentence()
     {
-        //_audio.Play();
         botonContinuar.SetActive(false);
         textoPregunta.SetActive(false);
         textoAciertos.SetActive(false);

@@ -4,19 +4,13 @@ using UnityEngine;
 
 //compile with: -doc:DocFileName.xml
 
-    /// <summary>
-    /// Esta clase maneja el tiempo de vida de los cuadros de diálogo
-    /// </summary>
+/// <summary>
+/// Esta clase maneja el tiempo de vida de los cuadros de diálogo
+/// </summary>
 public class ControladorBurbuja : MonoBehaviour
 {
     /// <value>Establece el valor flotante del tiempo de vida que tiene en pantalla los cuadros de diálogo</value>
     public float tiempoVida;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     /// <summary>

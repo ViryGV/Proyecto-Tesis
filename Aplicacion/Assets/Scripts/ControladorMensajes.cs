@@ -13,19 +13,11 @@ public class ControladorMensajes : MonoBehaviour
     /// <value>Establece el valor del panel que contendrá la pantalla del mensaje</value>
     public GameObject panelMensaje;
 
-    private AudioSource _audio;
-
-    void Awake()
-    {
-        _audio = GetComponent<AudioSource>();
-    }
-
     /// <summary>
     /// Activa la corrutina para cargar la pantalla de nivel superado
     /// </summary>
     public void CargarPanelMensaje()
     {
-        Debug.Log("Mensaje");
         StartCoroutine(EsperarPanelCargando());
     }
 
@@ -36,7 +28,6 @@ public class ControladorMensajes : MonoBehaviour
     public IEnumerator EsperarPanelCargando()
     {
         panelMensaje.SetActive(true);
-        //_audio.Play();
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesEmociones");
         Time.timeScale = 1;
