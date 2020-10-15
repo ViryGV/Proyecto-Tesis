@@ -20,6 +20,9 @@ public class SonidoPersonajes : MonoBehaviour
     /// <value>Variable serializada para almacenar el sonido del personaje de Tobi</value>
     [SerializeField]
     private AudioClip _sonidoTobi;
+    /// <value>Variable serializada para almacenar el sonido del personaje de Penelope</value>
+    [SerializeField]
+    private AudioClip _sonidoPenelope;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -45,5 +48,14 @@ public class SonidoPersonajes : MonoBehaviour
     public void ReproducirSonidoTobi()
     {
         _audioSource.PlayOneShot(_sonidoTobi);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoPenelope()
+    {
+        _audioSource.PlayOneShot(_sonidoPenelope);
     }
 }

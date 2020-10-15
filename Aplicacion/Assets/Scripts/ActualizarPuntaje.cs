@@ -76,6 +76,12 @@ public class ActualizarPuntaje : MonoBehaviour
     public static int guardarHistoriaMin;
     public static int aciertosHistoria;
 
+    /*void Start()
+    {
+        textoGuardarEmocionesDosMax.enabled = true;
+        textoGuardarEmocionesDosIntermedio.enabled = false;
+    }*/
+
     // Update is called once per frame
     void Update()
     {
@@ -91,16 +97,89 @@ public class ActualizarPuntaje : MonoBehaviour
         Debug.Log("Entre");
         barraActividades.SetActive(true);
         barraHistorias.SetActive(false);
-        textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
+        textoGuardarEmocionesDosMin.enabled = false;
+        //Emociones
+        /*textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErroresMax", 0).ToString();
         textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErroresMin", 0).ToString();
-        textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
-        textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
-        textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+        */
+
+        //textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+        //textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+        //if ((PlayerPrefs.GetInt("PuntajeErroresMinDos", 0) > 1) && (PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0) == 0))
+
+
+        if (PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0) == PlayerPrefs.GetInt("PuntajeErroresMinDos", 0))
+        {
+            Debug.Log("Estoy en if actuales");
+            textoGuardarEmocionesDosMax.enabled = true;
+            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+
+            //textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+        } //else if (PlayerPrefs.GetInt("PuntajeErroresMinDos", 0) > PlayerPrefs.GetInt("PuntajeErroresDos", 0))
+        else if (PlayerPrefs.GetInt("PuntajeErroresDos", 0) > PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0))
+        {
+            Debug.Log("Estoy en else if ");
+            textoGuardarEmocionesDosMax.enabled = true;
+            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+        }
+        else if (PlayerPrefs.GetInt("PuntajeErroresDos", 0) != PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0))
+        {
+            Debug.Log("Estoy en else if actuales");
+            textoGuardarEmocionesDosMax.enabled = true;
+            //textoGuardarEmocionesDosMin.enabled = true;
+            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+            //textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+        }
+        else //if (PlayerPrefs.GetInt("PuntajeErroresDos", 0) < PlayerPrefs.GetInt("PuntajeErroresAnterioresDos", 0))
+        {
+            Debug.Log("Estoy en else if anteriores");
+            textoGuardarEmocionesDosMin.enabled = true;
+            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+            textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+        }
+        
+        /*else if (PlayerPrefs.GetInt("PuntajeErroresAnterioresDos", 0) == PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0))
+        
+        //else if (PlayerPrefs.GetInt("PuntajeErroresMinDos", 0) >= 1)
+        {
+            Debug.Log("Estoy en else if");
+            textoGuardarEmocionesDosMax.enabled = false;
+            textoGuardarEmocionesDosMin.enabled = true;
+            textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+            //textoGuardarEmocionesDosMin.enabled = true;
+            //textoGuardarEmocionesDosMax.enabled = false;
+            //textoGuardarEmocionesDosMax.enabled = true;
+            //textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+            //textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();  
+        } else
+        {
+            Debug.Log("Estoy en else");
+            textoGuardarEmocionesDosMax.enabled = false;
+            textoGuardarEmocionesDosMin.enabled = true;
+            textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+        } 
+        /*else 
+        {
+            Debug.Log("Estoy en else");
+            textoGuardarEmocionesDosMax.enabled = true;
+            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+            textoGuardarEmocionesDosMax.enabled = false;
+            textoGuardarEmocionesDosMin.enabled = true;
+            textoGuardarEmocionesDosMin.text = PlayerPrefs.GetInt("PuntajeErroresDos", 0).ToString();
+        }*/
+
+
+
+
+
         textoGuardarEmocionesTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0).ToString();
         textoGuardarEmocionesTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMinTres", 0).ToString();
-        textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
-        textoAciertosEmocionesDos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
-        textoAciertosEmocionesTres.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
+        textoAciertosEmociones.text = PlayerPrefs.GetInt("PuntajeAciertosEUno", 0).ToString();
+        textoAciertosEmocionesDos.text = PlayerPrefs.GetInt("PuntajeAciertosEDos", 0).ToString();
+        textoAciertosEmocionesTres.text = PlayerPrefs.GetInt("PuntajeAciertosETres", 0).ToString();
         //Atencion
         textoGuardarAtencionMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMax", 0).ToString();
         textoGuardarAtencionMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencion", 0).ToString();

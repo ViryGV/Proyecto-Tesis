@@ -218,7 +218,7 @@ public class ControladorPuntos : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntaje()
+    public void SumarPuntajeNivelUno()
     {
         puntajeAciertos += 1;
         ActualizarTextoPuntaje();
@@ -273,9 +273,139 @@ public class ControladorPuntos : MonoBehaviour
         if (puntajeAciertos >= 8)
         {
             controladorJuego.DesbloquearNivel();
-            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertos", 0))
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosEUno", 0))
             {
-                PlayerPrefs.SetInt("PuntajeAciertos", puntajeAciertos);
+                PlayerPrefs.SetInt("PuntajeAciertosEUno", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeNivelDos()
+    {
+        puntajeAciertos += 1;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 1)
+        {
+            Debug.Log("puntaje 1");
+            DesactivarPanelAlegria();
+            ActivarPanelEnojo();
+        }
+        if (puntajeAciertos >= 2)
+        {
+            Debug.Log("puntaje 2");
+            DesactivarPanelEnojo();
+            ActivarPanelTristeza();
+        }
+        if (puntajeAciertos >= 3)
+        {
+            Debug.Log("puntaje 3");
+            DesactivarPanelTristeza();
+            ActivarPanelSorpresa();
+        }
+        if (puntajeAciertos >= 4)
+        {
+            Debug.Log("puntaje 4");
+            DesactivarPanelSorpresa();
+            ActivarPanelTemor();
+        }
+        if (puntajeAciertos >= 5)
+        {
+            Debug.Log("puntaje 5");
+            DesactivarPanelTemor();
+            ActivarPanelAburrido();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            Debug.Log("puntaje 6");
+            DesactivarPanelAburrido();
+            ActivarPanelPreocupado();
+        }
+        if (puntajeAciertos >= 7)
+        {
+            Debug.Log("puntaje 7");
+            DesactivarPanelPreocupado();
+            ActivarPanelCansado();
+        }
+
+        if (puntajeAciertos >= 8)
+        {
+            controladorJuego.DesbloquearNivel();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosEDos", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosEDos", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeNivelTres()
+    {
+        puntajeAciertos += 1;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 1)
+        {
+            Debug.Log("puntaje 1");
+            DesactivarPanelAlegria();
+            ActivarPanelEnojo();
+        }
+        if (puntajeAciertos >= 2)
+        {
+            Debug.Log("puntaje 2");
+            DesactivarPanelEnojo();
+            ActivarPanelTristeza();
+        }
+        if (puntajeAciertos >= 3)
+        {
+            Debug.Log("puntaje 3");
+            DesactivarPanelTristeza();
+            ActivarPanelSorpresa();
+        }
+        if (puntajeAciertos >= 4)
+        {
+            Debug.Log("puntaje 4");
+            DesactivarPanelSorpresa();
+            ActivarPanelTemor();
+        }
+        if (puntajeAciertos >= 5)
+        {
+            Debug.Log("puntaje 5");
+            DesactivarPanelTemor();
+            ActivarPanelAburrido();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            Debug.Log("puntaje 6");
+            DesactivarPanelAburrido();
+            ActivarPanelPreocupado();
+        }
+        if (puntajeAciertos >= 7)
+        {
+            Debug.Log("puntaje 7");
+            DesactivarPanelPreocupado();
+            ActivarPanelCansado();
+        }
+
+        if (puntajeAciertos >= 8)
+        {
+            controladorJuego.DesbloquearNivel();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosETres", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosEtres", puntajeAciertos);
             }
         }
     }
@@ -358,6 +488,7 @@ public class ControladorPuntos : MonoBehaviour
             //PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresDos);
             //PlayerPrefs.SetInt("PuntajeErroresActualesDos", puntajeErroresDos); //Actuales
             PlayerPrefs.SetInt("PuntajeErroresDos", puntajeErroresDos); //Actuales
+            PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMinDos);
             Debug.Log("Errores max en else if " + puntajeErroresMaxDos);
         }
         else
