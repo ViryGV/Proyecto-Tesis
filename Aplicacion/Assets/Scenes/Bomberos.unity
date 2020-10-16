@@ -2784,7 +2784,7 @@ GameObject:
   - component: {fileID: 566026006}
   - component: {fileID: 566026005}
   m_Layer: 0
-  m_Name: Buho
+  m_Name: Tadeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2797,7 +2797,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566026003}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2806,8 +2806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -648, y: 17}
-  m_SizeDelta: {x: 335.97852, y: 359.28513}
+  m_AnchoredPosition: {x: -381, y: 37}
+  m_SizeDelta: {x: 378.84644, y: 490.95084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566026005
 MonoBehaviour:
@@ -2828,7 +2828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -637075139925974293, guid: 20fc6fb12b823c1458e1cbc063f308ba,
+  m_Sprite: {fileID: -5598186342643203869, guid: c673da7d2053e9c44b523d7eca66d57c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3400,7 +3400,7 @@ GameObject:
   - component: {fileID: 686927153}
   - component: {fileID: 686927152}
   m_Layer: 0
-  m_Name: Buho
+  m_Name: Tadeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3422,7 +3422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 782, y: -103}
+  m_AnchoredPosition: {x: 788, y: 148}
   m_SizeDelta: {x: 335.97852, y: 359.28513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686927152
@@ -3444,7 +3444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -637075139925974293, guid: 20fc6fb12b823c1458e1cbc063f308ba,
+  m_Sprite: {fileID: -5598186342643203869, guid: c673da7d2053e9c44b523d7eca66d57c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5371,6 +5371,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979860565}
   m_CullTransparentMesh: 0
+--- !u!1 &1047884287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047884290}
+  - component: {fileID: 1047884289}
+  - component: {fileID: 1047884288}
+  m_Layer: 0
+  m_Name: ControladorSonidoPersonajes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1047884288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047884287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894363a261dbd8d45ac7778cc7be939d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sonidoCosmo: {fileID: 8300000, guid: d10b67aa33c13f0459b66dbc938183ac, type: 3}
+  _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
+  _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
+  _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+--- !u!82 &1047884289
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047884287}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1047884290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047884287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 986.7464, y: 561.10767, z: -353.65894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083534913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5561,7 +5705,7 @@ GameObject:
   - component: {fileID: 1128746955}
   - component: {fileID: 1128746954}
   m_Layer: 0
-  m_Name: Buho
+  m_Name: Tadeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5583,7 +5727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 782, y: -103}
+  m_AnchoredPosition: {x: 776, y: 68}
   m_SizeDelta: {x: 335.97852, y: 359.28513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128746954
@@ -5605,7 +5749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -637075139925974293, guid: 20fc6fb12b823c1458e1cbc063f308ba,
+  m_Sprite: {fileID: -5598186342643203869, guid: c673da7d2053e9c44b523d7eca66d57c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -6348,6 +6492,64 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1240221893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240221895}
+  - component: {fileID: 1240221894}
+  m_Layer: 0
+  m_Name: ControladorDialogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1240221894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240221893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27eb46870ed7a94ca58d74fa0a4864b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoDisplay: {fileID: 2036537199}
+  botonContinuar: {fileID: 1583070056}
+  palabras:
+  - Hola! Nos volvemos a encontrar
+  - "Espero que Pen\xE9lope"
+  - "Te este ayudando como prometi\xF3"
+  - Veo que te interesaste por los bomberos
+  - "Yo s\xE9 mucho sobre ellos y otras profesiones"
+  - "Que ir\xE1s descubriendo"
+  - "Si te adentr\xE1s a explorar esta secci\xF3n"
+  - Si ya deseas conocer que hace un bombero
+  - "Presiona el bot\xF3n iniciar"
+  - "Y te contar\xE9 todo lo que s\xE9"
+  - Nos vemos!
+  typingSpeed: 0.02
+--- !u!4 &1240221895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240221893}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 970.6977, y: 344.36237, z: -1938.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1265344779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,6 +7863,7 @@ GameObject:
   - component: {fileID: 1583070060}
   - component: {fileID: 1583070059}
   - component: {fileID: 1583070058}
+  - component: {fileID: 1583070061}
   m_Layer: 5
   m_Name: SiguienteText
   m_TagString: Untagged
@@ -7684,7 +7887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307, y: -420}
+  m_AnchoredPosition: {x: -627, y: -43}
   m_SizeDelta: {x: 121.32605, y: 53.146942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583070058
@@ -7730,7 +7933,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1240221894}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -7860,6 +8063,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583070056}
   m_CullTransparentMesh: 0
+--- !u!114 &1583070061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583070056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1047884288}
+          m_MethodName: ReproducirSonidoTadeo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1585781300
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,7 +8343,6 @@ GameObject:
   - component: {fileID: 1636281112}
   - component: {fileID: 1636281115}
   - component: {fileID: 1636281114}
-  - component: {fileID: 1636281113}
   m_Layer: 5
   m_Name: BurbujaDialogo
   m_TagString: Untagged
@@ -8137,22 +8367,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 174.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -240, y: 36}
-  m_SizeDelta: {x: 354.67566, y: 202.78076}
+  m_AnchoredPosition: {x: -610, y: 63}
+  m_SizeDelta: {x: 412.85205, y: 255.0495}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1636281113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636281111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b31bb85fd4ae587439e047d45422cb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoVida: 16
 --- !u!114 &1636281114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8753,7 +8970,7 @@ GameObject:
   - component: {fileID: 1736807635}
   - component: {fileID: 1736807634}
   m_Layer: 0
-  m_Name: Buho
+  m_Name: Tadeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8775,7 +8992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 782, y: -103}
+  m_AnchoredPosition: {x: 782, y: 68}
   m_SizeDelta: {x: 335.97852, y: 359.28513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736807634
@@ -8797,7 +9014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -637075139925974293, guid: 20fc6fb12b823c1458e1cbc063f308ba,
+  m_Sprite: {fileID: -5598186342643203869, guid: c673da7d2053e9c44b523d7eca66d57c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -10091,7 +10308,7 @@ GameObject:
   - component: {fileID: 2033577811}
   - component: {fileID: 2033577810}
   m_Layer: 0
-  m_Name: Buho
+  m_Name: Tadeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10113,7 +10330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -678, y: 124}
+  m_AnchoredPosition: {x: -638, y: 136}
   m_SizeDelta: {x: 335.97852, y: 359.28513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033577810
@@ -10135,7 +10352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -637075139925974293, guid: 20fc6fb12b823c1458e1cbc063f308ba,
+  m_Sprite: {fileID: -5598186342643203869, guid: c673da7d2053e9c44b523d7eca66d57c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -10188,8 +10405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.6, y: -15.1}
-  m_SizeDelta: {x: 171.67737, y: 141.2616}
+  m_AnchoredPosition: {x: 41.3, y: -7.6}
+  m_SizeDelta: {x: 205.35931, y: 178.00562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036537199
 MonoBehaviour:

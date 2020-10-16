@@ -7,7 +7,6 @@ using UnityEngine;
 /// <summary>
 /// Esta clase maneja el flujo para reproducir los sonidos
 /// de los botones de los personajes de la aplicación
-/// de navegación del menú
 /// </summary>
 public class SonidoPersonajes : MonoBehaviour
 {
@@ -23,6 +22,9 @@ public class SonidoPersonajes : MonoBehaviour
     /// <value>Variable serializada para almacenar el sonido del personaje de Penelope</value>
     [SerializeField]
     private AudioClip _sonidoPenelope;
+    /// <value>Variable serializada para almacenar el sonido del personaje de Tadeo</value>
+    [SerializeField]
+    private AudioClip _sonidoTadeo;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -57,5 +59,14 @@ public class SonidoPersonajes : MonoBehaviour
     public void ReproducirSonidoPenelope()
     {
         _audioSource.PlayOneShot(_sonidoPenelope);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoTadeo()
+    {
+        _audioSource.PlayOneShot(_sonidoTadeo);
     }
 }
