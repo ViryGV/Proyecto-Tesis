@@ -8,6 +8,8 @@ public class ControladorPanelesInfo : MonoBehaviour
     public GameObject panelEmociones;
     public GameObject panelAtencion;
     public GameObject panelMemoria;
+    public GameObject panelInstrucciones;
+    public GameObject barraHistorias;
 
     public void ActivarPanelActividades()
     {
@@ -20,6 +22,8 @@ public class ControladorPanelesInfo : MonoBehaviour
         panelEmociones.SetActive(false);
         panelAtencion.SetActive(false);
         panelMemoria.SetActive(false);
+        panelInstrucciones.SetActive(false);
+        barraHistorias.SetActive(false);
     }
 
     public void ActivarPanelEmociones()
@@ -27,16 +31,24 @@ public class ControladorPanelesInfo : MonoBehaviour
         panelEmociones.SetActive(true);
         panelAtencion.SetActive(false);
         panelMemoria.SetActive(false);
+        panelInstrucciones.SetActive(false);
     }
 
     public void ActivarPanelAtencion()
     {
         panelAtencion.SetActive(true);
         panelMemoria.SetActive(false);
+        panelInstrucciones.SetActive(false);
     }
 
     public void ActivarPanelMemoria()
     {
         panelMemoria.SetActive(true);
+        panelInstrucciones.SetActive(false);
+    }
+
+    public void ActivarPanelInstrucciones()
+    {
+        panelInstrucciones.SetActive(true);
     }
 }

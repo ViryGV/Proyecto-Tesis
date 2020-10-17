@@ -115,13 +115,6 @@ public class ControladorPuntosMemoria : MonoBehaviour
         puntajeErroresMaxTres = 0;
         puntajeErroresMinTres = 0;
         puntajeAciertos = 0;
-        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresMemoria", 0).ToString();
-        textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMax", 0).ToString();
-        textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMin", 0).ToString();
-        textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
-        textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxTres", 0).ToString();
-        textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     /// <summary>
@@ -135,7 +128,7 @@ public class ControladorPuntosMemoria : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntaje()
+    public void SumarPuntajeNivelUno()
     {
         puntajeAciertos += 1;
         ActualizarTextoPuntaje();
@@ -164,6 +157,49 @@ public class ControladorPuntosMemoria : MonoBehaviour
             Debug.Log("puntaje 3");
             DesactivarPanelTres();
             controladorJuego.DesbloquearNivelMemoria();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosMUno", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosMUno", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeNivelTres()
+    {
+        puntajeAciertos += 1;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 1)
+        {
+            Debug.Log("puntaje 1");
+            DesactivarPanelUno();
+            ActivarPanelParteDos();
+        }
+        if (puntajeAciertos >= 2)
+        {
+            Debug.Log("if 2");
+            Debug.Log("puntaje 2");
+            DesactivarPanelDos();
+            ActivarPanelParteTres();
+        }
+
+        if (puntajeAciertos >= 3)
+        {
+            Debug.Log("if 3");
+            Debug.Log("puntaje 3");
+            DesactivarPanelTres();
+            controladorJuego.DesbloquearNivelMemoria();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosMTres", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosMTres", puntajeAciertos);
+            }
         }
     }
 
@@ -176,23 +212,28 @@ public class ControladorPuntosMemoria : MonoBehaviour
         puntajeErroresMin++;
         puntajeErrores++;
 
-        if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMemoriaMax", 0))
+        if ((puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMemoriaActuales", 0)) &&
+            (puntajeErrores > PlayerPrefs.GetInt("PuntajeErroresMemoria", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMemoriaMax", puntajeErroresMax);
+            Debug.Log("if n1");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaActuales", puntajeErroresMax);
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMin", puntajeErroresMin);
             Debug.Log("Errores Max  " + puntajeErroresMax);
         }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMemoriaMin", 0))
+        else if ((puntajeErroresMin < PlayerPrefs.GetInt("PuntajeErroresMemoriaActuales", 0)) &&
+            (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMemoria", 0)))
         {
-            Debug.Log("elese if");
+            Debug.Log("elese if n1");
+            PlayerPrefs.SetInt("PuntajeErroresMemoria", puntajeErrores);
             PlayerPrefs.SetInt("PuntajeErroresMemoriaMin", puntajeErroresMin);
-            Debug.Log("Errores Min  " + puntajeErroresMin);
+            Debug.Log("Errores max en else if n1  " + puntajeErroresMax);
         }
         else
         {
-            Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresMemoria", puntajeErrores);
-            Debug.Log("Errores Normal " + puntajeErrores);
+            Debug.Log("else n1");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaActuales", puntajeErroresMin);
+            Debug.Log("Errores Min n2 " + puntajeErroresMin);
+            Debug.Log("Errores Max n2 " + puntajeErroresMax);
         }
 
         ActualizarTextoPuntaje();
@@ -205,23 +246,28 @@ public class ControladorPuntosMemoria : MonoBehaviour
         puntajeErroresMinTres++;
         puntajeErroresTres++;
 
-        if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMemoriaMaxTres", 0))
+        if ((puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0)) &&
+            (puntajeErroresTres > PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMemoriaMaxTres", puntajeErroresMaxTres);
+            Debug.Log("if n3");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaActualesTres", puntajeErroresMaxTres);
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaMinTres", puntajeErroresMinTres);
             Debug.Log("Errores Max tres " + puntajeErroresMaxTres);
         }
-        else if (puntajeErroresMinTres <= PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0))
+        else if ((puntajeErroresTres < PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0)) &&
+            (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0)))
         {
-            Debug.Log("elese if");
+            Debug.Log("elese if n3");
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaTres", puntajeErroresTres);
             PlayerPrefs.SetInt("PuntajeErroresMemoriaMinTres", puntajeErroresMinTres);
-            Debug.Log("Errores Min tres " + puntajeErroresMinTres);
+            Debug.Log("Errores max en else if tres " + puntajeErroresMaxTres);
         }
         else
         {
             Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresMemoriaTres", puntajeErroresTres);
-            Debug.Log("Errores Normal 3 " + puntajeErroresTres);
+            PlayerPrefs.SetInt("PuntajeErroresMemoriaActualesTres", puntajeErroresMinTres);
+            Debug.Log("Errores Min n3 " + puntajeErroresMinTres);
+            Debug.Log("Errores Max n3 " + puntajeErroresMaxTres);
         }
 
         ActualizarTextoPuntaje();
