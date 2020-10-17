@@ -21,19 +21,42 @@ public class BorrarDatos : MonoBehaviour
     public void BorrarDatosActividades()
     {
         panelMensajeExito.SetActive(true);
-        Debug.Log("Entre");
-        //Emociones
-        PlayerPrefs.DeleteKey("PuntajeErroresMax");
+
+        //Errores Emociones
+        PlayerPrefs.DeleteKey("PuntajeErroresActuales");
         PlayerPrefs.DeleteKey("PuntajeErroresMin");
         PlayerPrefs.DeleteKey("PuntajeErrores");
         PlayerPrefs.DeleteKey("PuntajeErroresActualesDos");
         PlayerPrefs.DeleteKey("PuntajeErroresAnterioresDos");
         PlayerPrefs.DeleteKey("PuntajeErroresMinDos");
         PlayerPrefs.DeleteKey("PuntajeErroresDos");
-        PlayerPrefs.DeleteKey("PuntajeErroresMaxTres");
+        PlayerPrefs.DeleteKey("PuntajeErroresActualesTres");
         PlayerPrefs.DeleteKey("PuntajeErroresMinTres");
         PlayerPrefs.DeleteKey("PuntajeErroresTres");
-        PlayerPrefs.DeleteKey("PuntajeAciertos");
+
+        //Aciertos Emociones
+        PlayerPrefs.DeleteKey("PuntajeAciertosEUno");
+        PlayerPrefs.DeleteKey("PuntajeAciertosEDos");
+        PlayerPrefs.DeleteKey("PuntajeAciertosETres");
+
+        //Errores Atención
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionActuales");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencion");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionMin");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionActualesDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionMinDos");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionActualesTres");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionTres");
+        PlayerPrefs.DeleteKey("PuntajeErroresAtencionMinTres");
+
+        //Aciertos Atención
+        PlayerPrefs.DeleteKey("PuntajeAciertosAUno");
+        PlayerPrefs.DeleteKey("PuntajeAciertosADos");
+        PlayerPrefs.DeleteKey("PuntajeAciertosATres");
+        
+
+
         PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMax");
         PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMin");
         PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMaxDos");
@@ -42,7 +65,7 @@ public class BorrarDatos : MonoBehaviour
         PlayerPrefs.DeleteKey("PuntajeErroresHistoriasMinTres");
         PlayerPrefs.DeleteKey("PuntajeAciertosHistoriasUno");
         PlayerPrefs.DeleteKey("PuntajeAciertosHistoriaDos");
-        PlayerPrefs.DeleteKey("PuntajeAciertos");
+        
     }
 
     /// <summary>

@@ -405,7 +405,7 @@ public class ControladorPuntos : MonoBehaviour
             controladorJuego.DesbloquearNivel();
             if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosETres", 0))
             {
-                PlayerPrefs.SetInt("PuntajeAciertosEtres", puntajeAciertos);
+                PlayerPrefs.SetInt("PuntajeAciertosETres", puntajeAciertos);
             }
         }
     }
@@ -419,41 +419,30 @@ public class ControladorPuntos : MonoBehaviour
         puntajeErroresMin++;
         puntajeErrores++;
 
-        if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMax", 0))
+        if ((puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresActuales", 0)) &&
+            (puntajeErrores > PlayerPrefs.GetInt("PuntajeErrores", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMax", puntajeErroresMax);
-            PlayerPrefs.SetInt("PuntajeErroresMin", puntajeErroresMax);
-            Debug.Log("Errores Max " + puntajeErroresMax);
-
-        }
-        else
-        {
-            Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresMax", puntajeErroresMin);
-            Debug.Log("Errores Min " + puntajeErroresMin);
-            Debug.Log("Errores Min con max" + puntajeErroresMax);
-        }
-
-        /*if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresMax", 0))
-        {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMax", puntajeErroresMax);
-            Debug.Log("Errores Max " + puntajeErroresMax);
-
-        }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMin", 0))
-        {
-            Debug.Log("elese if");
+            Debug.Log("if n1");
+            PlayerPrefs.SetInt("PuntajeErroresActuales", puntajeErroresMax);
             PlayerPrefs.SetInt("PuntajeErroresMin", puntajeErroresMin);
-            Debug.Log("Errores Min " + puntajeErroresMin);
+            Debug.Log("Errores Max n1 " + puntajeErroresMax);
+
+        }
+        else if ((puntajeErrores < PlayerPrefs.GetInt("PuntajeErroresActuales", 0)) &&
+          (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErrores", 0)))
+        {
+            Debug.Log("else if n1 " + puntajeErrores);
+            PlayerPrefs.SetInt("PuntajeErrores", puntajeErrores); //Actuales
+            PlayerPrefs.SetInt("PuntajeErroresMin", puntajeErroresMin);
+            Debug.Log("Errores max en else if n1 " + puntajeErroresMax);
         }
         else
         {
-            Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErrores", puntajeErrores);
-            Debug.Log("Errores Normal " + puntajeErrores);
-        }*/
+            Debug.Log("else n1");
+            PlayerPrefs.SetInt("PuntajeErroresActuales", puntajeErroresMin);
+            Debug.Log("Errores Min n1 " + puntajeErroresMin);
+            Debug.Log("Errores Max n1 " + puntajeErroresMax);
+        }
 
         ActualizarTextoPuntaje();
         ActivarPistas();
@@ -563,39 +552,35 @@ public class ControladorPuntos : MonoBehaviour
         puntajeErroresMinTres++;
         puntajeErroresTres++;
 
-        if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0))
+        if ((puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresActualesTres", 0)) &&
+            (puntajeErroresTres > PlayerPrefs.GetInt("PuntajeErroresTres", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresMaxTres", puntajeErroresMaxTres);
-            PlayerPrefs.SetInt("PuntajeErroresMinTres", puntajeErroresMaxTres);
+            Debug.Log("if 3");
+            PlayerPrefs.SetInt("PuntajeErroresActualesTres", puntajeErroresMaxTres);
+            PlayerPrefs.SetInt("PuntajeErroresMinTres", puntajeErroresMinTres);
             Debug.Log("Errores Max 3 " + puntajeErroresMaxTres);
 
         }
-        else
+        else if ((puntajeErroresTres < PlayerPrefs.GetInt("PuntajeErroresActualesTres", 0)) &&
+          (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresTres", 0)))
         {
-            Debug.Log("else 3");
-            PlayerPrefs.SetInt("PuntajeErroresMaxTres", puntajeErroresMinTres);
-            Debug.Log("Errores 3 Min " + puntajeErroresMinTres);
-        }
-
-        /*if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresMaxTres", 0))
-        {
-            Debug.Log("if tres");
-            PlayerPrefs.SetInt("PuntajeErroresMaxTres", puntajeErroresMaxTres);
-            Debug.Log("Errores Max " + puntajeErroresMaxTres);
-        }
-        else if (puntajeErroresMinTres <= PlayerPrefs.GetInt("PuntajeErroresMinTres", 0))
-        {
-            Debug.Log("elese if 3");
+            Debug.Log("else if n3 " + puntajeErroresTres);
+            PlayerPrefs.SetInt("PuntajeErroresTres", puntajeErroresTres); //Actuales
             PlayerPrefs.SetInt("PuntajeErroresMinTres", puntajeErroresMinTres);
-            Debug.Log("Errores Min " + puntajeErroresMinTres);
+            Debug.Log("Errores max en else if n3 " + puntajeErroresMaxTres);
         }
         else
         {
-            Debug.Log("else 3");
-            PlayerPrefs.SetInt("PuntajeErroresTres", puntajeErroresTres);
-            Debug.Log("Errores Normal " + puntajeErroresTres);
-        }*/
+            Debug.Log("else n3");
+            PlayerPrefs.SetInt("PuntajeErroresActualesTres", puntajeErroresMinTres);
+            Debug.Log("Errores Min n3 " + puntajeErroresMinTres);
+            Debug.Log("Errores Max n3 " + puntajeErroresMaxTres);
+        }
+        if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresMinTres", 0))
+        {
+            Debug.Log("if probando n3");
+            //PlayerPrefs.SetInt("PuntajeErroresMinDos", puntajeErroresMaxDos);
+        }
 
         ActualizarTextoPuntaje();
         ActivarPistas();

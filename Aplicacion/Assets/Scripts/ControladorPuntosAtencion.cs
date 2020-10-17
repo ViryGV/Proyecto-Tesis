@@ -171,16 +171,6 @@ public class ControladorPuntosAtencion : MonoBehaviour
         puntajeErroresMaxDos = 0;
         puntajeErroresMinDos = 0;
         puntajeAciertos = 0;
-        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresAtencion", 0).ToString();
-        textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMax", 0).ToString();
-        textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMin", 0).ToString();
-        textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresAtencionDos", 0).ToString();
-        textoGuardarMaxDos.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMaxDos", 0).ToString();
-        textoGuardarMinDos.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMinDos", 0).ToString();
-        textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresAtencionTres", 0).ToString();
-        textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMaxTres", 0).ToString();
-        textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMinTres", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     /// <summary>
@@ -193,8 +183,9 @@ public class ControladorPuntosAtencion : MonoBehaviour
 
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
+    /// durante el nivel uno
     /// </summary>
-    public void SumarPuntaje()
+    public void SumarPuntajeNivelUno()
     {
         puntajeAciertos += 1;
         ActualizarTextoPuntaje();
@@ -236,6 +227,116 @@ public class ControladorPuntosAtencion : MonoBehaviour
         if (puntajeAciertos >= 6)
         {
             controladorJuego.DesbloquearNivelAtencion();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosAUno", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosAUno", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// durante el nivel dos
+    /// </summary>
+    public void SumarPuntajeNivelDos()
+    {
+        puntajeAciertos += 1;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 1)
+        {
+            Debug.Log("puntaje 1");
+            DesactivarPanelUno();
+            ActivarPanelDos();
+        }
+        if (puntajeAciertos >= 2)
+        {
+            Debug.Log("puntaje 2");
+            DesactivarPanelDos();
+            ActivarPanelTres();
+        }
+        if (puntajeAciertos >= 3)
+        {
+            Debug.Log("puntaje 3");
+            DesactivarPanelTres();
+            ActivarPanelCuatro();
+        }
+        if (puntajeAciertos >= 4)
+        {
+            Debug.Log("puntaje 4");
+            DesactivarPanelCuatro();
+            ActivarPanelCinco();
+        }
+        if (puntajeAciertos >= 5)
+        {
+            Debug.Log("puntaje 5");
+            DesactivarPanelCinco();
+            ActivarPanelSeis();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            controladorJuego.DesbloquearNivelAtencion();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosADos", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosADos", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// durante el nivel tres
+    /// </summary>
+    public void SumarPuntajeNivelTres()
+    {
+        puntajeAciertos += 1;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 1)
+        {
+            Debug.Log("puntaje 1");
+            DesactivarPanelUno();
+            ActivarPanelDos();
+        }
+        if (puntajeAciertos >= 2)
+        {
+            Debug.Log("puntaje 2");
+            DesactivarPanelDos();
+            ActivarPanelTres();
+        }
+        if (puntajeAciertos >= 3)
+        {
+            Debug.Log("puntaje 3");
+            DesactivarPanelTres();
+            ActivarPanelCuatro();
+        }
+        if (puntajeAciertos >= 4)
+        {
+            Debug.Log("puntaje 4");
+            DesactivarPanelCuatro();
+            ActivarPanelCinco();
+        }
+        if (puntajeAciertos >= 5)
+        {
+            Debug.Log("puntaje 5");
+            DesactivarPanelCinco();
+            ActivarPanelSeis();
+        }
+        if (puntajeAciertos >= 6)
+        {
+            controladorJuego.DesbloquearNivelAtencion();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosATres", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosATres", puntajeAciertos);
+            }
         }
     }
 
@@ -248,81 +349,102 @@ public class ControladorPuntosAtencion : MonoBehaviour
         puntajeErroresMin++;
         puntajeErrores++;
 
-        if (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresAtencionMax", 0))
+        if ((puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresAtencionActuales", 0)) &&
+            (puntajeErrores > PlayerPrefs.GetInt("PuntajeErroresAtencion", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresAtencionMax", puntajeErroresMax);
-            Debug.Log("Errores Max " + puntajeErroresMax);
-        }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresAtencionMin", 0))
-        {
-            Debug.Log("elese if");
+            Debug.Log("if n1");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActuales", puntajeErroresMax);
             PlayerPrefs.SetInt("PuntajeErroresAtencionMin", puntajeErroresMin);
-            Debug.Log("Errores Min " + puntajeErroresMin);
+            Debug.Log("Errores Max n1 " + puntajeErroresMax);
+        }
+        else if ((puntajeErrores < PlayerPrefs.GetInt("PuntajeErroresAtencionActuales", 0)) &&
+            (puntajeErroresMax > PlayerPrefs.GetInt("PuntajeErroresAtencion", 0)))
+        {
+            Debug.Log("elese if n1 " + puntajeErrores);
+            PlayerPrefs.SetInt("PuntajeErroresAtencion", puntajeErrores);
+            PlayerPrefs.SetInt("PuntajeErroresAtencionMin", puntajeErroresMin);
+            Debug.Log("Errores max en else if n1 " + puntajeErroresMax);
         }
         else
         {
-            Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresAtencion", puntajeErrores);
-            Debug.Log("Errores Normal " + puntajeErrores);
+            Debug.Log("else n1");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActuales", puntajeErroresMin);
+            Debug.Log("Errores Min n1 " + puntajeErroresMin);
+            Debug.Log("Errores Max n1 " + puntajeErroresMax);
         }
 
         ActualizarTextoPuntaje();
         ActivarPistas();
     }
 
+    /// <summary>
+    /// Método que va sumando las veces que el usuario se ha equivocado
+    /// </summary>
     public void RestarPuntajeNivelDos()
     {
         puntajeErroresMaxDos++;
         puntajeErroresMinDos++;
         puntajeErroresDos++;
 
-        if (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresAtencionMaxDos", 0))
+        if ((puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresAtencionActualesDos", 0)) &&
+            (puntajeErroresDos > PlayerPrefs.GetInt("PuntajeErroresAtencionDos", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresAtencionMaxDos", puntajeErroresMaxDos);
+            Debug.Log("if 2");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActualesDos", puntajeErroresMaxDos);
+            PlayerPrefs.SetInt("PuntajeErroresAtencionMinDos", puntajeErroresMinDos);
             Debug.Log("Errores Max dos " + puntajeErroresMaxDos);
         }
-        else if (puntajeErroresMin <= PlayerPrefs.GetInt("PuntajeErroresAtencionMinDos", 0))
+        else if ((puntajeErroresTres < PlayerPrefs.GetInt("PuntajeErroresAtencionActualesDos", 0)) &&
+            (puntajeErroresMaxDos > PlayerPrefs.GetInt("PuntajeErroresAtencionDos", 0)))
         {
-            Debug.Log("elese if");
+            Debug.Log("elese if n2");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionDos", puntajeErroresDos);
             PlayerPrefs.SetInt("PuntajeErroresAtencionMinDos", puntajeErroresMinDos);
-            Debug.Log("Errores Min dos " + puntajeErroresMinDos);
+            Debug.Log("Errores max en else if n2 " + puntajeErroresMaxDos);
         }
         else
         {
-            Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresAtencionDos", puntajeErroresDos);
-            Debug.Log("Errores Normal dos " + puntajeErroresDos);
+            Debug.Log("else n3");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActualesDos", puntajeErroresMinDos);
+            Debug.Log("Errores Min n2 " + puntajeErroresMinDos);
+            Debug.Log("Errores Max n2 " + puntajeErroresMaxDos);
         }
 
         ActualizarTextoPuntaje();
         ActivarPistas();
     }
 
+    /// <summary>
+    /// Método que va sumando las veces que el usuario se ha equivocado
+    /// </summary>
     public void RestarPuntajeNivelTres()
     {
         puntajeErroresMaxTres++;
         puntajeErroresMinTres++;
         puntajeErroresTres++;
 
-        if (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresAtencionMaxTres", 0))
+        if ((puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresAtencionActualesTres", 0)) &&
+            (puntajeErroresTres > PlayerPrefs.GetInt("PuntajeErroresAtencionTres", 0)))
         {
-            Debug.Log("if");
-            PlayerPrefs.SetInt("PuntajeErroresAtencionMaxTres", puntajeErroresMaxTres);
+            Debug.Log("if 3");
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActualesTres", puntajeErroresMaxTres);
+            PlayerPrefs.SetInt("PuntajeErroresAtencionMinTres", puntajeErroresMinTres);
             Debug.Log("Errores Max 3 " + puntajeErroresMaxTres);
         }
-        else if (puntajeErroresMinTres <= PlayerPrefs.GetInt("PuntajeErroresAtencionMinTres", 0))
+        else if ((puntajeErroresTres < PlayerPrefs.GetInt("PuntajeErroresAtencionActualesTres", 0)) &&
+            (puntajeErroresMaxTres > PlayerPrefs.GetInt("PuntajeErroresAtencionTres", 0)))
         {
-            Debug.Log("elese if");
+            Debug.Log("elese if n3 " + puntajeErroresTres);
+            PlayerPrefs.SetInt("PuntajeErroresAtencionTres", puntajeErroresTres);
             PlayerPrefs.SetInt("PuntajeErroresAtencionMinTres", puntajeErroresMinTres);
-            Debug.Log("Errores Min 3 " + puntajeErroresMinTres);
+            Debug.Log("Errores max en else if n3 " + puntajeErroresMaxTres);
         }
         else
         {
             Debug.Log("else");
-            PlayerPrefs.SetInt("PuntajeErroresAtencionTres", puntajeErroresTres);
-            Debug.Log("Errores Normal 3 " + puntajeErroresTres);
+            PlayerPrefs.SetInt("PuntajeErroresAtencionActualesTres", puntajeErroresMinTres);
+            Debug.Log("Errores Min n3 " + puntajeErroresMinTres);
+            Debug.Log("Errores Max n3 " + puntajeErroresMaxTres);
         }
 
         ActualizarTextoPuntaje();
