@@ -24,6 +24,13 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     public GameObject barraNivelDosMemoria;
     public GameObject barraNivelTresMemoria;
 
+    public GameObject barraNivelUnoComedor;
+    public GameObject barraNivelDosComedor;
+    public GameObject barraNivelUnoUrbanidad;
+    public GameObject barraNivelDosUrbanidad;
+    public GameObject barraNivelUnoEscuela;
+    public GameObject barraNivelDosEscuela;
+
     //Tarjeta Reconocimiento de Emociones
     public TextMeshProUGUI textoGuardarEmocionesMax;
     public TextMeshProUGUI textoGuardarEmocionesMin;
@@ -66,6 +73,37 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     public TextMeshProUGUI textoAciertosMemoriaDos;
     public TextMeshProUGUI textoAciertosMemoriaTres;
 
+    //Tarjeta Instrucciones Visuales
+    //Reglas del comedor
+    public TextMeshProUGUI textoGuardarComedorMax;
+    public TextMeshProUGUI textoGuardarComedorMin;
+    public TextMeshProUGUI textoGuardarComedorIntermedio;
+    public TextMeshProUGUI textoGuardarComedorDosMax;
+    public TextMeshProUGUI textoGuardarComedorDosMin;
+    public TextMeshProUGUI textoGuardarComedorDosIntermedio;
+    public TextMeshProUGUI textoAciertosComedor;
+    public TextMeshProUGUI textoAciertosComedorDos;
+
+    //Reglas de urbanidad
+    public TextMeshProUGUI textoGuardarUrbanidadMax;
+    public TextMeshProUGUI textoGuardarUrbanidadMin;
+    public TextMeshProUGUI textoGuardarUrbanidadIntermedio;
+    public TextMeshProUGUI textoGuardarUrbanidadDosMax;
+    public TextMeshProUGUI textoGuardarUrbanidadDosMin;
+    public TextMeshProUGUI textoGuardarUrbanidadDosIntermedio;
+    public TextMeshProUGUI textoAciertosUrbanidad;
+    public TextMeshProUGUI textoAciertosUrbanidadDos;
+
+    //Reglas del Salón de Clases
+    public TextMeshProUGUI textoGuardarEscuelaMax;
+    public TextMeshProUGUI textoGuardarEscuelaMin;
+    public TextMeshProUGUI textoGuardarEscuelaIntermedio;
+    public TextMeshProUGUI textoGuardarEscuelaDosMax;
+    public TextMeshProUGUI textoGuardarEscuelaDosMin;
+    public TextMeshProUGUI textoGuardarEscuelaDosIntermedio;
+    public TextMeshProUGUI textoAciertosEscuela;
+    public TextMeshProUGUI textoAciertosEscuelaDos;
+
     public static int guardarEmocionesMax;
     public static int guardarEmocionesMin;
     public static int aciertosEmociones;
@@ -77,6 +115,16 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     public static int guardarMemoriaMax;
     public static int guardarMemoriaMin;
     public static int aciertosMemoria;
+
+    public static int guardarComedorMax;
+    public static int guardarComedorMin;
+    public static int aciertosComedor;
+    public static int guardarUrbanidadMax;
+    public static int guardarUrbanidadMin;
+    public static int aciertosUrbanidad;
+    public static int guardarEscuelaMax;
+    public static int guardarEscuelaMin;
+    public static int aciertosEscuela;
 
     // Update is called once per frame
     void Update()
@@ -468,5 +516,77 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
             textoGuardarMemoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
         }
         textoAciertosMemoriaTres.text = PlayerPrefs.GetInt("PuntajeAciertosMTres", 0).ToString();
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel uno de reglas del comedor
+    /// </summary>
+    public void MostrarPuntajeComedorNivelUno()
+    {
+        barraNivelUnoComedor.SetActive(true);
+        barraNivelDosComedor.SetActive(false);
+        textoGuardarComedorMin.enabled = false;
+
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel dos de reglas del comedor
+    /// </summary>
+    public void MostrarPuntajeComedorNivelDos()
+    {
+        barraNivelUnoComedor.SetActive(false);
+        barraNivelDosComedor.SetActive(true);
+        textoGuardarComedorDosMin.enabled = false;
+
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel uno de reglas de Urbanidad
+    /// </summary>
+    public void MostrarPuntajeUrbanidadNivelUno()
+    {
+        barraNivelUnoUrbanidad.SetActive(true);
+        barraNivelDosUrbanidad.SetActive(false);
+        textoGuardarUrbanidadMin.enabled = false;
+
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel dos de reglas de urbanidad
+    /// </summary>
+    public void MostrarPuntajeUrbanidadNivelDos()
+    {
+        barraNivelUnoUrbanidad.SetActive(false);
+        barraNivelDosUrbanidad.SetActive(true);
+        textoGuardarUrbanidadDosMin.enabled = false;
+
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel uno de reglas del salón de clases
+    /// </summary>
+    public void MostrarPuntajeEscuelaNivelUno()
+    {
+        barraNivelUnoEscuela.SetActive(true);
+        barraNivelDosEscuela.SetActive(false);
+        textoGuardarEscuelaMin.enabled = false;
+
+    }
+
+    /// <summary>
+    /// Método que se encarga de mostrar el número de errores y aciertos
+    /// que se obtuvieron al entrar al nivel dos de reglas del salón de clases
+    /// </summary>
+    public void MostrarPuntajeEscuelaNivelDos()
+    {
+        barraNivelUnoEscuela.SetActive(false);
+        barraNivelDosEscuela.SetActive(true);
+        textoGuardarEscuelaDosMin.enabled = false;
+
     }
 }

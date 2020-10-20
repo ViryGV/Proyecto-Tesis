@@ -139,26 +139,6 @@ public class ControladorPuntosReglas : MonoBehaviour
         puntajeErroresMaxSeis = 0;
         puntajeErroresMinSeis = 0;
         puntajeAciertos = 0;
-        textoGuardar.text = PlayerPrefs.GetInt("PuntajeErroresReglas", 0).ToString();
-        textoGuardarMax.text = PlayerPrefs.GetInt("PuntajeErroresReglasMax", 0).ToString();
-        textoGuardarMin.text = PlayerPrefs.GetInt("PuntajeErroresReglasMin", 0).ToString();
-        textoGuardarDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasDos", 0).ToString();
-        textoGuardarMaxDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxDos", 0).ToString();
-        textoGuardarMinDos.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinDos", 0).ToString();
-        textoGuardarTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasTres", 0).ToString();
-        textoGuardarMaxTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxTres", 0).ToString();
-        textoGuardarMinTres.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinTres", 0).ToString();
-        textoGuardarCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasCuatro", 0).ToString();
-        textoGuardarMaxCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxCuatro", 0).ToString();
-        textoGuardarMinCuatro.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinCuatro", 0).ToString();
-        textoGuardarCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasCinco", 0).ToString();
-        textoGuardarMaxCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxCinco", 0).ToString();
-        textoGuardarMinCinco.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinCinco", 0).ToString();
-        textoGuardarSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasSeis", 0).ToString();
-        textoGuardarMaxSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasMaxSeis", 0).ToString();
-        textoGuardarMinSeis.text = PlayerPrefs.GetInt("PuntajeErroresReglasMinSeis", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
-        textoGuardarAciertos.text = PlayerPrefs.GetInt("PuntajeAciertos", 0).ToString();
     }
 
     /// <summary>
@@ -172,7 +152,7 @@ public class ControladorPuntosReglas : MonoBehaviour
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntajeComedor()
+    public void SumarPuntajeComedorNivelUno()
     {
         puntajeAciertos ++;
         ActualizarTextoPuntaje();
@@ -184,13 +164,41 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelComedor();
+            controladorJuego.DesbloquearNivelAtencion();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosCUno", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosCUno", puntajeAciertos);
+            }
         }
     }
 
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntajeUrbanidad()
+    public void SumarPuntajeComedorNivelDos()
+    {
+        puntajeAciertos++;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 3)
+        {
+            controladorJuego.DesbloquearNivelComedor();
+            controladorJuego.DesbloquearNivelAtencion();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosCDos", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosCDos", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeUrbanidadNivelUno()
     {
         puntajeAciertos++;
         ActualizarTextoPuntaje();
@@ -202,13 +210,39 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelUrbanidad();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosUrUno", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosUrUno", puntajeAciertos);
+            }
         }
     }
 
     /// <summary>
     /// Método que va sumando las veces que el usuario acierta
     /// </summary>
-    public void SumarPuntajeEscuela()
+    public void SumarPuntajeUrbanidadNivelDos()
+    {
+        puntajeAciertos++;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 3)
+        {
+            controladorJuego.DesbloquearNivelUrbanidad();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosUrDos", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosUrDos", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeEscuelaNivelUno()
     {
         puntajeAciertos++;
         ActualizarTextoPuntaje();
@@ -220,6 +254,32 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelEscuela();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosEscuelaUno", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosEscuelaUno", puntajeAciertos);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Método que va sumando las veces que el usuario acierta
+    /// </summary>
+    public void SumarPuntajeEscuelaNivelDos()
+    {
+        puntajeAciertos++;
+        ActualizarTextoPuntaje();
+        ActivarStatus();
+
+        // Si el puntaje equivale al número indicado
+        // se activa el panel siguiete y el superado 
+        // es desactivado hasta superar el nivel por completo
+        if (puntajeAciertos >= 3)
+        {
+            controladorJuego.DesbloquearNivelEscuela();
+            if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosEscuelaDos", 0))
+            {
+                PlayerPrefs.SetInt("PuntajeAciertosEscuelaDos", puntajeAciertos);
+            }
         }
     }
 
@@ -255,7 +315,6 @@ public class ControladorPuntosReglas : MonoBehaviour
         ActualizarTextoPuntaje();
         ActivarPistas();
     }
-
 
     public void RestarPuntajeComedorNivelDos()
     {
