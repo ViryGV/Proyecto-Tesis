@@ -329,8 +329,8 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
             Debug.Log("Estoy en else if atencion n2");
 
             textoGuardarAtencionDosMax.enabled = true;
-            textoGuardarAtencionDosMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMinDos", 0).ToString();
-            textoGuardarAtencionDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresAtencionActualesDos", 0).ToString();
+            textoGuardarAtencionDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresAtencionMinDos", 0).ToString();
+            textoGuardarAtencionDosMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencionActualesDos", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresAtencionDos", 0) != PlayerPrefs.GetInt("PuntajeErroresAtencionActualesDos", 0))
         {

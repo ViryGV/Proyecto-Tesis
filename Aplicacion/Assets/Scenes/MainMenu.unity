@@ -4146,7 +4146,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127829094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 462788851}
@@ -4154,8 +4154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 2.9}
+  m_SizeDelta: {x: 200, y: 55.900116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127829096
 MonoBehaviour:
@@ -5595,8 +5595,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.4, y: -66.019}
-  m_SizeDelta: {x: 1325.5818, y: 699.89606}
+  m_AnchoredPosition: {x: -42.4, y: -71.9}
+  m_SizeDelta: {x: 1325.5818, y: 711.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387618220
 MonoBehaviour:
@@ -5619,11 +5619,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Autor: ViryGV\nDesarrollo App: ViryGV\nAprendiendo con TEA fue desarrolla
     con la finalidad de proporcionar una herramieta de acompa\xF1amiento en las terapias
-    o sesiones de los ni\xF1os con autismo de bajo y medio nivel.\n\nAgradecimientos: 
+    o sesiones de los ni\xF1os con autismo de bajo y medio nivel de funcionamiento.\n\nAgradecimientos: 
     Asociaci\xF3n Clima y Arena por las estrategias que me brindaron y que sirvieron
     como base para muchas de las actividades presentadas. A mi amiga Clarissa por
-    el apoyo en la selecci\xF3n de colores.\nA la directora de TEAZ por su tiempo
-    de revisar el contenido de las actividades,"
+    el apoyo en la selecci\xF3n de colores.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5651,7 +5650,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 46.9
+  m_fontSize: 51.65
   m_fontSizeBase: 92.8
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5692,12 +5691,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1387618220}
-    characterCount: 505
+    characterCount: 443
     spriteCount: 0
-    spaceCount: 84
-    wordCount: 83
+    spaceCount: 72
+    wordCount: 70
     linkCount: 0
-    lineCount: 13
+    lineCount: 12
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
