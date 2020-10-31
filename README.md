@@ -1,5 +1,5 @@
 # Proyceto-Tesis
-Desarrollo de la aplicación móvil (Android) y versión escrituro (Windows) de proyecto de investigación con el motor multiplataforma Unity
+Desarrollo de la aplicación móvil (Android) y versión de escritorio (Windows) de proyecto de investigación con el motor multiplataforma Unity
 
 Aprendiendo con TEA es un juego serio que aborda varias estrategias estimulantes para niños con Trastorno del Espectro Autista:
 Síndrome de Asperger y Trastorno Invasivo del Desarrollo (Autismo en fase intermedia).
