@@ -161,7 +161,7 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
         {
             Debug.Log("Estoy en else if actuales n1");
             textoGuardarEmocionesMin.enabled = true;
-            textoGuardarEmocionesMax.text = PlayerPrefs.GetInt("PuntajeErrores", 0).ToString();
+            textoGuardarEmocionesMin.text = PlayerPrefs.GetInt("PuntajeErrores", 0).ToString();
             textoGuardarEmocionesIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresActuales", 0).ToString();
         }
         else
@@ -198,8 +198,8 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
             Debug.Log("Estoy en else if ");
 
             textoGuardarEmocionesDosMax.enabled = true;
-            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
-            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
+            textoGuardarEmocionesDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMinDos", 0).ToString();
+            textoGuardarEmocionesDosMax.text = PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresDos", 0) != PlayerPrefs.GetInt("PuntajeErroresActualesDos", 0))
         {
@@ -290,9 +290,9 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresAtencion", 0) != PlayerPrefs.GetInt("PuntajeErroresAtencionActuales", 0))
         {
-            Debug.Log("Estoy en else if actuales n1");
+            Debug.Log("Estoy en else if actuales atencion n1");
             textoGuardarAtencionMin.enabled = true;
-            textoGuardarAtencionMax.text = PlayerPrefs.GetInt("PuntajeErroresAtencion", 0).ToString();
+            textoGuardarAtencionMin.text = PlayerPrefs.GetInt("PuntajeErroresAtencion", 0).ToString();
             textoGuardarAtencionIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresAtencionActuales", 0).ToString();
         }
         else
@@ -421,7 +421,8 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
         {
             Debug.Log("Estoy en else if actuales n1");
             textoGuardarMemoriaMin.enabled = true;
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoria", 0).ToString();
+            textoGuardarMemoriaMax.enabled = false;
+            textoGuardarMemoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoria", 0).ToString();
             textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActuales", 0).ToString();
         }
         else
@@ -448,30 +449,30 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
         if (PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0) == PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0))
         {
             Debug.Log("Estoy en if actuales atencion");
-            textoGuardarMemoriaMax.enabled = true;
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
+            textoGuardarMemoriaDosMax.enabled = true;
+            textoGuardarMemoriaDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
+            textoGuardarMemoriaDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0) > PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0))
         {
             Debug.Log("Estoy en else if atencion");
-            textoGuardarMemoriaMax.enabled = true;
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
+            textoGuardarMemoriaDosMax.enabled = true;
+            textoGuardarMemoriaDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
+            textoGuardarMemoriaDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0) != PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0))
         {
             Debug.Log("Estoy en else if actuales n1");
-            textoGuardarMemoriaMin.enabled = true;
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0).ToString();
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
+            textoGuardarMemoriaDosMin.enabled = true;
+            textoGuardarMemoriaDosMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0).ToString();
+            textoGuardarMemoriaDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesDos", 0).ToString();
         }
         else
         {
             Debug.Log("Estoy en else if anteriores");
-            textoGuardarMemoriaMin.enabled = true;
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0).ToString();
-            textoGuardarMemoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
+            textoGuardarMemoriaDosMin.enabled = true;
+            textoGuardarMemoriaDosIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaDos", 0).ToString();
+            textoGuardarMemoriaDosMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinDos", 0).ToString();
         }
         textoAciertosMemoriaDos.text = PlayerPrefs.GetInt("PuntajeAciertosMDos", 0).ToString();
     }
@@ -489,31 +490,31 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
 
         if (PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0) == PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0))
         {
-            Debug.Log("Estoy en if actuales atencion");
-            textoGuardarMemoriaMax.enabled = true;
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
+            Debug.Log("Estoy en if actuales memoria n3");
+            textoGuardarMemoriaTresMax.enabled = true;
+            textoGuardarMemoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
+            textoGuardarMemoriaTresIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0) > PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0))
         {
-            Debug.Log("Estoy en else if atencion");
-            textoGuardarMemoriaMax.enabled = true;
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
+            Debug.Log("Estoy en else if memoria n3");
+            textoGuardarMemoriaTresMax.enabled = true;
+            textoGuardarMemoriaTresIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
+            textoGuardarMemoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
         }
         else if (PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0) != PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0))
         {
-            Debug.Log("Estoy en else if actuales n1");
-            textoGuardarMemoriaMin.enabled = true;
-            textoGuardarMemoriaMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
+            Debug.Log("Estoy en else if actuales memoria n3");
+            textoGuardarMemoriaTresMin.enabled = true;
+            textoGuardarMemoriaTresMax.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
+            textoGuardarMemoriaTresIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaActualesTres", 0).ToString();
         }
         else
         {
-            Debug.Log("Estoy en else if anteriores");
-            textoGuardarMemoriaMin.enabled = true;
-            textoGuardarMemoriaIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
-            textoGuardarMemoriaMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
+            Debug.Log("Estoy en else if anteriores memoria n3");
+            textoGuardarMemoriaTresMin.enabled = true;
+            textoGuardarMemoriaTresIntermedio.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaTres", 0).ToString();
+            textoGuardarMemoriaTresMin.text = PlayerPrefs.GetInt("PuntajeErroresMemoriaMinTres", 0).ToString();
         }
         textoAciertosMemoriaTres.text = PlayerPrefs.GetInt("PuntajeAciertosMTres", 0).ToString();
     }
@@ -526,6 +527,10 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     {
         barraNivelUnoComedor.SetActive(true);
         barraNivelDosComedor.SetActive(false);
+        barraNivelUnoUrbanidad.SetActive(false);
+        barraNivelDosUrbanidad.SetActive(false);
+        barraNivelUnoEscuela.SetActive(false);
+        barraNivelDosEscuela.SetActive(false);
         textoGuardarComedorMin.enabled = false;
 
     }
@@ -538,6 +543,10 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     {
         barraNivelUnoComedor.SetActive(false);
         barraNivelDosComedor.SetActive(true);
+        barraNivelUnoUrbanidad.SetActive(false);
+        barraNivelDosUrbanidad.SetActive(false);
+        barraNivelUnoEscuela.SetActive(false);
+        barraNivelDosEscuela.SetActive(false);
         textoGuardarComedorDosMin.enabled = false;
 
     }
@@ -550,6 +559,10 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     {
         barraNivelUnoUrbanidad.SetActive(true);
         barraNivelDosUrbanidad.SetActive(false);
+        barraNivelUnoComedor.SetActive(false);
+        barraNivelDosComedor.SetActive(false);
+        barraNivelUnoEscuela.SetActive(false);
+        barraNivelDosEscuela.SetActive(false);
         textoGuardarUrbanidadMin.enabled = false;
 
     }
@@ -562,6 +575,10 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     {
         barraNivelUnoUrbanidad.SetActive(false);
         barraNivelDosUrbanidad.SetActive(true);
+        barraNivelUnoComedor.SetActive(false);
+        barraNivelDosComedor.SetActive(false);
+        barraNivelUnoEscuela.SetActive(false);
+        barraNivelDosEscuela.SetActive(false);
         textoGuardarUrbanidadDosMin.enabled = false;
 
     }
@@ -573,6 +590,12 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     public void MostrarPuntajeEscuelaNivelUno()
     {
         barraNivelUnoEscuela.SetActive(true);
+        barraNivelDosEscuela.SetActive(false);
+        barraNivelUnoUrbanidad.SetActive(false);
+        barraNivelDosUrbanidad.SetActive(false);
+        barraNivelUnoComedor.SetActive(false);
+        barraNivelDosComedor.SetActive(false);
+        barraNivelUnoEscuela.SetActive(false);
         barraNivelDosEscuela.SetActive(false);
         textoGuardarEscuelaMin.enabled = false;
 
@@ -586,6 +609,10 @@ public class ActualizarPuntajeTarjetas : MonoBehaviour
     {
         barraNivelUnoEscuela.SetActive(false);
         barraNivelDosEscuela.SetActive(true);
+        barraNivelUnoUrbanidad.SetActive(false);
+        barraNivelDosUrbanidad.SetActive(false);
+        barraNivelUnoComedor.SetActive(false);
+        barraNivelDosComedor.SetActive(false);
         textoGuardarEscuelaDosMin.enabled = false;
 
     }

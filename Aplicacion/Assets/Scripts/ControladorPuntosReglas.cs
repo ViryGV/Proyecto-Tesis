@@ -164,7 +164,6 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelComedor();
-            controladorJuego.DesbloquearNivelAtencion();
             if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosCUno", 0))
             {
                 PlayerPrefs.SetInt("PuntajeAciertosCUno", puntajeAciertos);
@@ -187,7 +186,6 @@ public class ControladorPuntosReglas : MonoBehaviour
         if (puntajeAciertos >= 3)
         {
             controladorJuego.DesbloquearNivelComedor();
-            controladorJuego.DesbloquearNivelAtencion();
             if (puntajeAciertos > PlayerPrefs.GetInt("PuntajeAciertosCDos", 0))
             {
                 PlayerPrefs.SetInt("PuntajeAciertosCDos", puntajeAciertos);
