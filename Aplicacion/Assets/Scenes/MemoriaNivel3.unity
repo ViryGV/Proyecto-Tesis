@@ -11684,7 +11684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2f5c52cee394945809b9431584aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 2
+  tiempoVida: 3
   empezar_btn: {fileID: 1203071033}
   panel: {fileID: 1231117205}
 --- !u!1 &1239306073
@@ -17110,12 +17110,14 @@ MonoBehaviour:
   nivelAcutalUrbanidad: 0
   nivelAcutalEscuela: 0
   nivelAcutalMemoria: 3
+  nivelAcutalSumar: 0
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor: []
   botonesMenuUrbanidad: []
   botonesMenuEscuela: []
   botonesMenuMemoria: []
+  botonesMenuSumar: []
 --- !u!4 &1909606948
 Transform:
   m_ObjectHideFlags: 0

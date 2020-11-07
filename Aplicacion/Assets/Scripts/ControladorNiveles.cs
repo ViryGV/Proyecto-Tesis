@@ -71,6 +71,15 @@ public class ControladorNiveles : MonoBehaviour
     }
 
     /// <summary>
+    /// Activa la corrutina para cargar la pantalla de espera
+    /// para los niveles de operaciones de suma
+    /// </summary>
+    public void CargarSumar()
+    {
+        StartCoroutine(EsperarPanelCargandoSumar());
+    }
+
+    /// <summary>
     /// Activa la corrutina para cargar la pantalla de espera para el menú de juegos
     /// </summary>
     public void CargarMenuJuegos()
@@ -147,6 +156,18 @@ public class ControladorNiveles : MonoBehaviour
         panelCargando.SetActive(true);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("NivelesMemoria");
+        Time.timeScale = 1;
+    }
+
+    /// <summary>
+    /// Permite crear una corrutina entre el lapso de tiempo en que
+    /// se muestran la pantalla de cargando y el menú de los niveles (sumar)
+    /// </summary>
+    public IEnumerator EsperarPanelCargandoSumar()
+    {
+        panelCargando.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("NivelesSumar");
         Time.timeScale = 1;
     }
 

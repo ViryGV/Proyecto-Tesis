@@ -59,6 +59,15 @@ public class ControladorMensajesAtencion : MonoBehaviour
     }
 
     /// <summary>
+    /// Activa la corrutina para cargar la pantalla del
+    /// nivel superado en razonamiento matemático (sumar)
+    /// </summary>
+    public void CargarPanelMensajeSumar()
+    {
+        StartCoroutine(EsperarPanelCargandoSumar());
+    }
+
+    /// <summary>
     /// Permite crear una corrutina entre el lapso de tiempo en que
     /// se muestran la pantalla del mensaje y el menú de los niveles de atención
     /// </summary>
@@ -99,6 +108,14 @@ public class ControladorMensajesAtencion : MonoBehaviour
         panelMensaje.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("NivelesMemoria");
+        Time.timeScale = 1;
+    }
+
+    public IEnumerator EsperarPanelCargandoSumar()
+    {
+        panelMensaje.SetActive(true);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("NivelesSumar");
         Time.timeScale = 1;
     }
 }

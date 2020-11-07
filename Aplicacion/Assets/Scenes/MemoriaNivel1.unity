@@ -5963,7 +5963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2f5c52cee394945809b9431584aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 2
+  tiempoVida: 3
   empezar_btn: {fileID: 357356359}
   panel: {fileID: 1343100152}
 --- !u!1 &1354031190
@@ -8361,12 +8361,14 @@ MonoBehaviour:
   nivelAcutalUrbanidad: 0
   nivelAcutalEscuela: 0
   nivelAcutalMemoria: 1
+  nivelAcutalSumar: 0
   botonesMenuEmociones: []
   botonesMenuAtencion: []
   botonesMenuComedor: []
   botonesMenuUrbanidad: []
   botonesMenuEscuela: []
   botonesMenuMemoria: []
+  botonesMenuSumar: []
 --- !u!4 &1909606948
 Transform:
   m_ObjectHideFlags: 0
@@ -8438,7 +8440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2f5c52cee394945809b9431584aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 2
+  tiempoVida: 3
   empezar_btn: {fileID: 1417424411}
   panel: {fileID: 1917456512}
 --- !u!1 &1917963789

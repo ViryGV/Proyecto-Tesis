@@ -1671,7 +1671,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 137271696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1108120366}
+        m_MethodName: CargarPracticar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &137271696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3648,7 +3659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4e098764438514c8957821035f8314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 15
+  tiempoVida: 25
 --- !u!114 &476259479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4846,7 +4857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31bb85fd4ae587439e047d45422cb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 15
+  tiempoVida: 25
 --- !u!114 &726252473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6776,6 +6787,7 @@ GameObject:
   - component: {fileID: 1108120363}
   - component: {fileID: 1108120362}
   - component: {fileID: 1108120365}
+  - component: {fileID: 1108120366}
   m_Layer: 0
   m_Name: ControladorPaneles
   m_TagString: Untagged
@@ -6836,6 +6848,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 142ff0697422375469bbf9fa146abaf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelCargando: {fileID: 1686638798}
+--- !u!114 &1108120366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108120361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78fca375e8df984a8381e6c245753e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelCargando: {fileID: 1686638798}
