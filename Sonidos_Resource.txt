@@ -112,7 +112,7 @@ bucket drummer » 42street2(da hats).aiff de jessdub1
 Link: https://freesound.org/people/jessdub1/sounds/80537/
 -------------------------------------------------------------------------------
 
-Información
+Progreso
 1. Botón Actividades
 techniques 1200 turntable start/stops » 1200 start.stop button-02.wav de Lervis
 Link: https://freesound.org/people/Lervis/sounds/31786/
@@ -122,6 +122,30 @@ Link: https://freesound.org/people/komanderkyle/sounds/482221/
 3. Botón Pensamiento Matemático
 Modular Bass Hits » modular hits#09.43.aif de modularsamples
 Link: https://freesound.org/people/modularsamples/sounds/331262/
+4. Reconocimiento de Emociones
+Factory Noise from Gears Of Destruction » FX018 de mitchelk
+Link: https://freesound.org/people/mitchelk/sounds/136790/
+5. Atención
+pcmdclchrhplfo+lpf(1|2)l/f » pulse cmdclchrhplfo lp fold1 lessfast.wav de Saltbearer
+Link: https://freesound.org/people/Saltbearer/sounds/486736/
+6. Memoria de Trabajo
+8-bit Sound Effects » 8-bit Happy Ding de JapanYoshiTheGamer
+Link: https://freesound.org/people/JapanYoshiTheGamer/sounds/361264/
+7. Nivel 1
+drip.wav de Nightflame
+Link: https://freesound.org/people/Nightflame/sounds/188642/
+8. Nivel 2
+Arcade » Arcade Splatter de plasterbrain
+Link: https://freesound.org/people/plasterbrain/sounds/464909/
+9. Nivel 3
+Other » Idea.wav de FxKid2
+Link: https://freesound.org/people/FxKid2/sounds/367627/
+10. Instrucciones Visuales
+Ding 1 de greenvwbeetle
+Link: https://freesound.org/people/greenvwbeetle/sounds/241288/
+11. Atrás
+Game Sounds » FX231.wav de jalastram
+Link: https://freesound.org/people/jalastram/sounds/318913/
 ------------------------------------------------------------------------------
 
 Menú Historias
@@ -131,6 +155,21 @@ Link: https://freesound.org/people/AbdrTar/sounds/519985/
 2. Volver
 Levl Up de qubodup
 Link: https://freesound.org/people/qubodup/sounds/442943/
+--------------------------------------------------------------------------------
+
+Menú Practicar
+1. Botón Sumar
+Spastic Polarbear Anime Revenge » PopGoesTheHead.wav de Surn_Thing
+Link: https://freesound.org/people/Surn_Thing/sounds/249555/
+2. Botón Multiplicar
+squeek toys » SQUEAK3.WAV de propthis
+Link: https://freesound.org/people/propthis/sounds/24731/
+3. Botón Restar
+UI SFX » Ding 3 de andersmmg
+Link: https://freesound.org/people/andersmmg/sounds/523424/
+4. Botón Dividir
+PowerUp.wav de kianda
+Link:https://freesound.org/people/kianda/sounds/328120/
 
 ***************************************************************************
 Los sonidos para los personajes se listan a continuación: 
@@ -147,6 +186,9 @@ Link: https://freesound.org/people/chestnutjam/sounds/399288/
 4. Tadeo
 OwlHoot(clean).wav de musicmasta1
 Link: https://freesound.org/people/musicmasta1/sounds/251937/
+5. Clarissa
+13-Ohhh7w7.wav de lauracarolina09
+Link: https://freesound.org/people/lauracarolina09/sounds/445926/
 **************************************************************************
 Pantalla Nivel Superado
 Music » Music: Orchestral Victory Fanfare de Sheyvan

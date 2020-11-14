@@ -1647,6 +1647,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962228587}
   m_CullTransparentMesh: 0
+--- !u!1 &966801954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966801957}
+  - component: {fileID: 966801956}
+  - component: {fileID: 966801955}
+  m_Layer: 0
+  m_Name: ControladorSonidoPersonajes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966801955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966801954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894363a261dbd8d45ac7778cc7be939d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sonidoCosmo: {fileID: 8300000, guid: d10b67aa33c13f0459b66dbc938183ac, type: 3}
+  _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
+  _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
+  _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 900a5175c54e58f43a4855fad08267c6, type: 3}
+--- !u!82 &966801956
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966801954}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &966801957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966801954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 986.7464, y: 561.10767, z: -353.65894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048876839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,13 +2481,10 @@ MonoBehaviour:
   - "El n\xFAmero 3 m\xE1s el 2"
   - "Tienes como resultado el n\xFAmero 5"
   - "Ves, como es f\xE1cil"
-  - Ahora en el segundo nivel
-  - "Tendr\xE1s que resolver unos ejercicios"
-  - Usando lo que aprendiste de sumar
-  - "Por \xFAltimo en el tercer nivel"
-  - "Se te presentar\xE1 una"
-  - "Combinaci\xF3n de ambos niveles y algo m\xE1s"
-  - "Adelante y diviertet\xE9 aprendiendo"
+  - Para el resto de los
+  - "Niveles, te lo contar\xE9"
+  - "M\xE1s adelante, bueno"
+  - "Diviertet\xE9 aprendiendo"
   typingSpeed: 0.02
 --- !u!4 &1265007666
 Transform:
@@ -2370,13 +2512,14 @@ GameObject:
   - component: {fileID: 1269174927}
   - component: {fileID: 1269174926}
   - component: {fileID: 1269174925}
+  - component: {fileID: 1269174928}
   m_Layer: 5
   m_Name: SiguienteText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1269174924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2569,6 +2712,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269174923}
   m_CullTransparentMesh: 0
+--- !u!114 &1269174928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269174923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 966801955}
+          m_MethodName: ReproducirSonidoClarissa
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1440291913
 GameObject:
   m_ObjectHideFlags: 0

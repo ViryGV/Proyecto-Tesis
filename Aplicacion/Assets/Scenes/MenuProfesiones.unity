@@ -1809,7 +1809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.26}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 391, y: -412}
+  m_AnchoredPosition: {x: 369, y: -422}
   m_SizeDelta: {x: 122.87097, y: 25.33815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1068912020
@@ -2682,13 +2682,19 @@ MonoBehaviour:
   botonContinuar: {fileID: 1068912018}
   palabras:
   - Hola! Soy amigo de Cosmo
-  - "Nos pidi\xF3 a mi hermana y a mi que te ayudaramos"
-  - Porque los dos tenemos experiencia trabajando
-  - "Me llamo Tadeo, a mi hermana Pen\xE9lope"
+  - "Nos pidi\xF3 a mi hermana y a mi"
+  - ' Que te ayudaramos'
+  - Porque los dos tenemos
+  - Experiencia trabajando
+  - Me llamo Tadeo
+  - "A mi hermana Pen\xE9lope"
   - "Ya te la encontr\xE1s despu\xE9s"
-  - Aunque te advierto que ella habla mucho sin parar
-  - Pero no le digas que te lo he dicho yo!
-  - "Bueno aqu\xED tienes algunas im\xE1genes"
+  - Aunque te advierto
+  - Ella habla mucho
+  - Sin parar, pero no le digas
+  - Que te lo he dicho yo!
+  - "Bueno aqu\xED tienes"
+  - "Algunas im\xE1genes"
   - Sobre profesiones y oficios
   - Escoge la imagen que quieras
   - "Para descubrir lo hay detr\xE1s"
@@ -2696,7 +2702,8 @@ MonoBehaviour:
   - "As\xED que habr\xE1 algunas secciones"
   - "Donde yo te guiar\xE9 y en otras"
   - "Pen\xE9lope lo har\xE1"
-  - "Adelante escoge una y te veremos depu\xE9s!"
+  - Adelante escoge una y
+  - "Te veremos depu\xE9s!"
   typingSpeed: 0.02
 --- !u!4 &1497908924
 Transform:
@@ -2881,8 +2888,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 174.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400.7, y: -329.5}
-  m_SizeDelta: {x: 376.2091, y: 220.63928}
+  m_AnchoredPosition: {x: 374, y: -341}
+  m_SizeDelta: {x: 443.4928, y: 246.43518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673399250
 MonoBehaviour:
@@ -2896,7 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31bb85fd4ae587439e047d45422cb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 23
+  tiempoVida: 40
 --- !u!114 &1673399251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2969,6 +2976,7 @@ MonoBehaviour:
   _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
   _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
   _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 20a3c367fa4f00c4ea4380ed4d83f6a1, type: 3}
 --- !u!82 &1802501083
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3701,8 +3709,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -3}
-  m_SizeDelta: {x: 179.44702, y: 160.79425}
+  m_AnchoredPosition: {x: 27.6, y: -11.6}
+  m_SizeDelta: {x: 216.83704, y: 172.86212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2085474668
 MonoBehaviour:
@@ -3754,7 +3762,7 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1

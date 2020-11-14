@@ -26,6 +26,30 @@ public class SonidoBotonesInformacion : MonoBehaviour
     /// <value>Variable serializada para almacenar el sonido del botón regresar (Menú Principal) </value>
     [SerializeField]
     private AudioClip _sonidoRegresar;
+    /// <value>Variable serializada para almacenar el sonido del botón reconocimiento de emociones </value>
+    [SerializeField]
+    private AudioClip _sonidoEmociones;
+    /// <value>Variable serializada para almacenar el sonido del botón reconocimiento de emociones </value>
+    [SerializeField]
+    private AudioClip _sonidoAtencion;
+    /// <value>Variable serializada para almacenar el sonido del botón atención </value>
+    [SerializeField]
+    private AudioClip _sonidoMemoria;
+    /// <value>Variable serializada para almacenar el sonido del botón instrucciones visuales </value>
+    [SerializeField]
+    private AudioClip _sonidoInstrucciones;
+    /// <value>Variable serializada para almacenar el sonido del botón atras (selección de información) </value>
+    [SerializeField]
+    private AudioClip _sonidoAtras;
+    /// <value>Variable serializada para almacenar el sonido de los botones para el nivel uno </value>
+    [SerializeField]
+    private AudioClip _sonidoNivelUno;
+    /// <value>Variable serializada para almacenar el sonido de los botones para el nivel dos </value>
+    [SerializeField]
+    private AudioClip _sonidoNivelDos;
+    /// <value>Variable serializada para almacenar el sonido de los botones para el nivel tres </value>
+    [SerializeField]
+    private AudioClip _sonidoNivelTres;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -69,5 +93,77 @@ public class SonidoBotonesInformacion : MonoBehaviour
     public void ReproducirSonidoRegresar()
     {
         _audioSource.PlayOneShot(_sonidoRegresar);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoEmociones()
+    {
+        _audioSource.PlayOneShot(_sonidoEmociones);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoAtencion()
+    {
+        _audioSource.PlayOneShot(_sonidoAtencion);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoMemoria()
+    {
+        _audioSource.PlayOneShot(_sonidoMemoria);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoInstrucciones()
+    {
+        _audioSource.PlayOneShot(_sonidoInstrucciones);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoAtras()
+    {
+        _audioSource.PlayOneShot(_sonidoAtras);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoNivelUno()
+    {
+        _audioSource.PlayOneShot(_sonidoNivelUno);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoNivelDos()
+    {
+        _audioSource.PlayOneShot(_sonidoNivelDos);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoNivelTres()
+    {
+        _audioSource.PlayOneShot(_sonidoNivelTres);
     }
 }

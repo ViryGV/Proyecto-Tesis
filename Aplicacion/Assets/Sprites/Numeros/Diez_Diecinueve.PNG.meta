@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 8714c31ffc409614aba2e9ab16f7b867
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4680320292781502742
+    second: Diez_Diecinueve_0
+  - first:
+      213: 6383760768178539431
+    second: Diez_Diecinueve_1
+  - first:
+      213: -4800913733990643108
+    second: Diez_Diecinueve_2
+  - first:
+      213: -2024200951010596315
+    second: Diez_Diecinueve_3
+  - first:
+      213: -4802840059914285382
+    second: Diez_Diecinueve_4
+  - first:
+      213: -462911403782924427
+    second: Diez_Diecinueve_5
+  - first:
+      213: 3046876580081890450
+    second: Diez_Diecinueve_6
+  - first:
+      213: 5460398697888606904
+    second: Diez_Diecinueve_7
+  - first:
+      213: -9018828183801691748
+    second: Diez_Diecinueve_8
+  - first:
+      213: -7996985932797489144
+    second: Diez_Diecinueve_9
+  - first:
+      213: 3408387525403046126
+    second: Diez_Diecinueve_10
+  - first:
+      213: 6251897628731644959
+    second: Diez_Diecinueve_11
+  - first:
+      213: -5605977945734922832
+    second: Diez_Diecinueve_12
+  - first:
+      213: -2350620234381701271
+    second: Diez_Diecinueve_13
+  - first:
+      213: 3769594992914134667
+    second: Diez_Diecinueve_14
+  - first:
+      213: -9051119359841929029
+    second: Diez_Diecinueve_15
+  - first:
+      213: -5570349751835593714
+    second: Diez_Diecinueve_16
+  - first:
+      213: -1098546340489892765
+    second: Diez_Diecinueve_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diez_Diecinueve_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1129
+        width: 569
+        height: 467
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeec4b9bd792c0fb0800000000000000
+      internalID: -4680320292781502742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1158
+        width: 533
+        height: 439
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8130356abf5db0800000000000000
+      internalID: -4800913733990643108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_3
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 1162
+        width: 583
+        height: 440
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a6101b5f798e3e0800000000000000
+      internalID: -2024200951010596315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 540
+        width: 524
+        height: 472
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5779a07e7886399f0800000000000000
+      internalID: -462911403782924427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_7
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 581
+        width: 551
+        height: 441
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bae7af6fab37cb40800000000000000
+      internalID: 5460398697888606904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_9
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 603
+        width: 587
+        height: 440
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8005fc9f9aff40190800000000000000
+      internalID: -7996985932797489144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 12
+        width: 477
+        height: 441
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c18a4f4c333c650800000000000000
+      internalID: 6251897628731644959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 21
+        width: 506
+        height: 440
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f45d7d95be06fd0800000000000000
+      internalID: -2350620234381701271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_15
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 18
+        width: 568
+        height: 441
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8f5f8a5e6f36280800000000000000
+      internalID: -9051119359841929029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diez_Diecinueve_17
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 63
+        width: 240
+        height: 450
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c6bc57ced21c0f0800000000000000
+      internalID: -1098546340489892765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

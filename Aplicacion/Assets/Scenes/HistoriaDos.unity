@@ -5825,6 +5825,7 @@ MonoBehaviour:
   _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
   _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
   _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 20a3c367fa4f00c4ea4380ed4d83f6a1, type: 3}
 --- !u!82 &2046107499
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5837,7 +5838,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

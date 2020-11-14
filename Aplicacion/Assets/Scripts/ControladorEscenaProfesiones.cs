@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 //compile with: -doc:DocFileName.xml
 
@@ -74,6 +75,7 @@ public class ControladorEscenaProfesiones : MonoBehaviour
     public GameObject imageBuho;
     /// <value>Establece el valor para poder manipular la imagen (desactivarlo)</value>
     public GameObject imagedialogo;
+    public TextMeshProUGUI dialogText;
 
     public void ActivarPanelDescripcion()
     {
@@ -81,6 +83,7 @@ public class ControladorEscenaProfesiones : MonoBehaviour
         btnIniciar.SetActive(false);
         imageBuho.SetActive(false);
         imagedialogo.SetActive(false);
+        dialogText.enabled = false;
         DesactivarPanelDescripcionDos();
         DesactivarPanelFinal();
     }

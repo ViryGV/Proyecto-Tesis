@@ -3042,6 +3042,7 @@ MonoBehaviour:
   btnFinalizar: {fileID: 887585421}
   imageBuho: {fileID: 566026003}
   imagedialogo: {fileID: 1636281111}
+  dialogText: {fileID: 1583070059}
 --- !u!4 &592089109
 Transform:
   m_ObjectHideFlags: 0
@@ -5404,6 +5405,7 @@ MonoBehaviour:
   _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
   _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
   _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 20a3c367fa4f00c4ea4380ed4d83f6a1, type: 3}
 --- !u!82 &1047884289
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6527,7 +6529,8 @@ MonoBehaviour:
   - "Espero que Pen\xE9lope"
   - "Te este ayudando como prometi\xF3"
   - Veo que te interesaste por los bomberos
-  - "Yo s\xE9 mucho sobre ellos y otras profesiones"
+  - "Yo s\xE9 mucho sobre ellos"
+  - "As\xED como otras profesiones y oficios"
   - "Que ir\xE1s descubriendo"
   - "Si te adentr\xE1s a explorar esta secci\xF3n"
   - Si ya deseas conocer que hace un bombero
@@ -10404,8 +10407,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.3, y: -7.6}
-  m_SizeDelta: {x: 205.35931, y: 178.00562}
+  m_AnchoredPosition: {x: 26.5, y: -9.1}
+  m_SizeDelta: {x: 235.15863, y: 178.00562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036537199
 MonoBehaviour:
@@ -10457,7 +10460,7 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1

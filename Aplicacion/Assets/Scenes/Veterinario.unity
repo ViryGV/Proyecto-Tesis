@@ -2890,6 +2890,7 @@ MonoBehaviour:
   btnFinalizar: {fileID: 887585421}
   imageBuho: {fileID: 566026003}
   imagedialogo: {fileID: 1636281111}
+  dialogText: {fileID: 1583070059}
 --- !u!4 &592089109
 Transform:
   m_ObjectHideFlags: 0
@@ -4936,7 +4937,8 @@ MonoBehaviour:
   _sonidoCosmo: {fileID: 8300000, guid: d10b67aa33c13f0459b66dbc938183ac, type: 3}
   _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
   _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
-  _sonidoTadeo: {fileID: 0}
+  _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 20a3c367fa4f00c4ea4380ed4d83f6a1, type: 3}
 --- !u!82 &893009473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8387,8 +8389,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 171.51}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261, y: 56}
-  m_SizeDelta: {x: 353.49884, y: 259.1737}
+  m_AnchoredPosition: {x: 278.31, y: 65.4}
+  m_SizeDelta: {x: 355.89246, y: 266.58344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636281114
 MonoBehaviour:
@@ -8547,10 +8549,12 @@ MonoBehaviour:
   - "Tadeo te hablar\xE1 bien de mi"
   - "Mi nombre es Pen\xE9lope"
   - Veo que te interesaste por los veterinarios
-  - "Yo s\xE9 mucho sobre ellos y otras profesiones"
-  - "Que ir\xE1s descubriendo si te adentr\xE1s a explorar esta secci\xF3n"
-  - Pero basta de tantas palabras que me aburro
-  - Si ya deseas conocer que hace un veterinario
+  - "Yo s\xE9 mucho sobre ellos"
+  - "As\xED como otras profesiones y oficios"
+  - "Que ir\xE1s descubriendo"
+  - Pero basta de tantas palabras
+  - Que me aburro, si ya deseas conocer
+  - Que hace un veterinario
   - "Presiona el bot\xF3n iniciar"
   - "Y te contar\xE9 todo lo que s\xE9"
   - Nos vemos!
@@ -10482,8 +10486,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.2, y: -10.3}
-  m_SizeDelta: {x: 193.17316, y: 183.77869}
+  m_AnchoredPosition: {x: 27.6, y: 5.4}
+  m_SizeDelta: {x: 237.2526, y: 190.4444}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036537199
 MonoBehaviour:
@@ -10532,10 +10536,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1

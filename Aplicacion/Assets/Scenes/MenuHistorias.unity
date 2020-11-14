@@ -533,6 +533,7 @@ MonoBehaviour:
   _sonidoTobi: {fileID: 8300000, guid: d5592c51d874e984690aa38a8c8e1e60, type: 3}
   _sonidoPenelope: {fileID: 8300000, guid: 24cc4cb4bd98eb6488b2c8d4706e6683, type: 3}
   _sonidoTadeo: {fileID: 8300000, guid: a3c18a794fe02684ea6e9b2d43b8ee3c, type: 3}
+  _sonidoClarissa: {fileID: 8300000, guid: 20a3c367fa4f00c4ea4380ed4d83f6a1, type: 3}
 --- !u!82 &177263276
 AudioSource:
   m_ObjectHideFlags: 0
@@ -545,7 +546,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1871,8 +1872,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 174.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320.2, y: -333.7}
-  m_SizeDelta: {x: 354.67566, y: 202.78076}
+  m_AnchoredPosition: {x: 326.3, y: -333}
+  m_SizeDelta: {x: 366.24988, y: 218.37909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &977785880
 MonoBehaviour:
@@ -1886,7 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31bb85fd4ae587439e047d45422cb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 25
+  tiempoVida: 40
 --- !u!114 &977785881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,7 +2103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4e098764438514c8957821035f8314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoVida: 25
+  tiempoVida: 40
 --- !u!114 &1063417608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2331,8 +2332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.6, y: -15.1}
-  m_SizeDelta: {x: 171.67737, y: 141.2616}
+  m_AnchoredPosition: {x: 22, y: -12}
+  m_SizeDelta: {x: 184.97974, y: 153.44525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269979921
 MonoBehaviour:
@@ -2384,7 +2385,7 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -2489,7 +2490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307, y: -420}
+  m_AnchoredPosition: {x: 318, y: -427}
   m_SizeDelta: {x: 121.32605, y: 53.146942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296622730
@@ -3158,9 +3159,11 @@ MonoBehaviour:
   palabras:
   - Hola! Soy amigo de Cosmo
   - "Me pidi\xF3 que te ayudara"
-  - Porque soy muy bueno contando historias
+  - Porque soy muy bueno
+  - Contando historias
   - Me llamo Tobi
-  - "Aqu\xED debes estar atento a lo que se dice"
+  - "Aqu\xED debes estar atento "
+  - A lo que se dice
   - Y tratar de imaginarte
   - "Que eres t\xFA el de la historia"
   - "Para despu\xE9s responder"

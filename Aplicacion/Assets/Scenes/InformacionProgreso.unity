@@ -2563,6 +2563,7 @@ GameObject:
   - component: {fileID: 88014224}
   - component: {fileID: 88014223}
   - component: {fileID: 88014222}
+  - component: {fileID: 88014225}
   m_Layer: 5
   m_Name: NivelTresButton
   m_TagString: Untagged
@@ -2682,6 +2683,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88014220}
   m_CullTransparentMesh: 0
+--- !u!114 &88014225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88014220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelTres
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &89675531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4290,6 +4319,7 @@ GameObject:
   - component: {fileID: 152684782}
   - component: {fileID: 152684781}
   - component: {fileID: 152684780}
+  - component: {fileID: 152684783}
   m_Layer: 5
   m_Name: NivelUnoButton
   m_TagString: Untagged
@@ -4409,6 +4439,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152684778}
   m_CullTransparentMesh: 0
+--- !u!114 &152684783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152684778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &167581943
 GameObject:
   m_ObjectHideFlags: 0
@@ -8802,6 +8860,7 @@ GameObject:
   - component: {fileID: 328956017}
   - component: {fileID: 328956016}
   - component: {fileID: 328956015}
+  - component: {fileID: 328956018}
   m_Layer: 5
   m_Name: NivelDosEButton
   m_TagString: Untagged
@@ -8921,6 +8980,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328956013}
   m_CullTransparentMesh: 0
+--- !u!114 &328956018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328956013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &329344027
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,6 +9020,7 @@ GameObject:
   - component: {fileID: 329344031}
   - component: {fileID: 329344030}
   - component: {fileID: 329344029}
+  - component: {fileID: 329344032}
   m_Layer: 5
   m_Name: AtrasButton
   m_TagString: Untagged
@@ -9052,6 +9140,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329344027}
   m_CullTransparentMesh: 0
+--- !u!114 &329344032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329344027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoAtras
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &330130055
 GameObject:
   m_ObjectHideFlags: 0
@@ -14130,6 +14246,7 @@ GameObject:
   - component: {fileID: 469137595}
   - component: {fileID: 469137594}
   - component: {fileID: 469137593}
+  - component: {fileID: 469137596}
   m_Layer: 5
   m_Name: NivelTresButton
   m_TagString: Untagged
@@ -14249,6 +14366,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469137591}
   m_CullTransparentMesh: 0
+--- !u!114 &469137596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469137591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelTres
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &473301657
 GameObject:
   m_ObjectHideFlags: 0
@@ -23334,6 +23479,7 @@ GameObject:
   - component: {fileID: 756879011}
   - component: {fileID: 756879010}
   - component: {fileID: 756879009}
+  - component: {fileID: 756879012}
   m_Layer: 5
   m_Name: NivelDosButton
   m_TagString: Untagged
@@ -23453,6 +23599,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756879007}
   m_CullTransparentMesh: 0
+--- !u!114 &756879012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756879007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &757210433
 GameObject:
   m_ObjectHideFlags: 0
@@ -25609,6 +25783,7 @@ GameObject:
   - component: {fileID: 839324721}
   - component: {fileID: 839324720}
   - component: {fileID: 839324719}
+  - component: {fileID: 839324722}
   m_Layer: 5
   m_Name: NivelDosButton
   m_TagString: Untagged
@@ -25728,6 +25903,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839324717}
   m_CullTransparentMesh: 0
+--- !u!114 &839324722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839324717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &842911240
 GameObject:
   m_ObjectHideFlags: 0
@@ -29170,6 +29373,7 @@ GameObject:
   - component: {fileID: 969815161}
   - component: {fileID: 969815160}
   - component: {fileID: 969815159}
+  - component: {fileID: 969815162}
   m_Layer: 5
   m_Name: NivelUnoButton
   m_TagString: Untagged
@@ -29289,6 +29493,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969815157}
   m_CullTransparentMesh: 0
+--- !u!114 &969815162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969815157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &973089804
 GameObject:
   m_ObjectHideFlags: 0
@@ -31453,6 +31685,7 @@ GameObject:
   - component: {fileID: 1066563429}
   - component: {fileID: 1066563428}
   - component: {fileID: 1066563427}
+  - component: {fileID: 1066563430}
   m_Layer: 5
   m_Name: NivelDosUButton
   m_TagString: Untagged
@@ -31572,6 +31805,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066563425}
   m_CullTransparentMesh: 0
+--- !u!114 &1066563430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066563425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1070637444
 GameObject:
   m_ObjectHideFlags: 0
@@ -32126,6 +32387,7 @@ GameObject:
   - component: {fileID: 1087226230}
   - component: {fileID: 1087226229}
   - component: {fileID: 1087226228}
+  - component: {fileID: 1087226231}
   m_Layer: 5
   m_Name: AtencionButton
   m_TagString: Untagged
@@ -32245,6 +32507,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087226226}
   m_CullTransparentMesh: 0
+--- !u!114 &1087226231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087226226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoAtencion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1090164663
 GameObject:
   m_ObjectHideFlags: 0
@@ -33602,6 +33892,7 @@ GameObject:
   - component: {fileID: 1149647506}
   - component: {fileID: 1149647505}
   - component: {fileID: 1149647504}
+  - component: {fileID: 1149647507}
   m_Layer: 5
   m_Name: NivelDosButton
   m_TagString: Untagged
@@ -33721,6 +34012,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149647502}
   m_CullTransparentMesh: 0
+--- !u!114 &1149647507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149647502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1155357141
 GameObject:
   m_ObjectHideFlags: 0
@@ -38503,6 +38822,7 @@ GameObject:
   - component: {fileID: 1334024508}
   - component: {fileID: 1334024507}
   - component: {fileID: 1334024506}
+  - component: {fileID: 1334024509}
   m_Layer: 5
   m_Name: InstruccionesButton
   m_TagString: Untagged
@@ -38622,6 +38942,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334024504}
   m_CullTransparentMesh: 0
+--- !u!114 &1334024509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334024504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoInstrucciones
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1340659088
 GameObject:
   m_ObjectHideFlags: 0
@@ -43513,6 +43861,7 @@ GameObject:
   - component: {fileID: 1496690114}
   - component: {fileID: 1496690113}
   - component: {fileID: 1496690112}
+  - component: {fileID: 1496690115}
   m_Layer: 5
   m_Name: NivelUnoUButton
   m_TagString: Untagged
@@ -43632,6 +43981,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496690110}
   m_CullTransparentMesh: 0
+--- !u!114 &1496690115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496690110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1498294280
 GameObject:
   m_ObjectHideFlags: 0
@@ -43644,6 +44021,7 @@ GameObject:
   - component: {fileID: 1498294284}
   - component: {fileID: 1498294283}
   - component: {fileID: 1498294282}
+  - component: {fileID: 1498294285}
   m_Layer: 5
   m_Name: EmocionesButton
   m_TagString: Untagged
@@ -43763,6 +44141,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498294280}
   m_CullTransparentMesh: 0
+--- !u!114 &1498294285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498294280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoEmociones
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1506300570
 GameObject:
   m_ObjectHideFlags: 0
@@ -45146,6 +45552,7 @@ GameObject:
   - component: {fileID: 1529196708}
   - component: {fileID: 1529196707}
   - component: {fileID: 1529196706}
+  - component: {fileID: 1529196709}
   m_Layer: 5
   m_Name: NivelDosButton
   m_TagString: Untagged
@@ -45265,6 +45672,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529196704}
   m_CullTransparentMesh: 0
+--- !u!114 &1529196709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529196704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelDos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1536913349
 GameObject:
   m_ObjectHideFlags: 0
@@ -49491,6 +49926,7 @@ GameObject:
   - component: {fileID: 1679012782}
   - component: {fileID: 1679012781}
   - component: {fileID: 1679012780}
+  - component: {fileID: 1679012783}
   m_Layer: 5
   m_Name: NivelTresButton
   m_TagString: Untagged
@@ -49610,6 +50046,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679012778}
   m_CullTransparentMesh: 0
+--- !u!114 &1679012783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679012778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelTres
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1681593944
 GameObject:
   m_ObjectHideFlags: 0
@@ -53791,6 +54255,7 @@ GameObject:
   - component: {fileID: 1816465432}
   - component: {fileID: 1816465431}
   - component: {fileID: 1816465430}
+  - component: {fileID: 1816465433}
   m_Layer: 5
   m_Name: NivelUnoEButton
   m_TagString: Untagged
@@ -53910,6 +54375,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816465428}
   m_CullTransparentMesh: 0
+--- !u!114 &1816465433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816465428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1816599182
 GameObject:
   m_ObjectHideFlags: 0
@@ -54234,6 +54727,7 @@ GameObject:
   - component: {fileID: 1828980307}
   - component: {fileID: 1828980306}
   - component: {fileID: 1828980305}
+  - component: {fileID: 1828980308}
   m_Layer: 5
   m_Name: NivelUnoButton
   m_TagString: Untagged
@@ -54353,6 +54847,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828980303}
   m_CullTransparentMesh: 0
+--- !u!114 &1828980308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828980303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1831946077
 GameObject:
   m_ObjectHideFlags: 0
@@ -57521,6 +58043,15 @@ MonoBehaviour:
   _sonidoHistorias: {fileID: 8300000, guid: ec480e744e81a2946ab1254e7fa8e25d, type: 3}
   _sonidoMatematicas: {fileID: 8300000, guid: fbc6cce36a1646142a2dd558ebae4ef3, type: 3}
   _sonidoRegresar: {fileID: 8300000, guid: 7d2c1a90f37e2a741a8255e263ae5433, type: 3}
+  _sonidoEmociones: {fileID: 8300000, guid: 9399c81b6a3596347a012e63a13dafcb, type: 3}
+  _sonidoAtencion: {fileID: 8300000, guid: 617c8775bf615b141ac896ed25d290eb, type: 3}
+  _sonidoMemoria: {fileID: 8300000, guid: 3edf214e1bdc5144abaa8ab02734d7d1, type: 3}
+  _sonidoInstrucciones: {fileID: 8300000, guid: e18cbd55f9f3fd44ba8404ad74a8bd00,
+    type: 3}
+  _sonidoAtras: {fileID: 8300000, guid: 078682370c426c04b99d9848f01aaab5, type: 3}
+  _sonidoNivelUno: {fileID: 8300000, guid: 0116a7db84505894d916d4bb82b7b36c, type: 3}
+  _sonidoNivelDos: {fileID: 8300000, guid: 8f780decc0673bc41a717ff5433a18db, type: 3}
+  _sonidoNivelTres: {fileID: 8300000, guid: a7554147f9dc1ea43b8396610364b865, type: 3}
 --- !u!82 &1919758687
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62080,6 +62611,7 @@ GameObject:
   - component: {fileID: 2051422877}
   - component: {fileID: 2051422876}
   - component: {fileID: 2051422875}
+  - component: {fileID: 2051422878}
   m_Layer: 5
   m_Name: NivelUnoButton
   m_TagString: Untagged
@@ -62199,6 +62731,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051422873}
   m_CullTransparentMesh: 0
+--- !u!114 &2051422878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051422873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoNivelUno
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2054158569
 GameObject:
   m_ObjectHideFlags: 0
@@ -62211,6 +62771,7 @@ GameObject:
   - component: {fileID: 2054158573}
   - component: {fileID: 2054158572}
   - component: {fileID: 2054158571}
+  - component: {fileID: 2054158574}
   m_Layer: 5
   m_Name: MemoriaButton
   m_TagString: Untagged
@@ -62330,6 +62891,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054158569}
   m_CullTransparentMesh: 0
+--- !u!114 &2054158574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054158569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1919758686}
+          m_MethodName: ReproducirSonidoMemoria
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2065515271
 GameObject:
   m_ObjectHideFlags: 0

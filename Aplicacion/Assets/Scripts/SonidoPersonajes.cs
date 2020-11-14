@@ -25,6 +25,9 @@ public class SonidoPersonajes : MonoBehaviour
     /// <value>Variable serializada para almacenar el sonido del personaje de Tadeo</value>
     [SerializeField]
     private AudioClip _sonidoTadeo;
+    /// <value>Variable serializada para almacenar el sonido del personaje de Clarissa</value>
+    [SerializeField]
+    private AudioClip _sonidoClarissa;
 
     /// <summary>
     /// Inicializa las variables establecidas
@@ -68,5 +71,14 @@ public class SonidoPersonajes : MonoBehaviour
     public void ReproducirSonidoTadeo()
     {
         _audioSource.PlayOneShot(_sonidoTadeo);
+    }
+
+    /// <summary>
+    /// Método que se encarga de reconocer el botón al que se le
+    /// asignó el sonido para poder reproducirlo cuando es accionado
+    /// </summary>
+    public void ReproducirSonidoClarissa()
+    {
+        _audioSource.PlayOneShot(_sonidoClarissa);
     }
 }
