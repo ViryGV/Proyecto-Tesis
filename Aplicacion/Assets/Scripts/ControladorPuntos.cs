@@ -161,29 +161,11 @@ public class ControladorPuntos : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorJuego controladorJuego;
 
-    /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
-    Renderer render;
-    Renderer renderE;
-    Renderer renderT;
-    Renderer renderS;
-    Renderer renderA;
-    Renderer renderP;
-    Renderer renderC;
-    Renderer renderTemor;
-
     /// <summary>
     /// Inicializa las variables establecidas
     /// </summary>
     void Start()
     {
-        render = objetoAlegria.GetComponent<Renderer>();
-        renderE = objetoEnojo.GetComponent<Renderer>();
-        renderT = objetoTristeza.GetComponent<Renderer>();
-        renderS = objetoSorpresa.GetComponent<Renderer>();
-        renderA = objetoAburrido.GetComponent<Renderer>();
-        renderP = objetoPreocupado.GetComponent<Renderer>();
-        renderTemor = objetoTemor.GetComponent<Renderer>();
-        renderC = objetoCansado.GetComponent<Renderer>();
         puntajeErrores = 0;
         puntajeErroresMax = 0;
         puntajeErroresMin = 0;
@@ -617,96 +599,80 @@ public class ControladorPuntos : MonoBehaviour
     public void ActivarPanelAlegria()
     {
         panelAlegria.SetActive(true);
-        render.enabled = true;
     }
 
     public void DesactivarPanelAlegria()
     {
         panelAlegria.SetActive(false);
-        render.enabled = false;
     }
 
     public void ActivarPanelEnojo()
     {
         panelEnojo.SetActive(true);
-        renderE.enabled = true;
     }
 
     public void DesactivarPanelEnojo()
     {
         panelEnojo.SetActive(false);
-        renderE.enabled = false;
     }
 
     public void ActivarPanelTristeza()
     {
         panelTristeza.SetActive(true);
-        renderT.enabled = true;
     }
 
     public void DesactivarPanelTristeza()
     {
         panelTristeza.SetActive(false);
-        renderT.enabled = false;
     }
 
     public void ActivarPanelSorpresa()
     {
         panelSopresa.SetActive(true);
-        renderS.enabled = true;
     }
 
     public void DesactivarPanelSorpresa()
     {
         panelSopresa.SetActive(false);
-        renderS.enabled = false;
     }
 
     public void ActivarPanelTemor()
     {
         panelTemor.SetActive(true);
-        renderTemor.enabled = true;
     }
 
     public void DesactivarPanelTemor()
     {
         panelTemor.SetActive(false);
-        renderTemor.enabled = false;
     }
 
     public void ActivarPanelAburrido()
     {
         panelAburrido.SetActive(true);
-        renderA.enabled = true;
     }
 
     public void DesactivarPanelAburrido()
     {
         panelAburrido.SetActive(false);
-        renderA.enabled = false;
     }
 
     public void ActivarPanelPreocupado()
     {
         panelPreocupado.SetActive(true);
-        renderP.enabled = true;
     }
 
     public void DesactivarPanelPreocupado()
     {
         panelPreocupado.SetActive(false);
-        renderP.enabled = false;
     }
 
     public void ActivarPanelCansado()
     {
         panelCansado.SetActive(true);
-        renderC.enabled = true;
     }
 
     public void DesactivarPanelCansado()
     {
         panelCansado.SetActive(false);
-        renderC.enabled = false;
     }
 }

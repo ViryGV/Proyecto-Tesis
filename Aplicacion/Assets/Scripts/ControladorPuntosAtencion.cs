@@ -145,25 +145,11 @@ public class ControladorPuntosAtencion : MonoBehaviour
     /// <value>Permite al acceso de los datos de la clase</value>
     ControladorJuego controladorJuego;
 
-    /// <value>Acceder al valor de Renderer en los objetos para manipularlos</value>
-    Renderer renderUno;
-    Renderer renderDos;
-    Renderer renderTres;
-    Renderer renderCuatro;
-    Renderer renderCinco;
-    Renderer renderSeis;
-
     /// <summary>
     /// Inicializa las variables establecidas
     /// </summary>
     void Start()
     {
-        renderUno = objetoUno.GetComponent<Renderer>();
-        renderDos = objetoDos.GetComponent<Renderer>();
-        renderTres = objetoTres.GetComponent<Renderer>();
-        renderCuatro = objetoCuatro.GetComponent<Renderer>();
-        renderCinco = objetoCinco.GetComponent<Renderer>();
-        renderSeis = objetoSeis.GetComponent<Renderer>();
         puntajeErrores = 0;
         puntajeErroresMax = 0;
         puntajeErroresMin = 0;
@@ -492,61 +478,50 @@ public class ControladorPuntosAtencion : MonoBehaviour
     public void ActivarPanelDos()
     {
         panelDos.SetActive(true);
-        renderUno.enabled = true;
-        renderDos.enabled = true;
     }
 
     public void DesactivarPanelDos()
     {
         panelDos.SetActive(false);
-        renderDos.enabled = false;
     }
 
     public void ActivarPanelTres()
     {
         panelTres.SetActive(true);
-        renderTres.enabled = true;
     }
 
     public void DesactivarPanelTres()
     {
         panelTres.SetActive(false);
-        renderTres.enabled = false;
     }
 
     public void ActivarPanelCuatro()
     {
         panelCuatro.SetActive(true);
-        renderCuatro.enabled = true;
     }
 
     public void DesactivarPanelCuatro()
     {
         panelCuatro.SetActive(false);
-        renderCuatro.enabled = false;
     }
 
     public void ActivarPanelCinco()
     {
         panelCinco.SetActive(true);
-        renderCinco.enabled = true;
     }
 
     public void DesactivarPanelCinco()
     {
         panelCinco.SetActive(false);
-        renderCinco.enabled = false;
     }
 
     public void ActivarPanelSeis()
     {
         panelSeis.SetActive(true);
-        renderSeis.enabled = true;
     }
 
     public void DesactivarPanelSeis()
     {
         panelSeis.SetActive(false);
-        renderSeis.enabled = false;
     }
 }
